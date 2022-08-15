@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+
+    <link rel="stylesheet" href="">
+    <style type="text/css" media="screen">
+        body {
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        @keyframes northern {
+            0% {
+                transform: translate(5%, -2%);
+            }
+
+            25% {
+                transform: translate(10%, 7%);
+            }
+
+            40% {
+                transform: rotate(-10deg);
+            }
+
+            60% {
+                transform: translate(7%, -2%);
+            }
+
+            85% {
+                transform: translate(6%, 3%) rotate(12deg);
+            }
+
+            100% {
+                transform: none;
+            }
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .auroral-northern {
+            position: fixed;
+            left: -50%;
+            top: -50%;
+            width: 200%;
+            height: 200%;
+            animation-name: northern;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            background: linear-gradient(10deg, rgb(0, 212, 255) 20%, #32988a 40%, #000e3c 70%);
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .top {
+            color: #FFF;
+            text-align: center;
+            padding-top: 15vh;
+        }
+    </style>
+</head>
+
+<body onClick="window.location='https://github.com/AuroraEditor';">
+    <div class='container'>
+        <div class='auroral-northern'></div>
+        <div class='top'>
+            <img
+                src="https://avatars.githubusercontent.com/u/106490518?s=400&u=1791b2d0244ce810752380cdb414463d5dd54685&v=4">
+            <h1>Aurora Editor</h1>
+        </div>
+    </div>
+</body>
+
+</html>
