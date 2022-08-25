@@ -1,0 +1,2326 @@
+.row-full {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%
+}
+
+.column {
+    position: relative
+}
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0;
+    padding: 0
+}
+
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hgroup,
+p,
+blockquote,
+figure,
+fieldset,
+input,
+legend,
+pre,
+button {
+    margin: 0;
+    padding: 0
+}
+
+pre,
+address,
+caption,
+th,
+figcaption {
+    font-size: 1em;
+    font-weight: normal;
+    font-style: normal
+}
+
+fieldset,
+iframe {
+    border: 0
+}
+
+caption,
+th {
+    text-align: left
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+main,
+summary,
+details {
+    display: block
+}
+
+audio,
+canvas,
+progress {
+    vertical-align: baseline
+}
+
+button {
+    background: none;
+    border: 0;
+    box-sizing: content-box;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    line-height: inherit;
+    overflow: visible;
+    vertical-align: inherit
+}
+
+button:disabled {
+    cursor: default
+}
+
+:focus {
+    outline: 4px solid rgba(0, 125, 250, 0.6);
+    outline-offset: 1px
+}
+
+:focus[data-focus-method="mouse"]:not(input):not(textarea):not(select),
+:focus[data-focus-method="touch"]:not(input):not(textarea):not(select) {
+    outline: none
+}
+
+::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+html {
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 106.25%;
+}
+
+body {
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    background-color: #fff;
+    color: #1d1d1f;
+    font-style: normal
+}
+
+body,
+input,
+textarea,
+select,
+button {
+    font-synthesis: none;
+    -moz-font-feature-settings: 'kern';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    direction: ltr;
+    text-align: left
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    color: #1d1d1f
+}
+
+h1 img,
+h2 img,
+h3 img,
+h4 img,
+h5 img,
+h6 img {
+    display: block;
+    margin: 0
+}
+
+h1+*,
+h2+*,
+h3+*,
+h4+*,
+h5+*,
+h6+* {
+    margin-top: .8em
+}
+
+h1+h1,
+h1+h2,
+h1+h3,
+h1+h4,
+h1+h5,
+h1+h6,
+h2+h1,
+h2+h2,
+h2+h3,
+h2+h4,
+h2+h5,
+h2+h6,
+h3+h1,
+h3+h2,
+h3+h3,
+h3+h4,
+h3+h5,
+h3+h6,
+h4+h1,
+h4+h2,
+h4+h3,
+h4+h4,
+h4+h5,
+h4+h6,
+h5+h1,
+h5+h2,
+h5+h3,
+h5+h4,
+h5+h5,
+h5+h6,
+h6+h1,
+h6+h2,
+h6+h3,
+h6+h4,
+h6+h5,
+h6+h6 {
+    margin-top: .4em
+}
+
+p+h1,
+ul+h1,
+ol+h1,
+p+h2,
+ul+h2,
+ol+h2,
+p+h3,
+ul+h3,
+ol+h3,
+p+h4,
+ul+h4,
+ol+h4,
+p+h5,
+ul+h5,
+ol+h5,
+p+h6,
+ul+h6,
+ol+h6 {
+    margin-top: 1.6em
+}
+
+.heading-collapsed+* {
+    margin-top: 0
+}
+
+p+*,
+ul+*,
+ol+* {
+    margin-top: .8em
+}
+
+ul,
+ol {
+    margin-left: 1.17647em
+}
+
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+nav ul,
+nav ol {
+    margin: 0;
+    list-style: none
+}
+
+li li {
+    font-size: 1em
+}
+
+a,
+.link {
+    color: #06c;
+    letter-spacing: inherit
+}
+
+a:link,
+a:visited,
+.link:link,
+.link:visited {
+    text-decoration: none
+}
+
+a:hover,
+.link:hover {
+    text-decoration: underline
+}
+
+a:active,
+.link:active {
+    text-decoration: none
+}
+
+a:disabled,
+.link:disabled {
+    opacity: .32
+}
+
+.links-inline,
+.links-stacked {
+    margin-left: 0;
+    margin-right: 0;
+    list-style: none
+}
+
+.links-inline li {
+    display: inline;
+    margin: 0 0.8em
+}
+
+.links-inline li:first-child {
+    margin-left: 0
+}
+
+.links-inline li:last-child {
+    margin-right: 0
+}
+
+.links-stacked li {
+    margin: 0;
+    display: block
+}
+
+.links-stacked li+li {
+    margin-top: .4em
+}
+
+b,
+strong {
+    font-weight: 600
+}
+
+em,
+i,
+cite,
+dfn {
+    font-style: italic
+}
+
+sup,
+sub {
+    position: relative;
+    font-size: .6em;
+    vertical-align: baseline
+}
+
+sup {
+    top: -.5em
+}
+
+sub {
+    bottom: -0.25em
+}
+
+.justify-content-start {
+    justify-content: flex-start
+}
+
+.justify-content-end {
+    justify-content: flex-end
+}
+
+.justify-content-center {
+    justify-content: center
+}
+
+.justify-content-spacebetween {
+    justify-content: space-between
+}
+
+.justify-content-spacearound {
+    justify-content: space-around
+}
+
+.justify-content-spaceevenly {
+    justify-content: space-evenly
+}
+
+.align-items-start {
+    align-items: flex-start
+}
+
+.align-items-center {
+    align-items: center
+}
+
+.align-items-end {
+    align-items: flex-end
+}
+
+.align-self-start {
+    align-self: flex-start
+}
+
+.align-self-center {
+    align-self: center
+}
+
+.align-self-end {
+    align-self: flex-end
+}
+
+.large-justify-content-start {
+    justify-content: flex-start
+}
+
+.large-justify-content-end {
+    justify-content: flex-end
+}
+
+.large-justify-content-center {
+    justify-content: center
+}
+
+.large-justify-content-spacebetween {
+    justify-content: space-between
+}
+
+.large-justify-content-spacearound {
+    justify-content: space-around
+}
+
+.large-justify-content-spaceevenly {
+    justify-content: space-evenly
+}
+
+.large-align-items-start {
+    align-items: flex-start
+}
+
+.large-align-items-center {
+    align-items: center
+}
+
+.large-align-items-end {
+    align-items: flex-end
+}
+
+.large-align-self-start {
+    align-self: flex-start
+}
+
+.large-align-self-center {
+    align-self: center
+}
+
+.large-align-self-end {
+    align-self: flex-end
+}
+
+
+@media only screen and (max-width: 1068px) {
+    .medium-justify-content-start {
+        justify-content: flex-start
+    }
+
+    .medium-justify-content-end {
+        justify-content: flex-end
+    }
+
+    .medium-justify-content-center {
+        justify-content: center
+    }
+
+    .medium-justify-content-spacebetween {
+        justify-content: space-between
+    }
+
+    .medium-justify-content-spacearound {
+        justify-content: space-around
+    }
+
+    .medium-justify-content-spaceevenly {
+        justify-content: space-evenly
+    }
+
+    .medium-align-items-start {
+        align-items: flex-start
+    }
+
+    .medium-align-items-center {
+        align-items: center
+    }
+
+    .medium-align-items-end {
+        align-items: flex-end
+    }
+
+    .medium-align-self-start {
+        align-self: flex-start
+    }
+
+    .medium-align-self-center {
+        align-self: center
+    }
+
+    .medium-align-self-end {
+        align-self: flex-end
+    }
+}
+
+@media only screen and (inverted-colors) {
+    .no-inversion {
+        filter: invert(1)
+    }
+}
+
+.nowrap {
+    display: inline-block;
+    text-decoration: inherit;
+    white-space: nowrap
+}
+
+.cursor-grab {
+    cursor: move;
+    cursor: -webkit-grab;
+    cursor: grab
+}
+
+.cursor-grabbing {
+    cursor: move;
+    cursor: -webkit-grabbing;
+    cursor: grabbing
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row
+}
+
+.column {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    min-width: 0px
+}
+
+.large-offset-0 {
+    margin-left: 0
+}
+
+.large-1 {
+    flex-basis: 8.33333%;
+    max-width: 8.33333%;
+    width: 8.33333%
+}
+
+.large-offset-1 {
+    margin-left: 8.33333%
+}
+
+.large-2 {
+    flex-basis: 16.66667%;
+    max-width: 16.66667%;
+    width: 16.66667%
+}
+
+.large-offset-2 {
+    margin-left: 16.66667%
+}
+
+.large-3 {
+    flex-basis: 25%;
+    max-width: 25%;
+    width: 25%
+}
+
+.large-offset-3 {
+    margin-left: 25%
+}
+
+.large-4 {
+    flex-basis: 33.33333%;
+    max-width: 33.33333%;
+    width: 33.33333%
+}
+
+.large-offset-4 {
+    margin-left: 33.33333%
+}
+
+.large-5 {
+    flex-basis: 41.66667%;
+    max-width: 41.66667%;
+    width: 41.66667%
+}
+
+.large-offset-5 {
+    margin-left: 41.66667%
+}
+
+.large-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+    width: 50%
+}
+
+.large-offset-6 {
+    margin-left: 50%
+}
+
+.large-7 {
+    flex-basis: 58.33333%;
+    max-width: 58.33333%;
+    width: 58.33333%
+}
+
+.large-offset-7 {
+    margin-left: 58.33333%
+}
+
+.large-8 {
+    flex-basis: 66.66667%;
+    max-width: 66.66667%;
+    width: 66.66667%
+}
+
+.large-offset-8 {
+    margin-left: 66.66667%
+}
+
+.large-9 {
+    flex-basis: 75%;
+    max-width: 75%;
+    width: 75%
+}
+
+.large-offset-9 {
+    margin-left: 75%
+}
+
+.large-10 {
+    flex-basis: 83.33333%;
+    max-width: 83.33333%;
+    width: 83.33333%
+}
+
+.large-offset-10 {
+    margin-left: 83.33333%
+}
+
+.large-11 {
+    flex-basis: 91.66667%;
+    max-width: 91.66667%;
+    width: 91.66667%
+}
+
+.large-offset-11 {
+    margin-left: 91.66667%
+}
+
+.large-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+    width: 100%
+}
+
+.large-offset-12 {
+    margin-left: 100%
+}
+
+.large-centered {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.large-uncentered {
+    margin-left: 0;
+    margin-right: 0
+}
+
+.large-last {
+    margin-left: auto
+}
+
+.large-notlast {
+    margin-left: 0
+}
+
+.large-grow {
+    flex: auto;
+    max-width: initial
+}
+
+.large-ungrow {
+    flex: initial;
+    max-width: initial
+}
+
+@media only screen and (max-width: 1068px) {
+    .medium-offset-0 {
+        margin-left: 0
+    }
+
+    .medium-1 {
+        flex-basis: 8.33333%;
+        max-width: 8.33333%;
+        width: 8.33333%
+    }
+
+    .medium-offset-1 {
+        margin-left: 8.33333%
+    }
+
+    .medium-2 {
+        flex-basis: 16.66667%;
+        max-width: 16.66667%;
+        width: 16.66667%
+    }
+
+    .medium-offset-2 {
+        margin-left: 16.66667%
+    }
+
+    .medium-3 {
+        flex-basis: 25%;
+        max-width: 25%;
+        width: 25%
+    }
+
+    .medium-offset-3 {
+        margin-left: 25%
+    }
+
+    .medium-4 {
+        flex-basis: 33.33333%;
+        max-width: 33.33333%;
+        width: 33.33333%
+    }
+
+    .medium-offset-4 {
+        margin-left: 33.33333%
+    }
+
+    .medium-5 {
+        flex-basis: 41.66667%;
+        max-width: 41.66667%;
+        width: 41.66667%
+    }
+
+    .medium-offset-5 {
+        margin-left: 41.66667%
+    }
+
+
+    .medium-6 {
+        flex-basis: 50%;
+        max-width: 50%;
+        width: 50%
+    }
+
+    .medium-offset-6 {
+        margin-left: 50%
+    }
+
+    .medium-7 {
+        flex-basis: 58.33333%;
+        max-width: 58.33333%;
+        width: 58.33333%
+    }
+
+    .medium-offset-7 {
+        margin-left: 58.33333%
+    }
+
+    .medium-8 {
+        flex-basis: 66.66667%;
+        max-width: 66.66667%;
+        width: 66.66667%
+    }
+
+    .medium-offset-8 {
+        margin-left: 66.66667%
+    }
+
+    .medium-9 {
+        flex-basis: 75%;
+        max-width: 75%;
+        width: 75%
+    }
+
+    .medium-offset-9 {
+        margin-left: 75%
+    }
+
+    .medium-10 {
+        flex-basis: 83.33333%;
+        max-width: 83.33333%;
+        width: 83.33333%
+    }
+
+    .medium-offset-10 {
+        margin-left: 83.33333%
+    }
+
+    .medium-11 {
+        flex-basis: 91.66667%;
+        max-width: 91.66667%;
+        width: 91.66667%
+    }
+
+    .medium-offset-11 {
+        margin-left: 91.66667%
+    }
+
+    .medium-12 {
+        flex-basis: 100%;
+        max-width: 100%;
+        width: 100%
+    }
+
+    .medium-offset-12 {
+        margin-left: 100%
+    }
+
+    .medium-centered {
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .medium-uncentered {
+        margin-left: 0;
+        margin-right: 0
+    }
+
+    .medium-last {
+        margin-left: auto
+    }
+
+    .medium-notlast {
+        margin-left: 0
+    }
+
+    .medium-grow {
+        flex: auto;
+        max-width: initial
+    }
+
+    .medium-ungrow {
+        flex: initial;
+        max-width: initial
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .small-offset-0 {
+        margin-left: 0
+    }
+}
+
+body {
+    min-width: 320px
+}
+
+.large-hide {
+    display: none
+}
+
+@media only screen and (max-width: 1068px) {
+    .medium-hide {
+        display: none
+    }
+
+    .medium-show {
+        display: block
+    }
+
+    .medium-show-inline {
+        display: inline
+    }
+
+    .medium-show-inlineblock {
+        display: inline-block
+    }
+}
+
+a.block {
+    box-sizing: border-box;
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit
+}
+
+a.block::before,
+a.block::after {
+    content: ' ';
+    display: table
+}
+
+a.block::after {
+    clear: both
+}
+
+a.block:hover {
+    text-decoration: none
+}
+
+a.block:hover .block-link {
+    text-decoration: underline
+}
+
+a.block .block-link {
+    color: #06c
+}
+
+.block-link {
+    cursor: pointer
+}
+
+a.block-inline {
+    display: inline-block
+}
+
+.button,
+input[type='button'],
+input[type='submit'] {
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 17px;
+    line-height: 1.17648;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    min-width: 28px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 18px;
+    background: #0071e3;
+    color: #fff
+}
+
+.button:hover,
+input:hover[type='button'],
+input:hover[type='submit'] {
+    text-decoration: none
+}
+
+.button:focus,
+input:focus[type='button'],
+input:focus[type='submit'] {
+    box-shadow: 0 0 0 4px rgba(0, 125, 250, 0.6);
+    outline: none
+}
+
+.button:focus[data-focus-method="mouse"]:not(input):not(textarea):not(select),
+input:focus[data-focus-method="mouse"]:not(input):not(textarea):not(select)[type='button'],
+input:focus[data-focus-method="mouse"]:not(input):not(textarea):not(select)[type='submit'],
+.button:focus[data-focus-method="touch"]:not(input):not(textarea):not(select),
+input:focus[data-focus-method="touch"]:not(input):not(textarea):not(select)[type='button'],
+input:focus[data-focus-method="touch"]:not(input):not(textarea):not(select)[type='submit'] {
+    box-shadow: none
+}
+
+.button:active,
+input:active[type='button'],
+input:active[type='submit'] {
+    outline: none
+}
+
+.button:disabled,
+input:disabled[type='button'],
+input:disabled[type='submit'],
+.button.disabled,
+input.disabled[type='button'],
+input.disabled[type='submit'] {
+    cursor: default
+}
+
+.button:hover,
+input:hover[type='button'],
+input:hover[type='submit'] {
+    background: #0077ED
+}
+
+.button:active,
+input:active[type='button'],
+input:active[type='submit'] {
+    background: #006EDB
+}
+
+.button:disabled,
+input:disabled[type='button'],
+input:disabled[type='submit'],
+.button.disabled,
+input.disabled[type='button'],
+input.disabled[type='submit'] {
+    background: #0071e3;
+    color: #fff;
+    opacity: .32
+}
+
+.button-compact {
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    min-width: 23px;
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 12px
+}
+
+.list {
+    box-sizing: border-box;
+    color: #1d1d1f
+}
+
+.list+ul,
+.list+ol,
+.list+.list {
+    margin-top: 1.6em
+}
+
+.list li {
+    margin-top: .4em
+}
+
+ol.list {
+    list-style-type: decimal
+}
+
+ol.list ol {
+    list-style-type: lower-alpha
+}
+
+ol.list ol ol {
+    list-style-type: lower-roman
+}
+
+.list-title {
+    color: #1d1d1f
+}
+
+.list-title+ul,
+.list-title+ol,
+.list-title+.list {
+    margin-top: 0
+}
+
+ul+.list-title,
+ol+.list-title,
+.list+.list-title {
+    margin-top: 1.6em
+}
+
+.list-nobullet {
+    margin-left: 0;
+    list-style-type: none
+}
+
+.list-nobullet ul {
+    list-style-type: disc
+}
+
+.list-nobullet ul ul {
+    list-style-type: circle
+}
+
+.list-nobullet ul ul ul {
+    list-style-type: square
+}
+
+.typography-headline-elevated,
+.typography-product-elevated {
+    font-size: 64px;
+    line-height: 1.0625;
+    font-weight: 600;
+    letter-spacing: -.009em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+@media only screen and (max-width: 1068px) {
+
+    .typography-headline-elevated,
+    .typography-product-elevated {
+        font-size: 48px;
+        line-height: 1.08349;
+        font-weight: 600;
+        letter-spacing: -.003em;
+        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+}
+
+@media only screen and (max-width: 734px) {
+
+    .typography-headline-elevated,
+    .typography-product-elevated {
+        font-size: 40px;
+        line-height: 1.1;
+        font-weight: 600;
+        letter-spacing: 0em;
+        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+}
+
+.typography-headline,
+h1 {
+    font-size: 48px;
+    line-height: 1.08349;
+    font-weight: 600;
+    letter-spacing: -.003em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+@media only screen and (max-width: 1068px) {
+
+    .typography-headline,
+    h1 {
+        font-size: 40px;
+        line-height: 1.1;
+        font-weight: 600;
+        letter-spacing: 0em;
+        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+}
+
+@media only screen and (max-width: 734px) {
+
+    .typography-headline,
+    h1 {
+        font-size: 32px;
+        line-height: 1.125;
+        font-weight: 600;
+        letter-spacing: .004em;
+        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+@media only screen and (max-width: 1068px) {
+
+    h2 {
+        font-size: 32px;
+        line-height: 1.125;
+        font-weight: 600;
+        letter-spacing: .004em;
+        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+}
+
+@media only screen and (max-width: 734px) {
+
+    h2 {
+        font-size: 28px;
+        line-height: 1.14286;
+        font-weight: 600;
+        letter-spacing: .007em;
+        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+}
+
+.typography-intro,
+.intro {
+    font-size: 21px;
+    line-height: 1.381;
+    font-weight: 400;
+    letter-spacing: .011em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+@media only screen and (max-width: 734px) {
+
+    .typography-intro,
+    .intro {
+        font-size: 19px;
+        line-height: 1.4211;
+        font-weight: 400;
+        letter-spacing: .012em;
+        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+}
+
+h5 {
+    font-size: 19px;
+    line-height: 1.21053;
+    font-weight: 600;
+    letter-spacing: .012em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+.typography-subbody {
+    font-size: 14px;
+    line-height: 1.42859;
+    font-weight: 400;
+    letter-spacing: -.016em;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+h6 {
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+.typography-headline+.typography-intro,
+h1+.typography-intro,
+.typography-headline+.intro,
+h1+.intro {
+    margin-top: 1.2em
+}
+
+h2+p,
+h2+ul,
+h2 {
+    margin-top: 1em
+}
+
+.theme-dark {
+    background-color: #000;
+    color: #f5f5f7
+}
+
+.theme-dark h1,
+.theme-dark h2,
+.theme-dark h3,
+.theme-dark h4,
+.theme-dark h5,
+.theme-dark h6 {
+    color: #f5f5f7
+}
+
+.theme-dark a,
+.theme-dark .link {
+    color: #2997ff
+}
+
+.theme-dark .footnote a {
+    color: inherit
+}
+
+.theme-dark .footnote a:hover {
+    color: #2997ff
+}
+
+.theme-dark a.block {
+    color: inherit
+}
+
+.theme-dark a.block .block-link {
+    color: #2997ff
+}
+
+.theme-dark .button,
+.theme-dark input[type='button'],
+.theme-dark input[type='submit'] {
+    background: #0071e3;
+    color: #fff
+}
+
+.theme-dark .button:hover,
+.theme-dark input:hover[type='button'],
+.theme-dark input:hover[type='submit'] {
+    background: #0077ED
+}
+
+.theme-dark .button:active,
+.theme-dark input:active[type='button'],
+.theme-dark input:active[type='submit'] {
+    background: #006EDB
+}
+
+.theme-dark .button:disabled,
+.theme-dark input:disabled[type='button'],
+.theme-dark input:disabled[type='submit'],
+.theme-dark .button.disabled,
+.theme-dark input.disabled[type='button'],
+.theme-dark input.disabled[type='submit'] {
+    background: #0071e3;
+    color: #fff;
+    opacity: .32
+}
+
+.theme-dark .callout {
+    background-color: #1d1d1f;
+    border-color: rgba(0, 0, 0, 0);
+    color: #f5f5f7
+}
+
+.theme-dark .list {
+    color: #f5f5f7
+}
+
+.theme-dark .list-title {
+    color: #f5f5f7
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    display: block
+}
+
+.left {
+    float: left
+}
+
+.right {
+    float: right
+}
+
+.block {
+    display: block
+}
+
+.inline-block {
+    display: inline-block
+}
+
+.inline {
+    display: inline !important
+}
+
+.overflow {
+    overflow-y: auto;
+    overflow-x: hidden
+}
+
+.hidden {
+    display: none !important;
+    opacity: 0
+}
+
+.hide-overflow {
+    overflow: hidden
+}
+
+.margin {
+    margin: 3em !important
+}
+
+.margin-top {
+    margin-top: 3em !important
+}
+
+.margin-bottom {
+    margin-bottom: 3em !important
+}
+
+.margin-left {
+    margin-left: 3em !important
+}
+
+.margin-right {
+    margin-right: 3em !important
+}
+
+.margin-small {
+    margin: 1.5em !important
+}
+
+.margin-top-small {
+    margin-top: 1.5em !important
+}
+
+.margin-bottom-small {
+    margin-bottom: 1.5em !important
+}
+
+.margin-left-small {
+    margin-left: 1.5em !important
+}
+
+.margin-right-small {
+    margin-right: 1.5em !important
+}
+
+.no-margin {
+    margin: 0 !important
+}
+
+.no-margin-top {
+    margin-top: 0 !important
+}
+
+.no-margin-bottom {
+    margin-bottom: 0 !important
+}
+
+.no-margin-left {
+    margin-left: 0 !important
+}
+
+.no-margin-right {
+    margin-right: 0 !important
+}
+
+.padding {
+    padding: 3em !important
+}
+
+.padding-top {
+    padding-top: 3em !important
+}
+
+.padding-bottom {
+    padding-bottom: 3em !important
+}
+
+.padding-left {
+    padding-left: 3em !important
+}
+
+.padding-right {
+    padding-right: 3em !important
+}
+
+.padding-small {
+    padding: 1.5em !important
+}
+
+.padding-top-small {
+    padding-top: 1.5em !important
+}
+
+.padding-bottom-small {
+    padding-bottom: 1.5em !important
+}
+
+.padding-left-small {
+    padding-left: 1.5em !important
+}
+
+.padding-right-small {
+    padding-right: 1.5em !important
+}
+
+.no-padding {
+    padding: 0 !important
+}
+
+.no-padding-top {
+    padding-top: 0 !important
+}
+
+.no-padding-bottom {
+    padding-bottom: 0 !important
+}
+
+.no-padding-left {
+    padding-left: 0 !important
+}
+
+.no-padding-right {
+    padding-right: 0 !important
+}
+
+html {
+    box-sizing: border-box
+}
+
+.main {
+    overflow: hidden
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit
+}
+
+.grid {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    min-width: 0;
+    max-width: 980px;
+    margin: 0 auto
+}
+
+@media only screen and (max-width: 1068px) {
+    .grid {
+        padding: 0 1em;
+        width: 768px
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .grid {
+        padding: 0 1.5em;
+        width: 100%
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .row.compact .column {
+        padding-top: 0;
+        padding-bottom: 0
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .row.compact .column:first-of-type {
+        padding-top: 2em
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .row.compact .column:last-of-type {
+        padding-bottom: 2em
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .grid .row.compact {
+        padding-top: 2em;
+        padding-bottom: 2em
+    }
+}
+
+@media only screen and (min-width: 1069px) and (max-width: 1440px) {
+
+    .large-gutter,
+    .column.gutter {
+        padding-left: 0.75em;
+        padding-right: 0.75em
+    }
+}
+
+@media only screen and (min-width: 1441px) {
+
+    .column.gutter {
+        padding-left: 0.75em;
+        padding-right: 0.75em
+    }
+}
+
+@media only screen and (min-width: 735px) and (max-width: 1068px) {
+
+    .medium-gutter,
+    .column.gutter {
+        padding-left: 0.75em;
+        padding-right: 0.75em
+    }
+}
+
+hr {
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #d2d2d7
+}
+
+.divider-top {
+    border-top: 1px solid #d2d2d7
+}
+
+.divider-bottom {
+    border-bottom: 1px solid #d2d2d7
+}
+
+.divider-left {
+    border-left: 1px solid #d2d2d7
+}
+
+.divider-right {
+    border-right: 1px solid #d2d2d7
+}
+
+p+a {
+    display: inline-block
+}
+
+section[class^='section-'] {
+    width: 100%;
+    overflow-x: hidden
+}
+
+.section-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+    position: relative
+}
+
+@media only screen and (min-width: 1441px) {
+    .section-content {
+        margin-left: auto;
+        margin-right: auto;
+        width: 980px
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-content {
+        margin-left: auto;
+        margin-right: auto;
+        width: 692px
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .section-content {
+        margin-left: auto;
+        margin-right: auto;
+        width: 87.5%
+    }
+}
+
+.section-content .row {
+    margin-left: -1.5em;
+    margin-right: -1.5em
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-content .row {
+        margin-left: -1em;
+        margin-right: -1em
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .section-content .row {
+        margin-left: 0em;
+        margin-right: 0em
+    }
+}
+
+.section-content .row>.column {
+    padding: 1.5em 1.5em
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-content .row>.column {
+        padding: 1.5em 1em
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .section-content .row>.column {
+        padding: 1em 0
+    }
+}
+
+ul.divided-list {
+    margin-left: 0
+}
+
+ul.divided-list ul {
+    margin-top: 0.75em
+}
+
+ul.divided-list>li {
+    list-style-type: none
+}
+
+ul.divided-list>li:not(:first-child) {
+    margin-top: 2em;
+    padding-top: 2em;
+    border-top: 1px solid #d6d6d6
+}
+
+ul.no-bullet {
+    list-style: none
+}
+
+ul.links {
+    list-style: none;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1em
+}
+
+ul.links>li {
+    margin-bottom: 1.3em;
+    padding-left: 45px;
+    background-size: 38px 38px;
+    background-position: 0 0px;
+    background-repeat: no-repeat;
+    min-height: 38px;
+    line-height: 1.45em;
+    padding-top: 6px
+}
+
+ul.links>li:before {
+    content: none;
+    padding-right: 0
+}
+
+ul.links li>a {
+    display: inline-block
+}
+
+ul.links li:not(:last-child)>p {
+    margin-bottom: 1em
+}
+
+ul.links li.inline {
+    display: inline-block
+}
+
+h4+ul.links,
+p+ul.links {
+    margin-top: 0.8em
+}
+
+ul.links.small>li {
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 0.263em;
+    padding-left: 28px;
+    background-size: 19px 19px;
+    background-position: 0 2px;
+    line-height: 1.6em;
+    min-height: 0;
+    padding-top: 0
+}
+
+span.error {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+    padding-top: 6px;
+    border: none;
+    font-size: 12px;
+    font-weight: 400;
+    color: #ee0000
+}
+
+ul.footnote {
+    margin-bottom: 0
+}
+
+ul.footnote:hover {
+    color: #888
+}
+
+ul.footnote li {
+    max-width: 784px
+}
+
+span.instruction {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5em
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: inherit
+}
+
+h6 {
+    font-weight: 600
+}
+
+img+h1 {
+    margin-top: 0.5em
+}
+
+img+h2,
+img+h3,
+img+h4,
+img+h5,
+img+h6 {
+    margin-top: 0.3em
+}
+
+h1 img,
+h2 img,
+h3 img,
+h4 img,
+h5 img,
+h6 img {
+    margin: 0 0.5em 0.2em 0;
+    vertical-align: middle;
+    display: inline-block
+}
+
+.lighter {
+    color: #666
+}
+
+.monospace,
+
+.nowrap {
+    white-space: nowrap
+}
+
+@media only screen and (max-width: 734px) {
+    .nowrap {
+        white-space: normal
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .nowrap-small {
+        white-space: nowrap
+    }
+}
+
+.text-center {
+    text-align: center
+}
+
+.background {
+    background-color: #fbfbfd
+}
+
+.backgroundfooter {
+    background-color: #f5f5f7
+}
+
+.bg-grad-up {
+    background: #ffffff;
+    background: linear-gradient(to bottom, #fff 0%, #f9f9f9 100%)
+}
+
+.bg-grad-down {
+    background: #ffffff;
+    background: linear-gradient(to bottom, #f9f9f9 0%, #fff 100%)
+}
+
+.bg-light {
+    background-color: #fafafa
+}
+
+.bg-dark {
+    background-color: #000;
+    color: #fff
+}
+
+.bg-dark a {
+    font-weight: 400;
+    color: #6bf
+}
+
+.bg-dark a:hover {
+    color: #fff
+}
+
+.bg-dark strong {
+    color: #fff
+}
+
+.button,
+input[type='button'],
+input[type='submit'] {
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 17px;
+    line-height: 1.17648;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    min-width: 28px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 18px;
+    background: #0071e3;
+    color: #fff
+}
+
+.button:hover,
+input:hover[type='button'],
+input:hover[type='submit'] {
+    text-decoration: none
+}
+
+.button:focus,
+input:focus[type='button'],
+input:focus[type='submit'] {
+    box-shadow: 0 0 0 4px rgba(0, 125, 250, 0.6);
+    outline: none
+}
+
+.button:focus[data-focus-method="mouse"]:not(input):not(textarea):not(select),
+input:focus[data-focus-method="mouse"]:not(input):not(textarea):not(select)[type='button'],
+input:focus[data-focus-method="mouse"]:not(input):not(textarea):not(select)[type='submit'],
+.button:focus[data-focus-method="touch"]:not(input):not(textarea):not(select),
+input:focus[data-focus-method="touch"]:not(input):not(textarea):not(select)[type='button'],
+input:focus[data-focus-method="touch"]:not(input):not(textarea):not(select)[type='submit'] {
+    box-shadow: none
+}
+
+.button:active,
+input:active[type='button'],
+input:active[type='submit'] {
+    outline: none
+}
+
+.button:disabled,
+input:disabled[type='button'],
+input:disabled[type='submit'],
+.button.disabled,
+input.disabled[type='button'],
+input.disabled[type='submit'] {
+    cursor: default
+}
+
+.button:hover,
+input:hover[type='button'],
+input:hover[type='submit'] {
+    background: #0077ED
+}
+
+.button:active,
+input:active[type='button'],
+input:active[type='submit'] {
+    background: #006EDB
+}
+
+.button:disabled,
+input:disabled[type='button'],
+input:disabled[type='submit'],
+.button.disabled,
+input.disabled[type='button'],
+input.disabled[type='submit'] {
+    background: #0071e3;
+    color: #fff;
+    opacity: .32
+}
+
+.button-compact {
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    min-width: 23px;
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 12px
+}
+
+button,
+button:focus,
+input[type='reset'],
+input[type='reset']:focus,
+input[type='submit'],
+input[type='submit']:focus {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none
+}
+
+input[type='button'],
+input[type='submit'] {
+    border: none
+}
+
+body[data-color-scheme="light"] {
+    --color-callout-label: #1d1d1f;
+    --color-callout-border: transparent;
+    --color-callout-background: #f5f5f7;
+    --color-callout-shadow: transparent;
+    --color-callout-border-warning: darken(#fefeee, 25%);
+    --color-callout-background-warning: #fefeee;
+    --color-callout-border-alert: darken(#f9d5d8, 25%);
+    --color-callout-background-alert: #f9d5d8;
+    --color-callout-border-success: darken(#cff3cf, 25%);
+    --color-callout-background-success: #cff3cf
+}
+
+body[data-color-scheme="dark"] {
+    --color-callout-label: white;
+    --color-callout-border: var(--fill-gray-quaternary);
+    --color-callout-background: var(--fill-tertiary);
+    --color-callout-shadow: rgba(black, 0.9);
+    --color-callout-border-warning: #eae544;
+    --color-callout-background-warning: #2d2c02;
+    --color-callout-shadow-warning: #eae544;
+    --color-callout-border-alert: var(--color-aside-warning-border);
+    --color-callout-background-alert: var(--color-aside-warning-background);
+    --color-callout-shadow-alert: var(--color-aside-warning-border);
+    --color-callout-border-success: #44ea44;
+    --color-callout-background-success: #022d02;
+    --color-callout-shadow-success: #44ea44
+}
+
+.device-macbook-pro-5th-gen-16-silver {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative
+}
+
+.device-macbook-pro-5th-gen-16-silver .device-screen,
+.device-macbook-pro-5th-gen-16-silver-cam .device-screen{
+    display: block;
+    position: absolute;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center
+}
+
+.device-macbook-pro-5th-gen-16-silver {
+    background-image: url("../../elements/hardware/macbook_pro_5th_gen_16_silver/large.png");
+    width: 984px;
+    height: 601.5px
+}
+
+@media only screen and (max-width: 1068px) {
+    .device-macbook-pro-5th-gen-16-silver {
+        background-image: url("../../elements/hardware/macbook_pro_5th_gen_16_silver/medium.png");
+        width: 697px;
+        height: 426px
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .device-macbook-pro-5th-gen-16-silver {
+        background-image: url("../../elements/hardware/macbook_pro_5th_gen_16_silver/small.png");
+        width: 375px;
+        height: 229px
+    }
+}
+
+.device-macbook-pro-5th-gen-16-silver .device-screen {
+    top: 12px;
+    left: 89.5px;
+    width: 805px;
+    height: 520px;
+    -webkit-mask-image: url("../../elements/hardware/macbook_pro_5th_gen_16_mask/large_2x.png");
+    mask-image: url("../../elements/hardware/macbook_pro_5th_gen_16_mask/large_2x.png");
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center center;
+    mask-position: center center
+}
+
+@media only screen and (max-width: 1068px) {
+    .device-macbook-pro-5th-gen-16-silver .device-screen {
+        top: 9px;
+        left: 63px;
+        width: 571px;
+        height: 369px;
+        -webkit-mask-image: url("../../elements/hardware/macbook_pro_5th_gen_16_mask/medium_2x.png");
+        mask-image: url("../../elements/hardware/macbook_pro_5th_gen_16_mask/medium_2x.png");
+        -webkit-mask-size: 100% 100%;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position: center center;
+        mask-position: center center
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .device-macbook-pro-5th-gen-16-silver .device-screen {
+        top: 4.5px;
+        left: 33px;
+        width: 308px;
+        height: 199px;
+        -webkit-mask-image: url("../../elements/hardware/macbook_pro_5th_gen_16_mask/small_2x.png");
+        mask-image: url("../../elements/hardware/macbook_pro_5th_gen_16_mask/small_2x.png");
+        -webkit-mask-size: 100% 100%;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position: center center;
+        mask-position: center center
+    }
+}
+
+.device-macbook-pro-5th-gen-16-silver-container.device-large-for-large .device-hardware,
+.device-macbook-pro-5th-gen-16-silver.device-large-for-large {
+    background-image: url("../../elements/hardware/macbook_pro_5th_gen_16_silver/large.png");
+    width: 984px;
+    height: 601.5px
+}
+
+.device-macbook-pro-5th-gen-16-silver-container.device-large-for-large .device-screen,
+.device-macbook-pro-5th-gen-16-silver-container.device-large-for-large[class*='device-animate']:before,
+.device-macbook-pro-5th-gen-16-silver.device-large-for-large .device-screen {
+    top: 12px;
+    left: 89.5px;
+    width: 805px;
+    height: 520px
+}
+
+@media only screen and (max-width: 1068px) {
+
+    .device-macbook-pro-5th-gen-16-silver-container.device-large-for-medium .device-hardware,
+    .device-macbook-pro-5th-gen-16-silver.device-large-for-medium {
+        background-image: url("../../elements/hardware/macbook_pro_5th_gen_16_silver/large.png");
+        width: 984px;
+        height: 601.5px
+    }
+
+    .device-macbook-pro-5th-gen-16-silver-container.device-large-for-medium .device-screen,
+    .device-macbook-pro-5th-gen-16-silver-container.device-large-for-medium[class*='device-animate']:before,
+    .device-macbook-pro-5th-gen-16-silver.device-large-for-medium .device-screen {
+        top: 12px;
+        left: 89.5px;
+        width: 805px;
+        height: 520px
+    }
+}
+
+@media only screen and (max-width: 734px) {
+
+    .device-macbook-pro-5th-gen-16-silver-container.device-large-for-small .device-hardware,
+    .device-macbook-pro-5th-gen-16-silver.device-large-for-small {
+        background-image: url("../../elements/hardware/macbook_pro_5th_gen_16_silver/large.png");
+        width: 984px;
+        height: 601.5px
+    }
+
+    .device-macbook-pro-5th-gen-16-silver-container.device-large-for-small .device-screen,
+    .device-macbook-pro-5th-gen-16-silver-container.device-large-for-small[class*='device-animate']:before,
+    .device-macbook-pro-5th-gen-16-silver.device-large-for-small .device-screen {
+        top: 12px;
+        left: 89.5px;
+        width: 805px;
+        height: 520px
+    }
+}
+
+.device-macbook-pro-5th-gen-16-silver-container.device-medium-for-large .device-hardware,
+.device-macbook-pro-5th-gen-16-silver.device-medium-for-large {
+    background-image: url("../../elements/hardware/macbook_pro_5th_gen_16_silver/medium.png");
+    width: 697px;
+    height: 426px
+}
+
+.device-macbook-pro-5th-gen-16-silver-container.device-medium-for-large .device-screen,
+.device-macbook-pro-5th-gen-16-silver-container.device-medium-for-large[class*='device-animate']:before,
+.device-macbook-pro-5th-gen-16-silver.device-medium-for-large .device-screen {
+    top: 9px;
+    left: 63px;
+    width: 571px;
+    height: 369px
+}
+
+@media only screen and (max-width: 1068px) {
+
+    .device-macbook-pro-5th-gen-16-silver-container.device-medium-for-medium .device-hardware,
+    .device-macbook-pro-5th-gen-16-silver.device-medium-for-medium {
+        background-image: url("../../elements/hardware/macbook_pro_5th_gen_16_silver/medium.png");
+        width: 697px;
+        height: 426px
+    }
+
+    .device-macbook-pro-5th-gen-16-silver-container.device-medium-for-medium .device-screen,
+    .device-macbook-pro-5th-gen-16-silver-container.device-medium-for-medium[class*='device-animate']:before,
+    .device-macbook-pro-5th-gen-16-silver.device-medium-for-medium .device-screen {
+        top: 9px;
+        left: 63px;
+        width: 571px;
+        height: 369px
+    }
+}
+
+@media only screen and (max-width: 734px) {
+
+    .device-macbook-pro-5th-gen-16-silver-container.device-medium-for-small .device-hardware,
+    .device-macbook-pro-5th-gen-16-silver.device-medium-for-small {
+        background-image: url("../../elements/hardware/macbook_pro_5th_gen_16_silver/medium.png");
+        width: 697px;
+        height: 426px
+    }
+
+    .device-macbook-pro-5th-gen-16-silver-container.device-medium-for-small .device-screen,
+    .device-macbook-pro-5th-gen-16-silver-container.device-medium-for-small[class*='device-animate']:before,
+    .device-macbook-pro-5th-gen-16-silver.device-medium-for-small .device-screen {
+        top: 9px;
+        left: 63px;
+        width: 571px;
+        height: 369px
+    }
+}
+
+.device-macbook-pro-5th-gen-16-silver-container.device-small-for-large .device-hardware,
+.device-macbook-pro-5th-gen-16-silver.device-small-for-large {
+    background-image: url("../../elements/hardware/macbook_pro_5th_gen_16_silver/small.png");
+    width: 375px;
+    height: 229px
+}
+
+.device-macbook-pro-5th-gen-16-silver-container.device-small-for-large .device-screen,
+.device-macbook-pro-5th-gen-16-silver-container.device-small-for-large[class*='device-animate']:before,
+.device-macbook-pro-5th-gen-16-silver.device-small-for-large .device-screen {
+    top: 4.5px;
+    left: 33px;
+    width: 308px;
+    height: 199px
+}
+
+@media only screen and (max-width: 1068px) {
+
+    .device-macbook-pro-5th-gen-16-silver-container.device-small-for-medium .device-hardware,
+    .device-macbook-pro-5th-gen-16-silver.device-small-for-medium {
+        background-image: url("../../elements/hardware/macbook_pro_5th_gen_16_silver/small.png");
+        width: 375px;
+        height: 229px
+    }
+
+    .device-macbook-pro-5th-gen-16-silver-container.device-small-for-medium .device-screen,
+    .device-macbook-pro-5th-gen-16-silver-container.device-small-for-medium[class*='device-animate']:before,
+    .device-macbook-pro-5th-gen-16-silver.device-small-for-medium .device-screen {
+        top: 4.5px;
+        left: 33px;
+        width: 308px;
+        height: 199px
+    }
+}
+
+@media only screen and (max-width: 734px) {
+
+    .device-macbook-pro-5th-gen-16-silver-container.device-small-for-small .device-hardware,
+    .device-macbook-pro-5th-gen-16-silver.device-small-for-small {
+        background-image: url("../../elements/hardware/macbook_pro_5th_gen_16_silver/small.png");
+        width: 375px;
+        height: 229px
+    }
+
+    .device-macbook-pro-5th-gen-16-silver-container.device-small-for-small .device-screen,
+    .device-macbook-pro-5th-gen-16-silver-container.device-small-for-small[class*='device-animate']:before,
+    .device-macbook-pro-5th-gen-16-silver.device-small-for-small .device-screen {
+        top: 4.5px;
+        left: 33px;
+        width: 308px;
+        height: 199px
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    img.scale {
+        width: 100%;
+        height: auto
+    }
+}
+
+img.large-scale {
+    max-width: 100%;
+    height: auto
+}
+
+@media only screen and (max-width: 1068px) {
+    img.medium-scale {
+        max-width: 100%;
+        height: auto
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    img.small-scale {
+        max-width: 100%;
+        height: auto
+    }
+}
+
+body main ::-webkit-scrollbar {
+    width: 16px
+}
+
+body main ::-webkit-scrollbar-thumb {
+    border: 4px solid transparent;
+    border-radius: 9px;
+    background-clip: content-box;
+    border-color: var(--system-primary);
+    background: var(--system-secondary)
+}
+
+body main ::-webkit-scrollbar-thumb:hover {
+    background: var(--system-tertiary)
+}
+
+body main ::-webkit-scrollbar-track {
+    background: var(--system-primary)
+}
+
+:root {
+    --system-primary: rgb(249, 249, 249);
+    --system-secondary: rgb(193, 193, 193);
+    --system-tertiary: rgb(123, 123, 123)
+}
+
+.theme-dark,
+body:not([data-color-scheme]).theme-dark,
+body:not([data-color-scheme]) .theme-dark,
+body[data-color-scheme='light'].theme-dark main,
+body[data-color-scheme='light'] .theme-dark,
+body[data-color-scheme='light'] main.theme-dark,
+body[data-color-scheme='light'] main .theme-dark,
+body[data-color-scheme='dark'] main {
+    --system-primary: rgb(14, 14, 14);
+    --system-secondary: rgb(87, 87, 87);
+    --system-tertiary: rgb(135, 135, 135)
+}
+
+:root {
+    --glyph-blue: #2997ff
+}
+
+.theme-dark hr,
+.theme-dark .divider-top,
+.theme-dark .divider-bottom,
+.theme-dark .divider-left,
+.theme-dark .divider-right {
+    border-color: #444
+}
+
+.theme-dark pre {
+    color: #cccccc;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(214, 214, 214, 0.2)
+}
+
+.theme-dark .bg-light,
+.theme-dark .background {
+    background-color: rgba(255, 255, 255, 0.1)
+}
