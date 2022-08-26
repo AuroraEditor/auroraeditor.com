@@ -20,6 +20,7 @@ function App() {
       <NavHeader />
       <label id="auroranav-curtain" htmlFor="auroranav-menustate" />
       <div id="auroranav-viewport-emitter" data-viewport-emitter-dispatch="" data-viewport-emitter-state="{&quot;viewport&quot;:&quot;large&quot;,&quot;orientation&quot;:&quot;landscape&quot;,&quot;retina&quot;:false}"></div>
+      <script type="text/javascript" src={require("./Assets/aurora/scripts/aurora-nav.js")}></script>
       <main>
         <BrowserRouter>
           <Routes>
