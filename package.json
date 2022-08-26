@@ -10,12 +10,12 @@
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-router-dom": "^6.3.0",
-        "react-scripts": "^2.1.3",
+        "react-scripts": "^4.0.2",
         "web-vitals": "^2.1.4"
     },
     "scripts": {
         "start": "react-scripts start",
-        "build": "react-scripts build",
+        "build": "BUILD_PATH='./docs' react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
     },
