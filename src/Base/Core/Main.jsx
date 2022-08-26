@@ -4,7 +4,7 @@ import "../../Assets/aurora/styles/aurora-overview.css"
 
 function Main() {
     return (
-        <main id="main" className="main bg-gradient" role="main">
+        <main id="main" className="main" role="main">
             <section className="section section-hero">
                 <div className="section-content">
                     <div className="row">

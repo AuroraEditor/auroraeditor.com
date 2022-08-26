@@ -1,0 +1,114 @@
+html #notice-ribbon.ribbon:not(.hide)+aside+input+nav#ac-globalnav {
+    margin-top: 52px;
+}
+
+html body#home #notice-ribbon.ribbon:not(.hide)+aside+input+nav#ac-globalnav {
+    margin-top: 0;
+    position: sticky;
+}
+
+html body#home #notice-ribbon.ribbon:not(.hide)+aside+input+nav#ac-globalnav+.ac-gn-blur+#ac-gn-curtain+#ac-gn-placeholder {
+    height: 0;
+}
+
+html #notice-ribbon.ribbon:not(.hide)+script+aside+input+nav#ac-globalnav {
+    margin-top: 52px;
+}
+
+html body#home #notice-ribbon.ribbon:not(.hide)+script+aside+input+nav#ac-globalnav {
+    margin-top: 0;
+    position: sticky;
+}
+
+html body#home #notice-ribbon.ribbon:not(.hide)+script+aside+input+nav#ac-globalnav+.ac-gn-blur+#ac-gn-curtain+#ac-gn-placeholder {
+    height: 0;
+}
+
+#notice-ribbon.ribbon {
+    display: block;
+    overflow: hidden;
+    height: 52px;
+}
+
+#notice-ribbon.ribbon.sticky {
+    border-bottom: none;
+}
+
+#notice-ribbon.ribbon.hide {
+    display: none;
+}
+
+#notice-ribbon.ribbon .ribbon-content-wrapper {
+    padding-top: 0.94118em;
+    padding-bottom: 0.94118em;
+    text-align: center;
+    background-color: #000;
+}
+
+#notice-ribbon.ribbon .ribbon-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+    text-align: center;
+    color: #F5F5F7;
+    font-size: 14px;
+    line-height: 1.42859;
+    font-weight: 400;
+    letter-spacing: -0.016em;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+#notice-ribbon.ribbon .ribbon-link {
+    color: #2997FF;
+}
+
+#notice-ribbon.ribbon #suggest-closer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 0;
+    color: #FFF;
+    font-size: 16px;
+}
+
+#notice-ribbon.ribbon #suggest-closer:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1068px) {
+    #notice-ribbon.ribbon .ribbon-content {
+        margin-left: auto;
+        margin-right: auto;
+        width: 692px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    html #notice-ribbon.ribbon:not(.hide)+aside+input+nav#ac-globalnav {
+        margin-top: 48px;
+    }
+
+    html #notice-ribbon.ribbon:not(.hide)+aside+input+nav#ac-globalnav+.ac-gn-blur {
+        top: 48px;
+    }
+
+    html #notice-ribbon.ribbon:not(.hide)+script+aside+input+nav#ac-globalnav {
+        margin-top: 48px;
+    }
+
+    html #notice-ribbon.ribbon:not(.hide)+script+aside+input+nav#ac-globalnav+.ac-gn-blur {
+        top: 48px;
+    }
+
+    #notice-ribbon.ribbon {
+        height: 48px;
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    #notice-ribbon.ribbon .ribbon-content {
+        margin-left: auto;
+        margin-right: auto;
+        width: 87.5%;
+    }
+}

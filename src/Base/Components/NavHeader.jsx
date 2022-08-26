@@ -24,7 +24,7 @@ function NavHeader() {
                                     <a href="/" className="auroranav-menu-link current" aria-disabled="true">Aurora Editor</a>
                                 </li>
                                 <li className="auroranav-menu-item">
-                                    <a href="/whats-new/" className="auroranav-menu-link">What’s included</a>
+                                    <a href="/included/" className="auroranav-menu-link">What’s included</a>
                                 </li>
                                 <li className="auroranav-menu-item">
                                     <a href="/resources/" className="auroranav-menu-link">Resources</a>
