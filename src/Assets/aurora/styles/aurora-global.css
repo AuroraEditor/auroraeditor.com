@@ -98,7 +98,7 @@ button:disabled {
 }
 
 :focus {
-    outline: 4px solid rgba(0, 125, 250, 0.6);
+    /* outline: 4px solid rgba(0, 125, 250, 0.6); */
     outline-offset: 1px
 }
 
