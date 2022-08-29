@@ -17,10 +17,6 @@ function ThemeSelection() {
                     <input type="radio" value="auto" autoComplete="off" />
                     <div className="text">Auto</div>
                 </label>
-                <label data-color-scheme-option="auto">
-                    <input type="radio" value="test" autoComplete="off" />
-                    <div className="text">test</div>
-                </label>
             </div>
         </div>
     )
