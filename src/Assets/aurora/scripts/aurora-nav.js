@@ -4,9 +4,11 @@ function auroranavUpdate() {
             path = this;
         }
 
+        // eslint-disable-next-line no-useless-escape
         return path.replace(/index\.\w+$/, '').replace(/^https?:\/\/[\w\.]+/, '').toLowerCase();
     }
 
+    // eslint-disable-next-line no-extend-native
     String.prototype.basicPath = basicPath;
 
     // eslint-disable-next-line no-restricted-globals
@@ -14,12 +16,11 @@ function auroranavUpdate() {
     var navItems = document.querySelectorAll('#auroranav .auroranav-menu-link');
 
     navItems.forEach(function (navItem) {
-        if (navItem.href.basicPath() == page) {
+        if (navItem.href.basicPath() === page) {
             navItem.classList.add('current');
             navItem.setAttribute('aria-disabled', 'true');
         }
     });
 }
-
 auroranavUpdate();
 window.addEventListener('DOMContentLoaded', auroranavUpdate);
