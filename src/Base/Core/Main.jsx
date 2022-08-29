@@ -1,6 +1,7 @@
 import React from "react";
 import "../../Assets/aurora/styles/aurora-style.css"
 import "../../Assets/aurora/styles/aurora-overview.css"
+import Aurora from "../../Assets/aurora/images/aurora-editor-main.png";
 
 function Main() {
     return (
@@ -16,9 +17,9 @@ function Main() {
                 </div>
                 <figure className="device-hero device-macbook-pro-5th-gen-16-silver center">
                     <picture className="device-screen">
-                        <source media="(max-width:735px)" srcSet={require("../../Assets/aurora/images/aurora-editor-main.png")} />
-                        <source media="(max-width:1068px)" srcSet={require("../../Assets/aurora/images/aurora-editor-main.png")} />
-                        <img src={require("../../Assets/aurora/images/aurora-editor-main.png")} width="100%" alt="" aria-label="" />
+                       <source media="(max-width:735px)" srcSet={Aurora} />
+                        <source media="(max-width:1068px)" srcSet={Aurora} />
+                        <img src={Aurora} width="100%" alt="" aria-label="" />
                     </picture>
                 </figure>
             </section>
