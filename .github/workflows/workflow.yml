@@ -11,6 +11,7 @@ jobs:
       run: |
         npm install
         npm run build
+        echo "auroraeditor.com" > build/CNAME
     - name: setup github env
       run: |
         git config user.name github-actions
