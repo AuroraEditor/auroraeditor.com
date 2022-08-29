@@ -2,7 +2,6 @@ import React from 'react'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./Assets/aurora/styles/aurora-global.css"
 import "./Assets/aurora/styles/aurora-footer.css"
-import "./Assets/aurora/styles/aurora-dark-mode.css"
 import "./Assets/aurora/styles/aurora-ribbon.css"
 import NavHeader from "./Base/Components/NavHeader"
 import MainPage from "./Base/Core/Main"
