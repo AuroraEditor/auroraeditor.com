@@ -1,0 +1,13 @@
+	name: Deploy website
+on:
+  pull:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest   
+    steps:
+    - uses: actions/checkout@v2
+    - name: npm install & build react app
+      run: |
+        npm install
+        npm run build
