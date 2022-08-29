@@ -15,12 +15,12 @@ function NavHeader() {
                         <a href="#auroranav-menustate" className="auroranav-menucta-anchor auroranav-menucta-anchor-open" id="auroranav-menustate-open">
                             <span className="auroranav-menucta-anchor-label">Open Menu</span>
                         </a>
-                        <a href="#" className="auroranav-menucta-anchor auroranav-menucta-anchor-close" id="auroranav-menustate-close">
+                        <a href="/#" className="auroranav-menucta-anchor auroranav-menucta-anchor-close" id="auroranav-menustate-close">
                             <span className="auroranav-menucta-anchor-label">Close Menu</span>
                         </a>
                         <div className="auroranav-menu-tray">
                             <ul className="auroranav-menu-items">
-                                <li className="auroranav-menu-item">
+                                <li className="auroranav-menu-item" aria-disabled="true">
                                     <a href="/" className="auroranav-menu-link current">Aurora Editor</a>
                                 </li>
                                 <li className="auroranav-menu-item">
