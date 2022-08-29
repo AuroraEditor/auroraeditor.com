@@ -20,7 +20,7 @@ function NavHeader() {
                         </a>
                         <div className="auroranav-menu-tray">
                             <ul className="auroranav-menu-items">
-                                <li className="auroranav-menu-item" aria-disabled="true">
+                                <li className="auroranav-menu-item">
                                     <a href="/" className="auroranav-menu-link current">Aurora Editor</a>
                                 </li>
                                 <li className="auroranav-menu-item">
