@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import ThemeSelection from "./ThemeSelection"
 
 function Footer() {
@@ -14,7 +15,7 @@ function Footer() {
                         <div className="footer-mini-legal-links">
                             <a className="footer-mini-legal-link" href="/legal/tos">Terms of Use</a>
                             <a className="footer-mini-legal-link" href="/legal/privacy-policy">Privacy Policy</a>
-                            <a className="footer-mini-legal-link" href="/legal/terms">Agreements and Open Source Licenses</a>
+                            <Link to="/legal/terms"><a className="footer-mini-legal-link">Agreements and Open Source Licenses</a></Link>
                         </div>
                     </div>
                 </section>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import '../../Assets/aurora/styles/aurora-nav.css';
 
 function NavHeader() {
@@ -8,7 +9,7 @@ function NavHeader() {
                 <div className="auroranav-background"></div>
                 <div className="auroranav-content">
                     <h2 className="auroranav-title">
-                        <a href="/">Aurora Editor</a>
+                        <Link to="/"><a>Aurora Editor</a></Link>
                     </h2>
 
                     <div className="auroranav-menu">
@@ -21,13 +22,13 @@ function NavHeader() {
                         <div className="auroranav-menu-tray">
                             <ul className="auroranav-menu-items">
                                 <li className="auroranav-menu-item">
-                                    <a href="/" className="auroranav-menu-link current">Aurora Editor</a>
+                                    <Link to="/"><a className="auroranav-menu-link">Aurora Editor</a></Link>
                                 </li>
                                 <li className="auroranav-menu-item">
-                                    <a href="/included/" className="auroranav-menu-link">What’s included</a>
+                                    <Link to="/included"><a className="auroranav-menu-link">What’s included</a></Link>
                                 </li>
                                 <li className="auroranav-menu-item">
-                                    <a href="/resources/" className="auroranav-menu-link">Resources</a>
+                                    <Link to="/resources"><a className="auroranav-menu-link">Resources</a></Link>
                                 </li>
                             </ul>
                         </div>

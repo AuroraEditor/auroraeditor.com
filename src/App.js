@@ -1,9 +1,8 @@
 import React from 'react'
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "./Assets/aurora/styles/aurora-global.css"
 import "./Assets/aurora/styles/aurora-footer.css"
 import "./Assets/aurora/styles/aurora-ribbon.css"
-import "./index.css"
 import NavHeader from "./Base/Components/NavHeader"
 import MainPage from "./Base/Core/Main"
 import Included from './Base/Core/Included';
@@ -22,13 +21,11 @@ function App() {
       <div id="auroranav-viewport-emitter" data-viewport-emitter-dispatch="" data-viewport-emitter-state="{&quot;viewport&quot;:&quot;large&quot;,&quot;orientation&quot;:&quot;landscape&quot;,&quot;retina&quot;:false}"></div>
       <script type="text/javascript" src={require("./Assets/aurora/scripts/aurora-nav.js")}></script>
       <main>
-        <BrowserRouter>
-          <Routes>
-            <Route exact path="/" element={<MainPage />} />
-            <Route exact path="/included" element={<Included />} />
-            <Route exact path="/legal/terms" element={<Terms />} />
-          </Routes>
-        </BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<MainPage />} />
+          <Route exact path="/included" element={<Included />} />
+          <Route exact path="/legal/terms" element={<Terms />} />
+        </Routes>
       </main>
       <Footer />
     </div>
