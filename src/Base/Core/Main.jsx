@@ -35,8 +35,8 @@ function Main() {
                         </div>
                         <div className="column large-offset-1 large-10 small-offset-0">
                             <picture className="screen-only">
-                                <source media="(max-width:1068px)" srcSet={require("../../Assets/aurora/images/aurora-editor-main.png")} />
-                                <img src={require("../../Assets/aurora/images/aurora-editor-main.png")} width="100%" alt="" aria-label="" />
+                                <source media="(max-width:1068px)" srcSet={Aurora} />
+                                <img src={Aurora} width="100%" alt="" aria-label="" />
                             </picture>
                         </div>
                     </div>
@@ -53,8 +53,8 @@ function Main() {
                         </div>
                         <div className="column large-offset-1 large-10 small-offset-0">
                             <picture className="screen-only">
-                                <source media="(max-width:1068px)" srcSet={require("../../Assets/aurora/images/aurora-editor-main.png")} />
-                                <img src={require("../../Assets/aurora/images/aurora-editor-main.png")} width="100%" alt="" aria-label="" />
+                                <source media="(max-width:1068px)" srcSet={Aurora} />
+                                <img src={Aurora} width="100%" alt="" aria-label="" />
                             </picture>
                         </div>
                     </div>
@@ -70,8 +70,8 @@ function Main() {
                         </div>
                         <div className="column large-offset-1 large-10 small-offset-0">
                             <picture className="screen-only">
-                                <source media="(max-width:1068px)" srcSet={require("../../Assets/aurora/images/aurora-editor-main.png")} />
-                                <img src={require("../../Assets/aurora/images/aurora-editor-main.png")} width="100%" alt="" aria-label="" />
+                                <source media="(max-width:1068px)" srcSet={Aurora} />
+                                <img src={Aurora} width="100%" alt="" aria-label="" />
                             </picture>
                         </div>
                     </div>
