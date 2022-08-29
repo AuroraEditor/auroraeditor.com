@@ -1,6 +1,6 @@
-	name: Deploy website
+name: Deploy website
 on:
-  pull:
+  pull_request:
     branches: [ main ]
 jobs:
   build:
