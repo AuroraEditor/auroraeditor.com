@@ -7,8 +7,10 @@ jobs:
     runs-on: ubuntu-latest   
     steps:
     - uses: actions/checkout@v2
-    - name: build react app
-      run: npm run build
+    - name: npm install & build react app
+      run: |
+        npm install
+        npm run build
     - name: setup github env
       run: |
         git config user.name github-actions
