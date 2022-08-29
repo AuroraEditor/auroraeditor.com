@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./Assets/aurora/styles/aurora-global.css"
 import "./Assets/aurora/styles/aurora-footer.css"
 import "./Assets/aurora/styles/aurora-ribbon.css"
+import "./index.css"
 import NavHeader from "./Base/Components/NavHeader"
 import MainPage from "./Base/Core/Main"
 import Included from './Base/Core/Included';
@@ -12,7 +13,7 @@ import Terms from './Base/Core/Terms';
 
 function App() {
   return (
-    <body id="overview" className="dmf" data-color-scheme="light">
+    <div id="overview" className="dmf" data-color-scheme="light">
       <Ribbon />
       <input type="checkbox" id="auroranav-menustate" className="auroranav-menustate" />
       <div id="auroranav-sticky-placeholder" className="css-sticky auroranav-sticking" />
@@ -30,7 +31,7 @@ function App() {
         </BrowserRouter>
       </main>
       <Footer />
-    </body>
+    </div>
   );
 }
 
