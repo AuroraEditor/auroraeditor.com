@@ -10,10 +10,10 @@ function Footer() {
                         <ThemeSelection />
                     </div>
                     <div className="footer-mini-legal">
-                        <div className="footer-mini-legal-copyright">Copyright ©  2022 <a href="https://www.auroraeditor.com">Aurora Company.</a> All rights reserved.</div>
+                        <div className="footer-mini-legal-copyright">Copyright &copy; 2022 <a href="https://auroracompany.dev">Aurora Company.</a> All rights reserved.</div>
                         <div className="footer-mini-legal-links">
                             <a className="footer-mini-legal-link" href="/legal/tos">Terms of Use</a>
-                            <a className="footer-mini-legal-link" href="legal/privacy-policy">Privacy Policy</a>
+                            <a className="footer-mini-legal-link" href="/legal/privacy-policy">Privacy Policy</a>
                             <a className="footer-mini-legal-link" href="/legal/terms">Agreements and Open Source Licenses</a>
                         </div>
                     </div>
