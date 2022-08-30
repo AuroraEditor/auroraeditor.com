@@ -5,6 +5,7 @@ function detectColorScheme() {
         theme = "dark"
     }
 
+    console.log("color scheme: " + theme + " [AUTO]")
     document.body.setAttribute("data-color-scheme", theme)
 }
 
@@ -12,6 +13,7 @@ function setColorScheme(theme) {
     if (theme === 'auto') {
         detectColorScheme()
     } else {
+        console.log("color scheme: " + theme)
         document.body.setAttribute("data-color-scheme", theme)
     }
     
