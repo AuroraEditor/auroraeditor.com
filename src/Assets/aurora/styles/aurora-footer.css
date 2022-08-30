@@ -161,6 +161,7 @@
 }
 
 @media only screen and (max-width: 767px) {
+
     .footer-mini-legal-copyright,
     .footer-mini-legal-links {
         margin-right: 0;
@@ -252,7 +253,7 @@ body {
 }
 
 @media screen {
-    body[data-color-scheme="dark"] {
+    html[data-color-scheme="dark"] body {
         --color-fill-blue: #0071e3;
         --color-figure-blue: #2997ff
     }

@@ -12,26 +12,26 @@ import Footer from "./Base/Components/Footer";
 import Terms from './Base/Core/Terms';
 
 function App() {
-  useScript("./Assets/aurora/scripts/aurora-nav.js")
-  useScript("./Assets/aurora/scripts/color-scheme-toggle.js")
-  return (
-    <div id="overview" className="dmf" data-color-scheme="light">
-      <Ribbon />
-      <input type="checkbox" id="auroranav-menustate" className="auroranav-menustate" />
-      <div id="auroranav-sticky-placeholder" className="css-sticky auroranav-sticking" />
-      <NavHeader />
-      <label id="auroranav-curtain" htmlFor="auroranav-menustate" />
-      <div id="auroranav-viewport-emitter" data-viewport-emitter-dispatch="" data-viewport-emitter-state="{&quot;viewport&quot;:&quot;large&quot;,&quot;orientation&quot;:&quot;landscape&quot;,&quot;retina&quot;:false}"></div>
-      <main>
-        <Routes>
-          <Route exact path="/" element={<MainPage />} />
-          <Route exact path="/included" element={<Included />} />
-          <Route exact path="/legal/terms" element={<Terms />} />
-        </Routes>
-      </main>
-      <Footer />
-    </div>
-  );
+    useScript("/scripts/aurora-nav.js")
+    useScript("/scripts/color-scheme-toggle.js")
+    return (
+        <div id="overview" className="dmf" data-color-scheme="light">
+            <Ribbon />
+            <input type="checkbox" id="auroranav-menustate" className="auroranav-menustate" />
+            <div id="auroranav-sticky-placeholder" className="css-sticky auroranav-sticking" />
+            <NavHeader />
+            <label id="auroranav-curtain" htmlFor="auroranav-menustate" />
+            <div id="auroranav-viewport-emitter" data-viewport-emitter-dispatch="" data-viewport-emitter-state="{&quot;viewport&quot;:&quot;large&quot;,&quot;orientation&quot;:&quot;landscape&quot;,&quot;retina&quot;:false}"></div>
+            <main>
+                <Routes>
+                    <Route exact path="/" element={<MainPage />} />
+                    <Route exact path="/included" element={<Included />} />
+                    <Route exact path="/legal/terms" element={<Terms />} />
+                </Routes>
+            </main>
+            <Footer />
+        </div>
+    );
 }
 
 export default App;

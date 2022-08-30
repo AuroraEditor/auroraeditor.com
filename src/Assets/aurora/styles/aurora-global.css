@@ -2000,7 +2000,7 @@ body[data-color-scheme="light"] {
     --color-callout-background-success: #cff3cf
 }
 
-body[data-color-scheme="dark"] {
+html[data-color-scheme="dark"] body {
     --color-callout-label: white;
     --color-callout-border: var(--fill-gray-quaternary);
     --color-callout-background: var(--fill-tertiary);
@@ -2024,7 +2024,7 @@ body[data-color-scheme="dark"] {
 }
 
 .device-macbook-pro-5th-gen-16-silver .device-screen,
-.device-macbook-pro-5th-gen-16-silver-cam .device-screen{
+.device-macbook-pro-5th-gen-16-silver-cam .device-screen {
     display: block;
     position: absolute;
     background-size: 100% 100%;

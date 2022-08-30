@@ -154,34 +154,34 @@ div.auroranav-action .button-multi-content-right {
 }
 
 /* DARK MODE */
-body[data-color-scheme="dark"] .button-multi-content {
+html[data-color-scheme="dark"] body .button-multi-content {
     color: #fff;
     border: 1px solid #545454;
     background-color: var(--fill-tertiary);
 }
 
-body[data-color-scheme="dark"] .button-multi-option {
+html[data-color-scheme="dark"] body .button-multi-option {
     color: var(--glyph-gray) !important;
     border-bottom: 1px solid #575757;
     opacity: 0.7;
 }
 
-body[data-color-scheme="dark"] .button-multi-option:last-child {
+html[data-color-scheme="dark"] body .button-multi-option:last-child {
     border-bottom: none;
 }
 
-body[data-color-scheme="dark"] .button-multi-option:hover {
+html[data-color-scheme="dark"] body .button-multi-option:hover {
     background-color: var(--fill-secondary);
     color: var(--glyph-blue) !important;
     text-decoration: none;
     opacity: 1;
 }
 
-body[data-color-scheme="dark"] .button-multi-option:active {
+html[data-color-scheme="dark"] body .button-multi-option:active {
     background-color: #0071e3;
     color: #fff !important;
 }
 
-body[data-color-scheme="dark"]#xcode .parallel-testing {
+html[data-color-scheme="dark"] body#xcode .parallel-testing {
     filter: invert(1);
 }

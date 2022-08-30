@@ -1,4 +1,4 @@
-:root {
+html[data-color-scheme="dark"][data-color-scheme="dark"] {
     --dark: #000;
     --light: #FFF;
     --glyph-gray: #F5F5F7;
@@ -90,376 +90,378 @@
 }
 
 /* ===== header/footer only ===== */
-html body {
+html[data-color-scheme="dark"] body {
     min-height: 100vh;
+    background-color: var(--dark);
+    color: var(--light);
 }
 
-html body .footer {
+html[data-color-scheme="dark"] body .footer {
     background-color: var(--fill-tertiary);
     color: var(--glyph-gray-tertiary);
 }
 
-html body .footer a {
+html[data-color-scheme="dark"] body .footer a {
     color: var(--glyph-gray-secondary-alt);
 }
 
-html body .footer a:hover,
-html body .footer a:hover {
+html[data-color-scheme="dark"] body .footer a:hover,
+html[data-color-scheme="dark"] body .footer a:hover {
     color: var(--glyph-gray);
 }
 
-html body .footer .footer-mini,
-html body .footer.footer-mini {
+html[data-color-scheme="dark"] body .footer .footer-mini,
+html[data-color-scheme="dark"] body .footer.footer-mini {
     border-color: var(--fill-gray-tertiary);
     color: var(--glyph-gray-tertiary);
 }
 
-html body .footer .footer-mini-shop a,
-html body .footer .footer-mini-news a {
+html[data-color-scheme="dark"] body .footer .footer-mini-shop a,
+html[data-color-scheme="dark"] body .footer .footer-mini-news a {
     color: var(--glyph-blue);
 }
 
-html body .footer .footer-mini-locale-link,
-html body .footer.footer-mini-locale-link {
+html[data-color-scheme="dark"] body .footer .footer-mini-locale-link,
+html[data-color-scheme="dark"] body .footer.footer-mini-locale-link {
     border-color: var(--fill-gray-tertiary);
 }
 
-html body .footer .footer-mini-legal-link,
-html body .footer.footer-mini-legal-link {
+html[data-color-scheme="dark"] body .footer .footer-mini-legal-link,
+html[data-color-scheme="dark"] body .footer.footer-mini-legal-link {
     border-color: var(--fill-gray-tertiary);
 }
 
-html body .footer .footer-content> :nth-child(2) {
+html[data-color-scheme="dark"] body .footer .footer-content> :nth-child(2) {
     border-color: var(--fill-gray-tertiary);
 }
 
-html body .dropdown-container select,
-html body .dropdown-container {
+html[data-color-scheme="dark"] body .dropdown-container select,
+html[data-color-scheme="dark"] body .dropdown-container {
     color: var(--glyph-blue);
 }
 
-html body .dropdown-container select,
-html body .dropdown-container:hover * {
+html[data-color-scheme="dark"] body .dropdown-container select,
+html[data-color-scheme="dark"] body .dropdown-container:hover * {
     color: var(--glyph-blue);
 }
 
-html body .auroranav.auroranav-scrim .auroranav-background,
-html body .auroranav-scrim.auroranav.auroranav-background {
+html[data-color-scheme="dark"] body .auroranav.auroranav-scrim .auroranav-background,
+html[data-color-scheme="dark"] body .auroranav-scrim.auroranav.auroranav-background {
     background-color: rgba(29, 29, 31, 0.9);
 }
 
 @supports ((-webkit-backdrop-filter: initial) or (backdrop-filter: initial)) {
 
-    html body .auroranav.auroranav-scrim .auroranav-background,
-    html body .auroranav-scrim.auroranav.auroranav-background {
+    html[data-color-scheme="dark"] body .auroranav.auroranav-scrim .auroranav-background,
+    html[data-color-scheme="dark"] body .auroranav-scrim.auroranav.auroranav-background {
         background-color: rgba(29, 29, 31, 0.72);
     }
 }
 
-html body .auroranav-scrim.auroranav.auroranav-noblur .auroranav-background,
-html body .auroranav-scrim.auroranav.auroranav-noblur .auroranav-background {
+html[data-color-scheme="dark"] body .auroranav-scrim.auroranav.auroranav-noblur .auroranav-background,
+html[data-color-scheme="dark"] body .auroranav-scrim.auroranav.auroranav-noblur .auroranav-background {
     -webkit-backdrop-filter: initial;
     backdrop-filter: initial;
     background-color: rgba(29, 29, 31, 0.9);
 }
 
-html body .auroranav.auroranav-sticking .auroranav-background,
-html body .auroranav-sticking.auroranav.auroranav-background {
+html[data-color-scheme="dark"] body .auroranav.auroranav-sticking .auroranav-background,
+html[data-color-scheme="dark"] body .auroranav-sticking.auroranav.auroranav-background {
     background-color: rgba(29, 29, 31, 0.9);
 }
 
 @supports ((-webkit-backdrop-filter: initial) or (backdrop-filter: initial)) {
 
-    html body .auroranav.auroranav-sticking .auroranav-background,
-    html body .auroranav-sticking.auroranav.auroranav-background {
+    html[data-color-scheme="dark"] body .auroranav.auroranav-sticking .auroranav-background,
+    html[data-color-scheme="dark"] body .auroranav-sticking.auroranav.auroranav-background {
         background-color: rgba(29, 29, 31, 0.72);
     }
 }
 
-html body .auroranav-sticking.auroranav.auroranav-noblur .auroranav-background,
-html body .auroranav-sticking.auroranav.auroranav-noblur .auroranav-background {
+html[data-color-scheme="dark"] body .auroranav-sticking.auroranav.auroranav-noblur .auroranav-background,
+html[data-color-scheme="dark"] body .auroranav-sticking.auroranav.auroranav-noblur .auroranav-background {
     -webkit-backdrop-filter: initial;
     backdrop-filter: initial;
     background-color: rgba(29, 29, 31, 0.9);
 }
 
-html body .auroranav .auroranav-background:after,
-html body .auroranav.auroranav-background:after {
+html[data-color-scheme="dark"] body .auroranav .auroranav-background:after,
+html[data-color-scheme="dark"] body .auroranav.auroranav-background:after {
     background-color: rgba(255, 255, 255, 0.24);
 }
 
-html body .auroranav-menustate:checked~.auroranav .auroranav-background,
-html body .auroranav-menustate:target~.auroranav .auroranav-background,
-html body .auroranav-menustate:checked~.auroranav .auroranav-background,
+html[data-color-scheme="dark"] body .auroranav-menustate:checked~.auroranav .auroranav-background,
+html[data-color-scheme="dark"] body .auroranav-menustate:target~.auroranav .auroranav-background,
+html[data-color-scheme="dark"] body .auroranav-menustate:checked~.auroranav .auroranav-background,
 .auroranav-menustate:target~.auroranav .auroranav-background {
     background-color: var(--fill-tertiary);
 }
 
 @supports ((-webkit-backdrop-filter: initial) or (backdrop-filter: initial)) {
 
-    html body .auroranav-menustate:checked~.auroranav .auroranav-background,
-    html body .auroranav-menustate:target~.auroranav .auroranav-background,
-    html body .auroranav-menustate:checked~.auroranav .auroranav-background,
-    html body .auroranav-menustate:target~.auroranav .auroranav-background {
+    html[data-color-scheme="dark"] body .auroranav-menustate:checked~.auroranav .auroranav-background,
+    html[data-color-scheme="dark"] body .auroranav-menustate:target~.auroranav .auroranav-background,
+    html[data-color-scheme="dark"] body .auroranav-menustate:checked~.auroranav .auroranav-background,
+    html[data-color-scheme="dark"] body .auroranav-menustate:target~.auroranav .auroranav-background {
         background-color: rgba(29, 29, 31, 0.9);
     }
 }
 
-html body .auroranav-menustate:checked~.auroranav.auroranav-noblur .auroranav-background,
-html body .auroranav-menustate:target~.auroranav.auroranav-noblur .auroranav-background,
+html[data-color-scheme="dark"] body .auroranav-menustate:checked~.auroranav.auroranav-noblur .auroranav-background,
+html[data-color-scheme="dark"] body .auroranav-menustate:target~.auroranav.auroranav-noblur .auroranav-background,
 .auroranav-menustate:checked~.auroranav.auroranav-noblur .auroranav-background,
-html body .auroranav-menustate:target~.auroranav.auroranav-noblur .auroranav-background {
+html[data-color-scheme="dark"] body .auroranav-menustate:target~.auroranav.auroranav-noblur .auroranav-background {
     -webkit-backdrop-filter: initial;
     backdrop-filter: initial;
     background-color: var(--fill-tertiary);
 }
 
-html body .auroranav-hero.auroranav.auroranav-sticking .auroranav-background:after,
-html body .auroranav-hero.auroranav-sticking.auroranav.auroranav-background:after {
+html[data-color-scheme="dark"] body .auroranav-hero.auroranav.auroranav-sticking .auroranav-background:after,
+html[data-color-scheme="dark"] body .auroranav-hero.auroranav-sticking.auroranav.auroranav-background:after {
     background-color: rgba(255, 255, 255, 0.24);
 }
 
-html body .auroranav-menustate:checked~.auroranav-hero.auroranav .auroranav-background:after,
-html body .auroranav-menustate:target~.auroranav-hero.auroranav .auroranav-background:after,
-html body .auroranav-menustate:checked~.auroranav-hero.auroranav.auroranav-background:after,
-html body .auroranav-menustate:target~.auroranav-hero.auroranav.auroranav-background:after {
+html[data-color-scheme="dark"] body .auroranav-menustate:checked~.auroranav-hero.auroranav .auroranav-background:after,
+html[data-color-scheme="dark"] body .auroranav-menustate:target~.auroranav-hero.auroranav .auroranav-background:after,
+html[data-color-scheme="dark"] body .auroranav-menustate:checked~.auroranav-hero.auroranav.auroranav-background:after,
+html[data-color-scheme="dark"] body .auroranav-menustate:target~.auroranav-hero.auroranav.auroranav-background:after {
     background-color: rgba(255, 255, 255, 0.24);
 }
 
-html body .auroranav .auroranav-menu .auroranav-menu-item,
-html body .auroranav.auroranav-menu-item {
+html[data-color-scheme="dark"] body .auroranav .auroranav-menu .auroranav-menu-item,
+html[data-color-scheme="dark"] body .auroranav.auroranav-menu-item {
     border-color: rgba(255, 255, 255, 0.24);
 }
 
-html body .auroranav .auroranav-menu .auroranav-menu-link,
-html body .auroranav.auroranav-menu-link {
+html[data-color-scheme="dark"] body .auroranav .auroranav-menu .auroranav-menu-link,
+html[data-color-scheme="dark"] body .auroranav.auroranav-menu-link {
     border-color: rgba(255, 255, 255, 0.26087);
     color: var(--light);
 }
 
-html body .auroranav .auroranav-menu .auroranav-menu-link:hover,
-html body .auroranav.auroranav-menu-link:hover {
+html[data-color-scheme="dark"] body .auroranav .auroranav-menu .auroranav-menu-link:hover,
+html[data-color-scheme="dark"] body .auroranav.auroranav-menu-link:hover {
     color: var(--glyph-blue);
 }
 
-html body .auroranav .auroranav-menu .auroranav-menu-link.current {
+html[data-color-scheme="dark"] body .auroranav .auroranav-menu .auroranav-menu-link.current {
     color: var(--glyph-gray) !important;
     opacity: .5;
 }
 
-html body .auroranav-menustate:checked~.auroranav .auroranav-menu-link,
-html body .auroranav-menustate:target~.auroranav .auroranav-menu-link,
-html body .auroranav-menustate:checked~.auroranav .auroranav-menu-link,
-html body .auroranav-menustate:target~.auroranav .auroranav-menu-link {
+html[data-color-scheme="dark"] body .auroranav-menustate:checked~.auroranav .auroranav-menu-link,
+html[data-color-scheme="dark"] body .auroranav-menustate:target~.auroranav .auroranav-menu-link,
+html[data-color-scheme="dark"] body .auroranav-menustate:checked~.auroranav .auroranav-menu-link,
+html[data-color-scheme="dark"] body .auroranav-menustate:target~.auroranav .auroranav-menu-link {
     opacity: .92;
 }
 
-html body .auroranav-hero.auroranav.auroranav-sticking .auroranav-menu-link,
-html body .auroranav-hero.auroranav-sticking.auroranav.auroranav-menu-link {
+html[data-color-scheme="dark"] body .auroranav-hero.auroranav.auroranav-sticking .auroranav-menu-link,
+html[data-color-scheme="dark"] body .auroranav-hero.auroranav-sticking.auroranav.auroranav-menu-link {
     color: var(--glyph-gray);
     opacity: .92;
 }
 
-html body .auroranav-hero.auroranav.auroranav-sticking .auroranav-menu-link:hover,
-html body .auroranav-hero.auroranav-sticking.auroranav.auroranav-menu-link:hover {
+html[data-color-scheme="dark"] body .auroranav-hero.auroranav.auroranav-sticking .auroranav-menu-link:hover,
+html[data-color-scheme="dark"] body .auroranav-hero.auroranav-sticking.auroranav.auroranav-menu-link:hover {
     color: var(--glyph-blue);
     opacity: 1;
 }
 
-html body .auroranav-menustate:checked~.auroranav-hero.auroranav .auroranav-menu-link,
-html body .auroranav-menustate:target~.auroranav-hero.auroranav .auroranav-menu-link,
+html[data-color-scheme="dark"] body .auroranav-menustate:checked~.auroranav-hero.auroranav .auroranav-menu-link,
+html[data-color-scheme="dark"] body .auroranav-menustate:target~.auroranav-hero.auroranav .auroranav-menu-link,
 .auroranav-menustate:checked~.auroranav-hero.auroranav.auroranav-menu-link,
-html body .auroranav-menustate:target~.auroranav-hero.auroranav.auroranav-menu-link {
+html[data-color-scheme="dark"] body .auroranav-menustate:target~.auroranav-hero.auroranav.auroranav-menu-link {
     color: var(--glyph-gray);
     opacity: .92;
 }
 
-html body .auroranav-menustate:checked~.auroranav-hero.auroranav .auroranav-menu-link:hover,
-html body .auroranav-menustate:target~.auroranav-hero.auroranav .auroranav-menu-link:hover,
+html[data-color-scheme="dark"] body .auroranav-menustate:checked~.auroranav-hero.auroranav .auroranav-menu-link:hover,
+html[data-color-scheme="dark"] body .auroranav-menustate:target~.auroranav-hero.auroranav .auroranav-menu-link:hover,
 .auroranav-menustate:checked~.auroranav-hero.auroranav.auroranav-menu-link:hover,
-html body .auroranav-menustate:target~.auroranav-hero.auroranav.auroranav-menu-link:hover {
+html[data-color-scheme="dark"] body .auroranav-menustate:target~.auroranav-hero.auroranav.auroranav-menu-link:hover {
     color: var(--glyph-blue);
     opacity: 1;
 }
 
-html body .auroranav .auroranav-menu-link.current,
-html body .auroranav.auroranav-menu-link.current {
+html[data-color-scheme="dark"] body .auroranav .auroranav-menu-link.current,
+html[data-color-scheme="dark"] body .auroranav.auroranav-menu-link.current {
     color: var(--glyph-gray);
     opacity: .56;
     pointer-events: none;
 }
 
-html body .auroranav .auroranav-menu-link.current:hover,
-html body .auroranav.auroranav-menu-link.current:hover {
+html[data-color-scheme="dark"] body .auroranav .auroranav-menu-link.current:hover,
+html[data-color-scheme="dark"] body .auroranav.auroranav-menu-link.current:hover {
     color: var(--glyph-gray);
 }
 
-html body .auroranav-menustate:checked~.auroranav .auroranav-menu-link.current,
-html body .auroranav-menustate:target~.auroranav .auroranav-menu-link.current,
-html body .auroranav-menustate:checked~.auroranav .auroranav-menu-link.current,
-html body .auroranav-menustate:target~.auroranav .auroranav-menu-link.current {
+html[data-color-scheme="dark"] body .auroranav-menustate:checked~.auroranav .auroranav-menu-link.current,
+html[data-color-scheme="dark"] body .auroranav-menustate:target~.auroranav .auroranav-menu-link.current,
+html[data-color-scheme="dark"] body .auroranav-menustate:checked~.auroranav .auroranav-menu-link.current,
+html[data-color-scheme="dark"] body .auroranav-menustate:target~.auroranav .auroranav-menu-link.current {
     opacity: .56;
     border-color: rgba(255, 255, 255, 0.428571);
 }
 
-html body .auroranav-hero.auroranav.auroranav-sticking .auroranav-menu-link.current,
-html body .auroranav-hero.auroranav-sticking.auroranav.auroranav-menu-link.current {
+html[data-color-scheme="dark"] body .auroranav-hero.auroranav.auroranav-sticking .auroranav-menu-link.current,
+html[data-color-scheme="dark"] body .auroranav-hero.auroranav-sticking.auroranav.auroranav-menu-link.current {
     color: var(--glyph-gray);
     opacity: .56;
 }
 
-html body .auroranav-hero.auroranav.auroranav-sticking .auroranav-menu-link.current:hover,
-html body .auroranav-hero.auroranav-sticking.auroranav.auroranav-menu-link.current:hover {
+html[data-color-scheme="dark"] body .auroranav-hero.auroranav.auroranav-sticking .auroranav-menu-link.current:hover,
+html[data-color-scheme="dark"] body .auroranav-hero.auroranav-sticking.auroranav.auroranav-menu-link.current:hover {
     color: var(--glyph-gray);
 }
 
-html body .auroranav-menustate:checked~.auroranav-hero.auroranav .auroranav-menu-link.current,
-html body .auroranav-menustate:target~.auroranav-hero.auroranav .auroranav-menu-link.current,
+html[data-color-scheme="dark"] body .auroranav-menustate:checked~.auroranav-hero.auroranav .auroranav-menu-link.current,
+html[data-color-scheme="dark"] body .auroranav-menustate:target~.auroranav-hero.auroranav .auroranav-menu-link.current,
 .auroranav-menustate:checked~.auroranav-hero.auroranav.auroranav-menu-link.current,
-html body .auroranav-menustate:target~.auroranav-hero.auroranav.auroranav-menu-link.current {
+html[data-color-scheme="dark"] body .auroranav-menustate:target~.auroranav-hero.auroranav.auroranav-menu-link.current {
     color: var(--glyph-gray);
     opacity: .56;
     border-color: rgba(255, 255, 255, 0.428571);
 }
 
-html body .auroranav-menustate:checked~.auroranav-hero.auroranav .auroranav-menu-link.current:hover,
-html body .auroranav-menustate:target~.auroranav-hero.auroranav .auroranav-menu-link.current:hover,
-html body .auroranav-menustate:checked~.auroranav-hero.auroranav.auroranav-menu-link.current:hover,
-html body .auroranav-menustate:target~.auroranav-hero.auroranav.auroranav-menu-link.current:hover {
+html[data-color-scheme="dark"] body .auroranav-menustate:checked~.auroranav-hero.auroranav .auroranav-menu-link.current:hover,
+html[data-color-scheme="dark"] body .auroranav-menustate:target~.auroranav-hero.auroranav .auroranav-menu-link.current:hover,
+html[data-color-scheme="dark"] body .auroranav-menustate:checked~.auroranav-hero.auroranav.auroranav-menu-link.current:hover,
+html[data-color-scheme="dark"] body .auroranav-menustate:target~.auroranav-hero.auroranav.auroranav-menu-link.current:hover {
     color: var(--glyph-gray);
 }
 
-html body .auroranav .auroranav-menucta-chevron::before,
-html body .auroranav .auroranav-menucta-chevron::after,
-html body .auroranav.auroranav-menucta-chevron::before,
-html body .auroranav.auroranav-menucta-chevron::after {
+html[data-color-scheme="dark"] body .auroranav .auroranav-menucta-chevron::before,
+html[data-color-scheme="dark"] body .auroranav .auroranav-menucta-chevron::after,
+html[data-color-scheme="dark"] body .auroranav.auroranav-menucta-chevron::before,
+html[data-color-scheme="dark"] body .auroranav.auroranav-menucta-chevron::after {
     background: var(--glyph-gray);
 }
 
-html body .auroranav.auroranav-sticking .auroranav-menucta-chevron::before,
-html body .auroranav.auroranav-sticking .auroranav-menucta-chevron::after,
-html body .auroranav.auroranav-sticking .auroranav-menucta-chevron::before,
-html body .auroranav.auroranav-sticking .auroranav-menucta-chevron::after {
+html[data-color-scheme="dark"] body .auroranav.auroranav-sticking .auroranav-menucta-chevron::before,
+html[data-color-scheme="dark"] body .auroranav.auroranav-sticking .auroranav-menucta-chevron::after,
+html[data-color-scheme="dark"] body .auroranav.auroranav-sticking .auroranav-menucta-chevron::before,
+html[data-color-scheme="dark"] body .auroranav.auroranav-sticking .auroranav-menucta-chevron::after {
     background: var(--glyph-gray);
 }
 
-html body .auroranav-menustate:checked~.auroranav .auroranav-menucta-chevron::before,
-html body .auroranav-menustate:checked~.auroranav .auroranav-menucta-chevron::after,
-html body .auroranav-menustate:target~.auroranav .auroranav-menucta-chevron::before,
-html body .auroranav-menustate:target~.auroranav .auroranav-menucta-chevron::after,
-html body .auroranav-menustate:checked~.auroranav .auroranav-menucta-chevron::before,
+html[data-color-scheme="dark"] body .auroranav-menustate:checked~.auroranav .auroranav-menucta-chevron::before,
+html[data-color-scheme="dark"] body .auroranav-menustate:checked~.auroranav .auroranav-menucta-chevron::after,
+html[data-color-scheme="dark"] body .auroranav-menustate:target~.auroranav .auroranav-menucta-chevron::before,
+html[data-color-scheme="dark"] body .auroranav-menustate:target~.auroranav .auroranav-menucta-chevron::after,
+html[data-color-scheme="dark"] body .auroranav-menustate:checked~.auroranav .auroranav-menucta-chevron::before,
 .auroranav-menustate:checked~.auroranav .auroranav-menucta-chevron::after,
-html body .auroranav-menustate:target~.auroranav .auroranav-menucta-chevron::before,
+html[data-color-scheme="dark"] body .auroranav-menustate:target~.auroranav .auroranav-menucta-chevron::before,
 .auroranav-menustate:target~.auroranav .auroranav-menucta-chevron::after {
     background: var(--glyph-gray);
 }
 
-html body .auroranav-hero.auroranav.auroranav-sticking .auroranav-menucta-chevron::before,
-html body .auroranav-hero.auroranav.auroranav-sticking .auroranav-menucta-chevron::after,
-html body .auroranav-hero.auroranav-sticking.auroranav.auroranav-menucta-chevron::before,
-html body .auroranav-hero.auroranav-sticking.auroranav.auroranav-menucta-chevron::after {
+html[data-color-scheme="dark"] body .auroranav-hero.auroranav.auroranav-sticking .auroranav-menucta-chevron::before,
+html[data-color-scheme="dark"] body .auroranav-hero.auroranav.auroranav-sticking .auroranav-menucta-chevron::after,
+html[data-color-scheme="dark"] body .auroranav-hero.auroranav-sticking.auroranav.auroranav-menucta-chevron::before,
+html[data-color-scheme="dark"] body .auroranav-hero.auroranav-sticking.auroranav.auroranav-menucta-chevron::after {
     background: var(--glyph-gray);
 }
 
-html body .auroranav-menustate:checked~.auroranav-hero.auroranav .auroranav-menucta-chevron::before,
-html body .auroranav-menustate:checked~.auroranav-hero.auroranav .auroranav-menucta-chevron::after,
-html body .auroranav-menustate:target~.auroranav-hero.auroranav .auroranav-menucta-chevron::before,
-html body .auroranav-menustate:target~.auroranav-hero.auroranav .auroranav-menucta-chevron::after,
-html body .auroranav-menustate:checked~.auroranav-hero.auroranav.auroranav-menucta-chevron::before,
-html body .auroranav-menustate:checked~.auroranav-hero.auroranav.auroranav-menucta-chevron::after,
-html body .auroranav-menustate:target~.auroranav-hero.auroranav.auroranav-menucta-chevron::before,
-html body .auroranav-menustate:target~.auroranav-hero.auroranav.auroranav-menucta-chevron::after {
+html[data-color-scheme="dark"] body .auroranav-menustate:checked~.auroranav-hero.auroranav .auroranav-menucta-chevron::before,
+html[data-color-scheme="dark"] body .auroranav-menustate:checked~.auroranav-hero.auroranav .auroranav-menucta-chevron::after,
+html[data-color-scheme="dark"] body .auroranav-menustate:target~.auroranav-hero.auroranav .auroranav-menucta-chevron::before,
+html[data-color-scheme="dark"] body .auroranav-menustate:target~.auroranav-hero.auroranav .auroranav-menucta-chevron::after,
+html[data-color-scheme="dark"] body .auroranav-menustate:checked~.auroranav-hero.auroranav.auroranav-menucta-chevron::before,
+html[data-color-scheme="dark"] body .auroranav-menustate:checked~.auroranav-hero.auroranav.auroranav-menucta-chevron::after,
+html[data-color-scheme="dark"] body .auroranav-menustate:target~.auroranav-hero.auroranav.auroranav-menucta-chevron::before,
+html[data-color-scheme="dark"] body .auroranav-menustate:target~.auroranav-hero.auroranav.auroranav-menucta-chevron::after {
     background: var(--glyph-gray);
 }
 
-html body .auroranav .auroranav-title a,
-html body .auroranav.auroranav-title a {
+html[data-color-scheme="dark"] body .auroranav .auroranav-title a,
+html[data-color-scheme="dark"] body .auroranav.auroranav-title a {
     opacity: .92;
 }
 
-html body .auroranav-hero.auroranav.auroranav-sticking .auroranav-title a,
+html[data-color-scheme="dark"] body .auroranav-hero.auroranav.auroranav-sticking .auroranav-title a,
 .auroranav-hero.auroranav-sticking.auroranav.auroranav-title a {
     opacity: .92;
 }
 
-html body .auroranav-menustate:checked~.auroranav-hero.auroranav .auroranav-title a,
+html[data-color-scheme="dark"] body .auroranav-menustate:checked~.auroranav-hero.auroranav .auroranav-title a,
 .auroranav-menustate:target~.auroranav-hero.auroranav .auroranav-title a,
 .auroranav-menustate:checked~.auroranav-hero.auroranav.auroranav-title a,
-html body .auroranav-menustate:target~.auroranav-hero.auroranav.auroranav-title a {
+html[data-color-scheme="dark"] body .auroranav-menustate:target~.auroranav-hero.auroranav.auroranav-title a {
     opacity: .92;
 }
 
-html body .auroranav .auroranav-title,
-html body .auroranav .auroranav-title a,
+html[data-color-scheme="dark"] body .auroranav .auroranav-title,
+html[data-color-scheme="dark"] body .auroranav .auroranav-title a,
 .auroranav.auroranav-title,
-html body .auroranav.auroranav-title a {
+html[data-color-scheme="dark"] body .auroranav.auroranav-title a {
     color: var(--glyph-gray);
 }
 
-html body .auroranav-hero.auroranav.auroranav-sticking .auroranav-title,
-html body .auroranav-hero.auroranav.auroranav-sticking .auroranav-title a,
+html[data-color-scheme="dark"] body .auroranav-hero.auroranav.auroranav-sticking .auroranav-title,
+html[data-color-scheme="dark"] body .auroranav-hero.auroranav.auroranav-sticking .auroranav-title a,
 .auroranav-hero.auroranav-sticking.auroranav.auroranav-title,
 .auroranav-hero.auroranav-sticking.auroranav.auroranav-title a {
     color: var(--glyph-gray);
 }
 
-html body .auroranav-menustate:checked~.auroranav-hero.auroranav .auroranav-title,
-html body .auroranav-menustate:target~.auroranav-hero.auroranav .auroranav-title,
-html body .auroranav-menustate:checked~.auroranav-hero.auroranav .auroranav-title a,
-html body .auroranav-menustate:target~.auroranav-hero.auroranav .auroranav-title a,
+html[data-color-scheme="dark"] body .auroranav-menustate:checked~.auroranav-hero.auroranav .auroranav-title,
+html[data-color-scheme="dark"] body .auroranav-menustate:target~.auroranav-hero.auroranav .auroranav-title,
+html[data-color-scheme="dark"] body .auroranav-menustate:checked~.auroranav-hero.auroranav .auroranav-title a,
+html[data-color-scheme="dark"] body .auroranav-menustate:target~.auroranav-hero.auroranav .auroranav-title a,
 .auroranav-menustate:checked~.auroranav-hero.auroranav.auroranav-title,
-html body .auroranav-menustate:target~.auroranav-hero.auroranav.auroranav-title,
-html body .auroranav-menustate:checked~.auroranav-hero.auroranav.auroranav-title a,
+html[data-color-scheme="dark"] body .auroranav-menustate:target~.auroranav-hero.auroranav.auroranav-title,
+html[data-color-scheme="dark"] body .auroranav-menustate:checked~.auroranav-hero.auroranav.auroranav-title a,
 .auroranav-menustate:target~.auroranav-hero.auroranav.auroranav-title a {
     color: var(--glyph-gray);
 }
 
-html body .auroranav .auroranav-title-subhead,
-html body .auroranav .auroranav-title-comingsoon,
-html body .auroranav.auroranav-title-subhead,
-html body .auroranav.auroranav-title-comingsoon {
+html[data-color-scheme="dark"] body .auroranav .auroranav-title-subhead,
+html[data-color-scheme="dark"] body .auroranav .auroranav-title-comingsoon,
+html[data-color-scheme="dark"] body .auroranav.auroranav-title-subhead,
+html[data-color-scheme="dark"] body .auroranav.auroranav-title-comingsoon {
     color: var(--glyph-gray);
 }
 
-html body .auroranav.auroranav-stacked .auroranav-title-subhead,
-html body .auroranav.auroranav-stacked .auroranav-title-comingsoon,
-html body .auroranav.auroranav-stacked .auroranav-title-subhead,
-html body .auroranav.auroranav-stacked .auroranav-title-comingsoon {
+html[data-color-scheme="dark"] body .auroranav.auroranav-stacked .auroranav-title-subhead,
+html[data-color-scheme="dark"] body .auroranav.auroranav-stacked .auroranav-title-comingsoon,
+html[data-color-scheme="dark"] body .auroranav.auroranav-stacked .auroranav-title-subhead,
+html[data-color-scheme="dark"] body .auroranav.auroranav-stacked .auroranav-title-comingsoon {
     opacity: 0.61;
 }
 
-html body .auroranav-hero.auroranav.auroranav-sticking .auroranav-title-subhead,
-html body .auroranav-hero.auroranav.auroranav-sticking .auroranav-title-comingsoon,
-html body .auroranav-hero.auroranav-sticking.auroranav.auroranav-title-subhead,
-html body .auroranav-hero.auroranav-sticking.auroranav.auroranav-title-comingsoon {
+html[data-color-scheme="dark"] body .auroranav-hero.auroranav.auroranav-sticking .auroranav-title-subhead,
+html[data-color-scheme="dark"] body .auroranav-hero.auroranav.auroranav-sticking .auroranav-title-comingsoon,
+html[data-color-scheme="dark"] body .auroranav-hero.auroranav-sticking.auroranav.auroranav-title-subhead,
+html[data-color-scheme="dark"] body .auroranav-hero.auroranav-sticking.auroranav.auroranav-title-comingsoon {
     color: var(--glyph-gray);
 }
 
-html body .auroranav-menustate:checked~.auroranav-hero.auroranav .auroranav-title-subhead,
-html body .auroranav-menustate:target~.auroranav-hero.auroranav .auroranav-title-subhead,
-html body .auroranav-menustate:checked~.auroranav-hero.auroranav .auroranav-title-comingsoon,
-html body .auroranav-menustate:target~.auroranav-hero.auroranav .auroranav-title-comingsoon,
-html body .auroranav-menustate:checked~.auroranav-hero.auroranav.auroranav-title-subhead,
+html[data-color-scheme="dark"] body .auroranav-menustate:checked~.auroranav-hero.auroranav .auroranav-title-subhead,
+html[data-color-scheme="dark"] body .auroranav-menustate:target~.auroranav-hero.auroranav .auroranav-title-subhead,
+html[data-color-scheme="dark"] body .auroranav-menustate:checked~.auroranav-hero.auroranav .auroranav-title-comingsoon,
+html[data-color-scheme="dark"] body .auroranav-menustate:target~.auroranav-hero.auroranav .auroranav-title-comingsoon,
+html[data-color-scheme="dark"] body .auroranav-menustate:checked~.auroranav-hero.auroranav.auroranav-title-subhead,
 .auroranav-menustate:target~.auroranav-hero.auroranav.auroranav-title-subhead,
 .auroranav-menustate:checked~.auroranav-hero.auroranav.auroranav-title-comingsoon,
-html body .auroranav-menustate:target~.auroranav-hero.auroranav.auroranav-title-comingsoon {
+html[data-color-scheme="dark"] body .auroranav-menustate:target~.auroranav-hero.auroranav.auroranav-title-comingsoon {
     color: var(--glyph-gray);
 }
 
-html body #main section.section.section-resources.bg-alt {
+html[data-color-scheme="dark"] body #main section.section.section-resources.bg-alt {
     background-color: var(--fill-tertiary);
     color: var(--glyph-gray);
 }
 
-html body .color-scheme-toggle {
+html[data-color-scheme="dark"] body .color-scheme-toggle {
     border: 1px solid var(--toggle-color-text);
 }
 
-html body .color-scheme-toggle .text {
+html[data-color-scheme="dark"] body .color-scheme-toggle .text {
     color: var(--toggle-color-text);
 }
 
-html body .color-scheme-toggle input:checked+.text {
+html[data-color-scheme="dark"] body .color-scheme-toggle input:checked+.text {
     color: var(--color-button-text);
     background: var(--color-button-background);
     border-color: var(--color-button-background);
@@ -467,338 +469,338 @@ html body .color-scheme-toggle input:checked+.text {
 
 
 /* ===== dmf opt-in body styles ===== */
-html body.dmf {
+html[data-color-scheme="dark"] body.dmf {
     background-color: var(--dark);
     color: var(--glyph-gray);
 }
 
-html body.dmf a,
-html body.dmf .link {
+html[data-color-scheme="dark"] body.dmf a,
+html[data-color-scheme="dark"] body.dmf .link {
     color: var(--glyph-blue);
 }
 
-html body.dmf .footer a {
+html[data-color-scheme="dark"] body.dmf .footer a {
     color: var(--glyph-gray-secondary-alt);
 }
 
-html body.dmf .footer h3 a {
+html[data-color-scheme="dark"] body.dmf .footer h3 a {
     color: var(--glyph-gray);
 }
 
-html body.dmf .footer .footer-mini-shop a,
-html body.dmf .footer .footer-mini-news a {
+html[data-color-scheme="dark"] body.dmf .footer .footer-mini-shop a,
+html[data-color-scheme="dark"] body.dmf .footer .footer-mini-news a {
     color: var(--glyph-blue);
 }
 
-html body.dmf a.block {
+html[data-color-scheme="dark"] body.dmf a.block {
     color: var(--glyph-gray);
 }
 
-html body.dmf a.block * {
+html[data-color-scheme="dark"] body.dmf a.block * {
     color: var(--glyph-gray);
 }
 
-html body.dmf a.block .block-link {
+html[data-color-scheme="dark"] body.dmf a.block .block-link {
     color: var(--glyph-blue);
 }
 
-html body.dmf a.block .block-link span {
+html[data-color-scheme="dark"] body.dmf a.block .block-link span {
     color: var(--glyph-blue);
 }
 
-html body.dmf h1,
-html body.dmf h2,
-html body.dmf h3,
-html body.dmf h4,
-html body.dmf h5,
-html body.dmf h6 {
+html[data-color-scheme="dark"] body.dmf h1,
+html[data-color-scheme="dark"] body.dmf h2,
+html[data-color-scheme="dark"] body.dmf h3,
+html[data-color-scheme="dark"] body.dmf h4,
+html[data-color-scheme="dark"] body.dmf h5,
+html[data-color-scheme="dark"] body.dmf h6 {
     color: var(--glyph-gray);
 }
 
-html body.dmf hr,
-html body.dmf .divider-top,
-html body.dmf .divider-bottom,
-html body.dmf .divider-left,
-html body.dmf .divider-right {
+html[data-color-scheme="dark"] body.dmf hr,
+html[data-color-scheme="dark"] body.dmf .divider-top,
+html[data-color-scheme="dark"] body.dmf .divider-bottom,
+html[data-color-scheme="dark"] body.dmf .divider-left,
+html[data-color-scheme="dark"] body.dmf .divider-right {
     border-color: #444;
 }
 
-html body.dmf .form-box {
+html[data-color-scheme="dark"] body.dmf .form-box {
     color: #ccc;
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-html body.dmf input[type='text'],
-html body.dmf input[type='email'],
-html body.dmf input[type='number'],
-html body.dmf input[type='password'],
-html body.dmf input[type='tel'],
-html body.dmf input[type='url'],
-html body.dmf textarea {
+html[data-color-scheme="dark"] body.dmf input[type='text'],
+html[data-color-scheme="dark"] body.dmf input[type='email'],
+html[data-color-scheme="dark"] body.dmf input[type='number'],
+html[data-color-scheme="dark"] body.dmf input[type='password'],
+html[data-color-scheme="dark"] body.dmf input[type='tel'],
+html[data-color-scheme="dark"] body.dmf input[type='url'],
+html[data-color-scheme="dark"] body.dmf textarea {
     color: #ccc;
     border-color: rgba(214, 214, 214, 0.2);
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-html body.dmf input[type='text'].error,
-html body.dmf input[type='email'].error,
-html body.dmf input[type='number'].error,
-html body.dmf input[type='password'].error,
-html body.dmf input[type='tel'].error,
-html body.dmf input[type='url'].error,
-html body.dmf textarea.error {
+html[data-color-scheme="dark"] body.dmf input[type='text'].error,
+html[data-color-scheme="dark"] body.dmf input[type='email'].error,
+html[data-color-scheme="dark"] body.dmf input[type='number'].error,
+html[data-color-scheme="dark"] body.dmf input[type='password'].error,
+html[data-color-scheme="dark"] body.dmf input[type='tel'].error,
+html[data-color-scheme="dark"] body.dmf input[type='url'].error,
+html[data-color-scheme="dark"] body.dmf textarea.error {
     background-color: rgba(255, 51, 51, 0.2);
     border-color: #ff3333;
     color: var(--glyph-gray);
 }
 
-html body.dmf input[type='file'] {
+html[data-color-scheme="dark"] body.dmf input[type='file'] {
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--glyph-gray);
 }
 
-html body.dmf fieldset.multi-field span.instruction {
+html[data-color-scheme="dark"] body.dmf fieldset.multi-field span.instruction {
     color: var(--glyph-gray-secondary);
 }
 
-html body.dmf pre {
+html[data-color-scheme="dark"] body.dmf pre {
     color: var(--glyph-gray);
     background-color: rgba(255, 255, 255, 0.1);
     border-color: rgba(214, 214, 214, 0.2);
 }
 
-/* html body.dmf select {color:var(--glyph-gray);} */
-html body.dmf select {
+/* html[data-color-scheme="dark"] body.dmf select {color:var(--glyph-gray);} */
+html[data-color-scheme="dark"] body.dmf select {
     color: var(--glyph-gray);
 }
 
-html body.dmf select:not([class*='error']) {
+html[data-color-scheme="dark"] body.dmf select:not([class*='error']) {
     background-color: var(--glyph-gray-override);
 }
 
-html body.dmf .lighter {
+html[data-color-scheme="dark"] body.dmf .lighter {
     color: #aaa;
 }
 
-html body.dmf .dropdown-container select,
-html body.dmf .dropdown-container:hover * {
+html[data-color-scheme="dark"] body.dmf .dropdown-container select,
+html[data-color-scheme="dark"] body.dmf .dropdown-container:hover * {
     color: var(--glyph-blue);
 }
 
-html body.dmf .sticky,
-html body.dmf .sticky-header {
+html[data-color-scheme="dark"] body.dmf .sticky,
+html[data-color-scheme="dark"] body.dmf .sticky-header {
     background-color: rgba(0, 0, 0, 0.95);
     border-color: var(--fill-gray-tertiary);
 }
 
-html body.dmf .searchbar .searchbar-input {
+html[data-color-scheme="dark"] body.dmf .searchbar .searchbar-input {
     color: var(--fill);
 }
 
-html body.dmf .bg-alt {
+html[data-color-scheme="dark"] body.dmf .bg-alt {
     background-color: var(--fill-tertiary);
 }
 
-html body.dmf .bg-blue {
+html[data-color-scheme="dark"] body.dmf .bg-blue {
     background-color: var(--fill-blue-secondary);
 }
 
-html body.dmf .bg-green-blue {
+html[data-color-scheme="dark"] body.dmf .bg-green-blue {
     background: linear-gradient(135deg, #65976d 0%, #588ea4 100%)
 }
 
-html body.dmf .bg-yellow {
+html[data-color-scheme="dark"] body.dmf .bg-yellow {
     background: linear-gradient(to bottom, var(--fill-tertiary) 0%, var(--fill-tertiary-alt) 100%);
 }
 
-html body.dmf .bg-light,
-html body.dmf .background {
+html[data-color-scheme="dark"] body.dmf .bg-light,
+html[data-color-scheme="dark"] body.dmf .background {
     background-color: var(--fill-secondary-alt);
 }
 
-html body.dmf .bg-gradient,
-html body.dmf .bg-grad {
+html[data-color-scheme="dark"] body.dmf .bg-gradient,
+html[data-color-scheme="dark"] body.dmf .bg-grad {
     background: linear-gradient(to bottom, var(--dark) 0%, var(--fill-gray-secondary-alt) 100%);
 }
 
-html body.dmf .bg-grad-down {
+html[data-color-scheme="dark"] body.dmf .bg-grad-down {
     background: linear-gradient(to bottom, var(--dark) 0%, var(--fill-gray-secondary-alt) 100%);
 }
 
-html body.dmf .bg-grad-up {
+html[data-color-scheme="dark"] body.dmf .bg-grad-up {
     background: linear-gradient(to bottom, var(--fill-gray-secondary-alt) 0%, var(--dark) 100%);
 }
 
-html body.dmf .bg-blue-gradient,
-html body.dmf .bg-gradient-blue {
+html[data-color-scheme="dark"] body.dmf .bg-blue-gradient,
+html[data-color-scheme="dark"] body.dmf .bg-gradient-blue {
     background: linear-gradient(to bottom, var(--fill-blue-gradient-light) 0%, var(--fill-blue-gradient-dark) 100%);
 }
 
-html body.dmf .bg-blue-gradient-alt {
+html[data-color-scheme="dark"] body.dmf .bg-blue-gradient-alt {
     background: linear-gradient(90deg, #061830 0%, #102d48 100%);
 }
 
-html body.dmf .overlay {
+html[data-color-scheme="dark"] body.dmf .overlay {
     background: rgba(29, 29, 29, 0.95);
 }
 
-html body.dmf .overlay-content {
+html[data-color-scheme="dark"] body.dmf .overlay-content {
     background: var(--fill);
     border-color: var(--fill-gray-tertiary);
     box-shadow: none;
 }
 
-html body.dmf input {
+html[data-color-scheme="dark"] body.dmf input {
     color: -internal-light-dark(white, black);
 }
 
-html body.dmf table {
+html[data-color-scheme="dark"] body.dmf table {
     border-color: var(--fill-gray-quaternary);
 }
 
-html body.dmf table thead th,
-html body.dmf table tr th {
+html[data-color-scheme="dark"] body.dmf table thead th,
+html[data-color-scheme="dark"] body.dmf table tr th {
     background-color: transparent;
     color: var(--glyph-gray);
 }
 
-html body.dmf table tbody td,
-html body.dmf table tr td {
+html[data-color-scheme="dark"] body.dmf table tbody td,
+html[data-color-scheme="dark"] body.dmf table tr td {
     background-color: var(--fill);
     color: var(--glyph-gray);
     border-color: var(--fill-gray-quaternary);
 }
 
-html body.dmf .flow-icon,
-html body.dmf .arkit-glyph {
+html[data-color-scheme="dark"] body.dmf .flow-icon,
+html[data-color-scheme="dark"] body.dmf .arkit-glyph {
     filter: invert(1)
 }
 
-html body.dmf#airprint img.hero {
+html[data-color-scheme="dark"] body.dmf#airprint img.hero {
     filter: invert(1);
 }
 
-html body.dmf .button,
-html body.dmf input[type='button'],
-html body.dmf input[type='submit'] {
+html[data-color-scheme="dark"] body.dmf .button,
+html[data-color-scheme="dark"] body.dmf input[type='button'],
+html[data-color-scheme="dark"] body.dmf input[type='submit'] {
     background: var(--fill-blue);
     color: var(--light);
 }
 
-html body.dmf .button:hover,
-html body.dmf input:hover[type='button'],
-html body.dmf input:hover[type='submit'] {
+html[data-color-scheme="dark"] body.dmf .button:hover,
+html[data-color-scheme="dark"] body.dmf input:hover[type='button'],
+html[data-color-scheme="dark"] body.dmf input:hover[type='submit'] {
     background: #0077ED;
 }
 
-html body.dmf .button:active,
-html body.dmf input:active[type='button'],
-html body.dmf input:active[type='submit'] {
+html[data-color-scheme="dark"] body.dmf .button:active,
+html[data-color-scheme="dark"] body.dmf input:active[type='button'],
+html[data-color-scheme="dark"] body.dmf input:active[type='submit'] {
     background: #006EDB;
 }
 
-html body.dmf .button:disabled:disabled,
-html body.dmf input:disabled[type='button'],
-html body.dmf input:disabled[type='submit'],
-html body.dmf .button.disabled,
-html body.dmf input.disabled[type='button'],
-html body.dmf input.disabled[type='submit'] {
+html[data-color-scheme="dark"] body.dmf .button:disabled:disabled,
+html[data-color-scheme="dark"] body.dmf input:disabled[type='button'],
+html[data-color-scheme="dark"] body.dmf input:disabled[type='submit'],
+html[data-color-scheme="dark"] body.dmf .button.disabled,
+html[data-color-scheme="dark"] body.dmf input.disabled[type='button'],
+html[data-color-scheme="dark"] body.dmf input.disabled[type='submit'] {
     background: var(--fill-blue);
     color: var(--light);
     opacity: .32;
 }
 
-html body.dmf .callout,
-html body.dmf .warning,
-html body.dmf .alert,
-html body.dmf .success {
+html[data-color-scheme="dark"] body.dmf .callout,
+html[data-color-scheme="dark"] body.dmf .warning,
+html[data-color-scheme="dark"] body.dmf .alert,
+html[data-color-scheme="dark"] body.dmf .success {
     background-color: var(--fill-tertiary);
     border-color: var(--fill-gray-quaternary);
     color: var(--glyph-gray);
 }
 
-html body.dmf .callout .callout-title,
-html body.dmf .warning .callout-title,
-html body.dmf .alert .callout-title,
-html body.dmf .success .callout-title {
+html[data-color-scheme="dark"] body.dmf .callout .callout-title,
+html[data-color-scheme="dark"] body.dmf .warning .callout-title,
+html[data-color-scheme="dark"] body.dmf .alert .callout-title,
+html[data-color-scheme="dark"] body.dmf .success .callout-title {
     color: var(--glyph-gray);
 }
 
-html body.dmf .callout.callout-shadow {
+html[data-color-scheme="dark"] body.dmf .callout.callout-shadow {
     box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, 0.9)
 }
 
-html body.dmf .footnote a {
+html[data-color-scheme="dark"] body.dmf .footnote a {
     color: inherit;
 }
 
-html body.dmf .footnote a:hover {
+html[data-color-scheme="dark"] body.dmf .footnote a:hover {
     color: var(--glyph-blue);
 }
 
-html body.dmf .list {
+html[data-color-scheme="dark"] body.dmf .list {
     color: var(--glyph-gray);
 }
 
-html body.dmf .list-title {
+html[data-color-scheme="dark"] body.dmf .list-title {
     color: var(--glyph-gray);
 }
 
 
-html body.dmf .tab-nav {
+html[data-color-scheme="dark"] body.dmf .tab-nav {
     background: rgba(0, 0, 0, 0.95);
 }
 
-html body.dmf a.tile-link {
+html[data-color-scheme="dark"] body.dmf a.tile-link {
     color: var(--app-store-glyph-tile);
 }
 
-html body.dmf a.tile-link .tile-wrap {
+html[data-color-scheme="dark"] body.dmf a.tile-link .tile-wrap {
     background-color: var(--fill-secondary-alt);
     color: var(--light);
     transition: 0.2s ease-in-out;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-html body.dmf a.tile-link .tile-wrap:hover {
+html[data-color-scheme="dark"] body.dmf a.tile-link .tile-wrap:hover {
     background-color: #1f1f1f;
     border: 1px solid rgba(255, 255, 255, 0.2)
 }
 
-html body.dmf a.tile-link span.more {
+html[data-color-scheme="dark"] body.dmf a.tile-link span.more {
     color: var(--glyph-blue);
 }
 
-html body.dmf .tile-wrap-full,
-html body.dmf .full-tile {
+html[data-color-scheme="dark"] body.dmf .tile-wrap-full,
+html[data-color-scheme="dark"] body.dmf .full-tile {
     background: var(--fill-tertiary);
     border: 1px solid var(--fill-gray-quaternary);
 }
 
-html body.dmf .violator {
+html[data-color-scheme="dark"] body.dmf .violator {
     background: rgba(0, 0, 0, 0);
     border-color: var(--glyph-orange);
     color: var(--glyph-orange);
 }
 
-html body.dmf .violator-frameless {
+html[data-color-scheme="dark"] body.dmf .violator-frameless {
     background: rgba(0, 0, 0, 0);
     border-color: var(--glyph-orange);
     color: var(--glyph-orange);
 }
 
-html body.dmf .violator-secondary {
+html[data-color-scheme="dark"] body.dmf .violator-secondary {
     background: rgba(0, 0, 0, 0);
     border-color: var(--glyph-gray-secondary);
     color: var(--glyph-gray-secondary);
 }
 
 /* search results */
-html body.dmf#search .sticky {
+html[data-color-scheme="dark"] body.dmf#search .sticky {
     background-color: var(--fill-secondary-alt);
     color: var(--glyph-gray-secondary-alt);
 }
 
-html body.dmf#search .shadow-box {
+html[data-color-scheme="dark"] body.dmf#search .shadow-box {
     background-color: var(--fill);
 }
