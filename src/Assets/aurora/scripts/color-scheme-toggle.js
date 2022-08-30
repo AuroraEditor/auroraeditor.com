@@ -17,16 +17,16 @@ function setColorScheme(theme) {
         document.body.setAttribute("data-color-scheme", theme)
     }
     
-    document.querySelectorAll("input[type=radio][name=colorToggle]").forEach(function (e) {
-        if (theme !== e.value) {
-            e.checked = false
+    document.querySelectorAll("input[type=radio][name=colorToggle]").forEach(function (element) {
+        if (theme !== element.value) {
+            element.checked = false
         }
     })
 }
 
 function setupActions() {
-    document.querySelectorAll("input[type=radio][name=colorToggle]").forEach(function (e) {
-        e.addEventListener("click", setColorScheme(e.value))
+    document.querySelectorAll("input[type=radio][name=colorToggle]").forEach(function (element) {
+        element.addEventListener("click", function (input) { setColorScheme(input.value) }, false)
     })
 }
 
