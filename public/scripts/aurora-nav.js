@@ -20,6 +20,11 @@ function auroranavUpdate() {
             navItem.classList.add('current');
             navItem.setAttribute('aria-disabled', 'true');
         }
+
+        navItem.addEventListener("click", function (e) {
+            // Close menu after click
+            document.querySelector(".auroranav-menustate").checked = false
+        })
     });
 }
 auroranavUpdate();
