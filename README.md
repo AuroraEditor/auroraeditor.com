@@ -1,4 +1,4 @@
-# AuroraEditor.com
+# https://AuroraEditor.com
 
 > Warning `docs` folder is used as build folder since github pages does not support any other folder then `/` and `/docs`.
 
