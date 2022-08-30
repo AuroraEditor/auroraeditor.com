@@ -1,11 +1,15 @@
-function detectColorScheme(){
-    var theme = "light";
+function detectColorScheme() {
+    var theme = "light"
 
     if (typeof window.matchMedia !== 'undefined' && window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        theme = "dark";
+        theme = "dark"
     }
 
-    document.body.setAttribute("data-color-scheme", theme);
+    document.body.setAttribute("data-color-scheme", theme)
 }
 
-detectColorScheme();
+function setColorScheme(theme) {
+    document.body.setAttribute("data-color-scheme", theme)
+}
+
+detectColorScheme()
