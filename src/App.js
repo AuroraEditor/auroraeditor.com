@@ -28,6 +28,7 @@ function App() {
         </Routes>
       </main>
       <Footer />
+      <script type="text/javascript" src={require("./Assets/aurora/scripts/color-scheme-toggle.js")}></script>
     </div>
   );
 }
