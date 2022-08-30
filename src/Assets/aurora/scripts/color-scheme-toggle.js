@@ -24,4 +24,11 @@ function setColorScheme(theme) {
     })
 }
 
+function setupActions() {
+    document.querySelectorAll("input[type=radio][name=colorToggle]").forEach(function (e) {
+        e.addEventListener("click", setColorScheme(e.value))
+    }
+}
+
 detectColorScheme()
+setupActions()
