@@ -12,7 +12,6 @@ import Footer from "./Base/Components/Footer";
 import Terms from './Base/Core/Terms';
 
 function App() {
-  useScript("./Assets/aurora/scripts/color-scheme-toggle.js")
   return (
     <div id="overview" className="dmf" data-color-scheme="light">
       <Ribbon />
@@ -21,7 +20,7 @@ function App() {
       <NavHeader />
       <label id="auroranav-curtain" htmlFor="auroranav-menustate" />
       <div id="auroranav-viewport-emitter" data-viewport-emitter-dispatch="" data-viewport-emitter-state="{&quot;viewport&quot;:&quot;large&quot;,&quot;orientation&quot;:&quot;landscape&quot;,&quot;retina&quot;:false}"></div>
-      <script type="text/javascript" src={require("./Assets/aurora/scripts/aurora-nav.js")}></script>
+      <script type="text/javascript" src="./Assets/aurora/scripts/aurora-nav.js"></script>
       <main>
         <Routes>
           <Route exact path="/" element={<MainPage />} />
@@ -30,6 +29,7 @@ function App() {
         </Routes>
       </main>
       <Footer />
+      <script type="text/javascript" src="./Assets/aurora/scripts/color-scheme-toggle.js"></script>
     </div>
   );
 }
