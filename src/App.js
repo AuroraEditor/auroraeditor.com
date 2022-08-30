@@ -1,5 +1,6 @@
 import React from 'react'
 import { Route, Routes } from "react-router-dom";
+import useScript from './Base/Hooks/useScript';
 import "./Assets/aurora/styles/aurora-global.css"
 import "./Assets/aurora/styles/aurora-footer.css"
 import "./Assets/aurora/styles/aurora-ribbon.css"
@@ -11,6 +12,7 @@ import Footer from "./Base/Components/Footer";
 import Terms from './Base/Core/Terms';
 
 function App() {
+  useScript("./Assets/aurora/scripts/color-scheme-toggle.js")
   return (
     <div id="overview" className="dmf" data-color-scheme="light">
       <Ribbon />
@@ -28,7 +30,6 @@ function App() {
         </Routes>
       </main>
       <Footer />
-      <script type="text/javascript" src={require("./Assets/aurora/scripts/color-scheme-toggle.js")}></script>
     </div>
   );
 }
