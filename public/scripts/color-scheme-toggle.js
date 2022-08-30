@@ -42,6 +42,10 @@ function setupActions() {
     document.querySelectorAll("input[type=radio][name=colorToggle]").forEach(function (element) {
         element.addEventListener("click", function (input) { setColorScheme(input.target.value) }, false)
     })
+
+    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function (e) {
+        detectColorScheme()
+    })
 }
 
 detectColorScheme()
