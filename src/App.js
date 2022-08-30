@@ -1,6 +1,5 @@
 import React from 'react'
 import { Route, Routes } from "react-router-dom";
-import useScript from './Base/Hooks/useScript';
 import "./Assets/aurora/styles/aurora-global.css"
 import "./Assets/aurora/styles/aurora-footer.css"
 import "./Assets/aurora/styles/aurora-ribbon.css"
