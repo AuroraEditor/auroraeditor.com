@@ -9,7 +9,17 @@ function detectColorScheme() {
 }
 
 function setColorScheme(theme) {
-    document.body.setAttribute("data-color-scheme", theme)
+    if (theme === 'auto') {
+        detectColorScheme()
+    } else {
+        document.body.setAttribute("data-color-scheme", theme)
+    }
+    
+    document.querySelectorAll("input[type=radio][name=colorToggle]").forEach(function (e) {
+        if (theme !== e.value) {
+            e.checked = false
+        }
+    })
 }
 
 detectColorScheme()
