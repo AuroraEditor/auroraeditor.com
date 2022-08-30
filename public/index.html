@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="en" data-color-scheme="dark">
+
+<head>
     <meta charset="utf-8" />
     <meta name="Author" content="Aurora Company">
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
@@ -24,9 +25,28 @@
     <meta name="twitter:url" content="https://auroraeditor.com">
 
     <link rel="canonical" href="https://auroraeditor.com">
-  </head>
-  <body>
+    <style>
+        html:not([data-color-scheme]) * {
+            opacity: 0;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            html:not([data-color-scheme]) * {
+                background-color: black;
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            html:not([data-color-scheme]) * {
+                background-color: white;
+            }
+        }
+    </style>
+</head>
+
+<body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-  </body>
+</body>
+
 </html>

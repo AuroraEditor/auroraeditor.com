@@ -1,15 +1,3 @@
-@media (prefers-color-scheme: dark) {
-    html:not([data-color-scheme]) * {
-        background-color: black;
-    }
-}
-
-@media (prefers-color-scheme: light) {
-    html:not([data-color-scheme]) * {
-        background-color: white;
-    }
-}
-
 .row-full {
     display: flex;
     flex-wrap: wrap;
