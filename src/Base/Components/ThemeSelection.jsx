@@ -4,7 +4,7 @@ function ThemeSelection() {
     // We should handle on change for theme here
     return (
         <div className="content">
-            <div className="color-scheme-toggle" role="radiogroup" tabIndex={0} aria-label="Select a color scheme preference">
+            <div className="color-scheme-toggle" role="radiogroup" tabIndex={0} aria-label="Select a color scheme preference.">
                 <label data-color-scheme-option="light">
                     <input type="radio" name="colorToggle" value="light" autoComplete="off" />
                     <div className="text">Light</div>
