@@ -27,9 +27,6 @@ function NavHeader() {
                                 <li className="auroranav-menu-item">
                                     <Link to="/included"><a href="/included" className="auroranav-menu-link">What’s included</a></Link>
                                 </li>
-                                <li className="auroranav-menu-item">
-                                    <Link to="/resources"><a href="resources" className="auroranav-menu-link">Resources</a></Link>
-                                </li>
                             </ul>
                         </div>
                         <div className="auroranav-actions auroranav-actions-center">
