@@ -1,4 +1,8 @@
-html[data-color-scheme="dark"][data-color-scheme="dark"] {
+/* Support for light/dark images */
+html[data-color-scheme="dark"] picture.light { display:none; visibility:hidden; }
+html[data-color-scheme="light"] picture.dark { display:none; visibility:hidden; }
+
+html[data-color-scheme="dark"] {
     --dark: #000;
     --light: #FFF;
     --glyph-gray: #F5F5F7;
