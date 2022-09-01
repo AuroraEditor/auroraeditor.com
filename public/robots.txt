@@ -1,3 +1,4 @@
-# https://www.robotstxt.org/robotstxt.html
+# robots.txt for http://auroraeditor.com/
 User-agent: *
-Disallow:
+Disallow: /click/
+Disallow: /temp/
