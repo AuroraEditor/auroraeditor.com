@@ -35,9 +35,9 @@ function NavHeader() {
                                     <span className="auroranav-menucta-chevron"></span>
                                 </label>
                             </div>
-                            <div className="auroranav-action auroranav-action-button" aria-disabled>
+                            <div className="auroranav-action auroranav-action-button">
                                 <div className="button-multi-container">
-                                    <a href="/#" className="auroranav-button button button-compact button-pill button-multi" id="button-multi-1">Coming Soon</a>
+                                    <a href="https://github.com/AuroraEditor/AuroraEditor" className="auroranav-button button button-compact button-pill button-multi" id="button-multi-1">GitHub repo</a>
                                 </div>
                             </div>
                         </div>
