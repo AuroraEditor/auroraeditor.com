@@ -9,7 +9,7 @@ function NavHeader() {
                 <div className="auroranav-background"></div>
                 <div className="auroranav-content">
                     <h2 className="auroranav-title">
-                        <Link to="/"><a href="/">Aurora Editor</a></Link>
+                        <Link to="/">Aurora Editor</Link>
                     </h2>
 
                     <div className="auroranav-menu">
@@ -22,10 +22,10 @@ function NavHeader() {
                         <div className="auroranav-menu-tray">
                             <ul className="auroranav-menu-items">
                                 <li className="auroranav-menu-item">
-                                    <Link to="/"><a href="/" className="auroranav-menu-link">Aurora Editor</a></Link>
+                                    <Link to="/" className="auroranav-menu-link">Aurora Editor</Link>
                                 </li>
                                 <li className="auroranav-menu-item">
-                                    <Link to="/included"><a href="/included" className="auroranav-menu-link">What’s included</a></Link>
+                                    <Link to="/included" className="auroranav-menu-link">What’s included</Link>
                                 </li>
                             </ul>
                         </div>
