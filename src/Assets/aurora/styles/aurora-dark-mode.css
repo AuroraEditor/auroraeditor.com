@@ -14,7 +14,7 @@ html[data-color-scheme="light"] {
 }
 
 html[data-color-scheme="dark"] {
-    --dark: #24292f;
+    --dark: #21212;
     --light: #FFF;
     --glyph-gray: #F5F5F7;
     --glyph-gray-override: #1D1D1F;
