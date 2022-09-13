@@ -27,6 +27,9 @@ function NavHeader() {
                                 <li className="auroranav-menu-item">
                                     <Link to="/included" className="auroranav-menu-link">What’s included</Link>
                                 </li>
+                                <li className="auroranav-menu-item">
+                                    <a href="https://github.com/AuroraEditor/AuroraEditor" className="auroranav-menu-link">GitHub</a>
+                                </li>
                             </ul>
                         </div>
                         <div className="auroranav-actions auroranav-actions-center">
@@ -37,7 +40,7 @@ function NavHeader() {
                             </div>
                             <div className="auroranav-action auroranav-action-button">
                                 <div className="button-multi-container">
-                                    <a href="https://github.com/AuroraEditor/AuroraEditor" className="auroranav-button button button-compact button-pill button-multi" id="button-multi-1">GitHub</a>
+                                    <a href="https://nightly.link/AuroraEditor/AuroraEditor/workflows/nightly/main/AuroraEditor_Nightly.zip" className="auroranav-button button button-compact button-pill button-multi" id="button-multi-1">Download (nightly)</a>
                                 </div>
                             </div>
                         </div>
