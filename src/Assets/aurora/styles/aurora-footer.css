@@ -307,7 +307,8 @@ body[data-supports-auto-color-scheme="false"] label[data-color-scheme-option="au
     border: 1px solid var(--toggle-color-fill);
     border-radius: var(--toggle-border-radius-outer, 2px);
     display: inline-flex;
-    padding: 1px
+    padding: 1px;
+    transition: all .2s ease-in-out;
 }
 
 @media screen {
@@ -373,5 +374,6 @@ body[data-supports-auto-color-scheme="false"] label[data-color-scheme-option="au
 }
 
 body.theme-dark .footer-mini-news .content .color-scheme-toggle {
-    display: none
+    display: none;
+    transition: all .2s ease-in-out;
 }

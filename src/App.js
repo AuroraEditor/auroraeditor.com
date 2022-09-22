@@ -15,7 +15,7 @@ function App() {
     useScript("/scripts/aurora-nav.js")
     useScript("/scripts/color-scheme-toggle.js")
     return (
-        <div id="overview" className="dmf" data-color-scheme="light">
+        <div id="overview" className="dmf" data-color-scheme="light" style={{scrollBehavior:'smooth'}}>
             <Ribbon />
             <input type="checkbox" id="auroranav-menustate" className="auroranav-menustate" />
             <div id="auroranav-sticky-placeholder" className="css-sticky auroranav-sticking" />
