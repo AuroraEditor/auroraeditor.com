@@ -18,8 +18,9 @@ function Included() {
                     <div className="row">
                         <div className="column large-centered large-10 small-12">
 
-                            <h2 className="typography-subsection-headline">Aurora Editor</h2>
-                            <p>Aurora Editor Requirements:</p>
+                            <h1 className="typography-subsection-headline">Aurora Editor</h1>
+                            <h4 className="typography-subsection-headline">What's new?</h4>
+                            <p>System Requirements:</p>
                             <ul>
                                 <li>Requires a Mac running <span className="nowrap">macOS Monterey 12.0</span> or later.</li>
                             </ul>
