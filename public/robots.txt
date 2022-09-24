@@ -1,7 +1,7 @@
 # robots.txt for http://auroraeditor.com/
+# robots.txt for http://auroraeditor.com/
 User-agent: *
+Allow: /*
 Disallow: /click/
 Disallow: /temp/
-Allow: /
-
 Sitemap: http://auroraeditor.com/sitemap.xml
