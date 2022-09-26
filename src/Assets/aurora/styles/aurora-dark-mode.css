@@ -819,3 +819,12 @@ html[data-color-scheme="dark"] body.dmf#search .sticky {
 html[data-color-scheme="dark"] body.dmf#search .shadow-box {
     background-color: var(--fill);
 }
+
+html body .socials-router-links {
+    background-color: var(--fill-tertiary);
+    color: var(--glyph-gray);
+}
+
+html body .socials-router-links a.block span.block-link.more {
+    color: var(--glyph-blue);
+}

@@ -10,6 +10,7 @@ import Included from './Base/Core/Included';
 import Ribbon from './Base/Components/Ribbon';
 import Footer from "./Base/Components/Footer";
 import Terms from './Base/Core/Terms';
+import Socials from './Base/Components/Socials';
 
 function App() {
     useScript("/scripts/aurora-nav.js")
@@ -30,6 +31,7 @@ function App() {
                     <Route exact path="/legal/terms" element={<Terms />} />
                 </Routes>
             </main>
+            <Socials/>
             <Footer />
         </div>
     );
