@@ -841,7 +841,27 @@ sub {
 
 @media only screen and (max-width: 734px) {
     .small-offset-0 {
-        margin-left: 0
+        margin-left:0
+    }
+
+    .small-12 {
+        flex-basis: 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .small-offset-12 {
+        margin-left:100%
+    }
+
+    .small-centered {
+        margin-left: auto;
+        margin-right:auto
+    }
+
+    .small-uncentered {
+        margin-left: 0;
+        margin-right:0
     }
 }
 
@@ -1600,21 +1620,21 @@ p+a {
 
 section[class^='section-'] {
     width: 100%;
-    overflow-x: hidden
+    overflow-x:hidden
 }
 
 .section-content {
     margin-left: auto;
     margin-right: auto;
     width: 980px;
-    position: relative
+    position:relative
 }
 
 @media only screen and (min-width: 1441px) {
     .section-content {
         margin-left: auto;
         margin-right: auto;
-        width: 980px
+        width:980px
     }
 }
 
@@ -1622,7 +1642,7 @@ section[class^='section-'] {
     .section-content {
         margin-left: auto;
         margin-right: auto;
-        width: 692px
+        width:692px
     }
 }
 
@@ -1630,42 +1650,42 @@ section[class^='section-'] {
     .section-content {
         margin-left: auto;
         margin-right: auto;
-        width: 87.5%
+        width:87.5%
     }
 }
 
 .section-content .row {
     margin-left: -1.5em;
-    margin-right: -1.5em
+    margin-right:-1.5em
 }
 
 @media only screen and (max-width: 1068px) {
     .section-content .row {
         margin-left: -1em;
-        margin-right: -1em
+        margin-right:-1em
     }
 }
 
 @media only screen and (max-width: 734px) {
     .section-content .row {
         margin-left: 0em;
-        margin-right: 0em
+        margin-right:0em
     }
 }
 
-.section-content .row>.column {
-    padding: 1.5em 1.5em
+.section-content .row > .column {
+    padding:1.5em 1.5em
 }
 
 @media only screen and (max-width: 1068px) {
-    .section-content .row>.column {
-        padding: 1.5em 1em
+    .section-content .row > .column {
+        padding:1.5em 1em
     }
 }
 
 @media only screen and (max-width: 734px) {
-    .section-content .row>.column {
-        padding: 1em 0
+    .section-content .row > .column {
+        padding:1em 0
     }
 }
 
