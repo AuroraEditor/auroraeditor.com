@@ -16,8 +16,8 @@ function NavHeader() {
                         <a href="#auroranav-menustate" class="auroranav-menucta-anchor auroranav-menucta-anchor-open" id="auroranav-menustate-open">
                             <span class="auroranav-menucta-anchor-label">Open Menu</span>
                         </a>
-                        <a href="#" class="auroranav-menucta-anchor auroranav-menucta-anchor-close" id="auroranav-menustate-close">
-                            <span class="auroranav-menucta-anchor-label">Close Menu</span>
+                        <a href="/#" className="auroranav-menucta-anchor auroranav-menucta-anchor-close" id="auroranav-menustate-close">
+                            <span className="auroranav-menucta-anchor-label">Close Menu</span>
                         </a>
                         <div className="auroranav-menu-tray">
                             <ul className="auroranav-menu-items">
@@ -32,19 +32,19 @@ function NavHeader() {
                                 </li>
                             </ul>
                         </div>
-                        <div class="auroranav-actions auroranav-actions-center">
-                            <div class="auroranav-action auroranav-action-menucta" aria-hidden="true">
-                                <label for="auroranav-menustate" class="auroranav-menucta">
-                                    <span class="auroranav-menucta-chevron"></span>
+                        <div className="auroranav-actions auroranav-actions-center">
+                            <div className="auroranav-action auroranav-action-menucta" aria-hidden="true">
+                                <label for="auroranav-menustate" className="auroranav-menucta">
+                                    <span className="auroranav-menucta-chevron"></span>
                                 </label>
                             </div>
-                            <div class="auroranav-action auroranav-action-button">
-                                <div class="button-multi-container">
-                                    <a href="#" class="auroranav-button button button-compact button-pill button-multi icon icon-chevrondown" id="button-multi-1" aria-haspopup="true" aria-expanded="false">Download </a>
-                                    <div class="button-multi-content button-multi-content-right button-multi-content-slide" role="menu">
-                                        <a href="" class="button-multi-option" role="menuitem" tabindex="0">Release (Comming Soon)</a>
-                                        <a href="" class="button-multi-option" role="menuitem" tabindex="1">Beta (Comming Soon)</a>
-                                        <a href="https://nightly.link/AuroraEditor/AuroraEditor/workflows/nightly/main/AuroraEditor_Nightly.zip" class="button-multi-option" role="menuitem" tabindex="2">Nightly</a>
+                            <div className="auroranav-action auroranav-action-button">
+                                <div className="button-multi-container">
+                                    <a href="/#" className="auroranav-button button button-compact button-pill button-multi icon icon-chevrondown" id="button-multi-1" aria-expanded="false">Download </a>
+                                    <div className="button-multi-content button-multi-content-right button-multi-content-slide" role="menu">
+                                        <a href="/#" className="button-multi-option" role="menuitem" tabindex="0">Release (Comming Soon)</a>
+                                        <a href="/#" className="button-multi-option" role="menuitem" tabindex="1">Beta (Comming Soon)</a>
+                                        <a href="https://nightly.link/AuroraEditor/AuroraEditor/workflows/nightly/main/AuroraEditor_Nightly.zip" className="button-multi-option" role="menuitem" tabindex="2">Nightly</a>
                                     </div>
                                 </div>
                             </div>
