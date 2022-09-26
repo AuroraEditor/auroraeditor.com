@@ -550,45 +550,6 @@
     margin-top: -3px
 }
 
-.auroranav-menu:lang(ar) {
-    letter-spacing: 0em;
-    font-family: "SF Pro AR", "SF Pro Gulf", "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
-}
-
-.auroranav-menu:lang(ja) {
-    letter-spacing: 0em;
-    font-family: "SF Pro JP", "SF Pro Text", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif
-}
-
-.auroranav-menu:lang(ko) {
-    letter-spacing: 0em;
-    font-family: "SF Pro KR", "SF Pro Text", "SF Pro Icons", "Apple Gothic", "HY Gulim", "MalgunGothic", "HY Dotum", "Lexi Gulim", "Helvetica Neue", "Helvetica", "Arial", sans-serif
-}
-
-.auroranav-menu:lang(zh) {
-    letter-spacing: 0em
-}
-
-.auroranav-menu:lang(th) {
-    font-family: "SF Pro TH", "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
-}
-
-.auroranav-menu:lang(zh-CN) {
-    font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif
-}
-
-.auroranav-menu:lang(zh-HK) {
-    font-family: "SF Pro HK", "SF Pro Text", "SF Pro Icons", "PingFang HK", "Helvetica Neue", "Helvetica", "Arial", sans-serif
-}
-
-.auroranav-menu:lang(zh-MO) {
-    font-family: "SF Pro HK", "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang HK", "Helvetica Neue", "Helvetica", "Arial", sans-serif
-}
-
-.auroranav-menu:lang(zh-TW) {
-    font-family: "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC", "Helvetica Neue", "Helvetica", "Arial", sans-serif
-}
-
 @media only screen and (max-width: 767px) {
     .auroranav-menu {
         font-size: 14px;
@@ -596,45 +557,6 @@
         font-weight: 400;
         letter-spacing: -.02em;
         font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
-    }
-
-    .auroranav-menu:lang(ar) {
-        letter-spacing: 0em;
-        font-family: "SF Pro AR", "SF Pro Gulf", "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
-    }
-
-    .auroranav-menu:lang(ja) {
-        letter-spacing: 0em;
-        font-family: "SF Pro JP", "SF Pro Text", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif
-    }
-
-    .auroranav-menu:lang(ko) {
-        letter-spacing: 0em;
-        font-family: "SF Pro KR", "SF Pro Text", "SF Pro Icons", "Apple Gothic", "HY Gulim", "MalgunGothic", "HY Dotum", "Lexi Gulim", "Helvetica Neue", "Helvetica", "Arial", sans-serif
-    }
-
-    .auroranav-menu:lang(zh) {
-        letter-spacing: 0em
-    }
-
-    .auroranav-menu:lang(th) {
-        font-family: "SF Pro TH", "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
-    }
-
-    .auroranav-menu:lang(zh-CN) {
-        font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif
-    }
-
-    .auroranav-menu:lang(zh-HK) {
-        font-family: "SF Pro HK", "SF Pro Text", "SF Pro Icons", "PingFang HK", "Helvetica Neue", "Helvetica", "Arial", sans-serif
-    }
-
-    .auroranav-menu:lang(zh-MO) {
-        font-family: "SF Pro HK", "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang HK", "Helvetica Neue", "Helvetica", "Arial", sans-serif
-    }
-
-    .auroranav-menu:lang(zh-TW) {
-        font-family: "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC", "Helvetica Neue", "Helvetica", "Arial", sans-serif
     }
 }
 
@@ -648,45 +570,6 @@
         padding-top: 0;
         margin-top: 0;
         width: 100%
-    }
-
-    .auroranav-menu:lang(ar) {
-        letter-spacing: 0em;
-        font-family: "SF Pro AR", "SF Pro Gulf", "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
-    }
-
-    .auroranav-menu:lang(ja) {
-        letter-spacing: 0em;
-        font-family: "SF Pro JP", "SF Pro Text", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif
-    }
-
-    .auroranav-menu:lang(ko) {
-        letter-spacing: 0em;
-        font-family: "SF Pro KR", "SF Pro Text", "SF Pro Icons", "Apple Gothic", "HY Gulim", "MalgunGothic", "HY Dotum", "Lexi Gulim", "Helvetica Neue", "Helvetica", "Arial", sans-serif
-    }
-
-    .auroranav-menu:lang(zh) {
-        letter-spacing: 0em
-    }
-
-    .auroranav-menu:lang(th) {
-        font-family: "SF Pro TH", "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
-    }
-
-    .auroranav-menu:lang(zh-CN) {
-        font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif
-    }
-
-    .auroranav-menu:lang(zh-HK) {
-        font-family: "SF Pro HK", "SF Pro Text", "SF Pro Icons", "PingFang HK", "Helvetica Neue", "Helvetica", "Arial", sans-serif
-    }
-
-    .auroranav-menu:lang(zh-MO) {
-        font-family: "SF Pro HK", "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang HK", "Helvetica Neue", "Helvetica", "Arial", sans-serif
-    }
-
-    .auroranav-menu:lang(zh-TW) {
-        font-family: "SF Pro TC", "SF Pro Text", "SF Pro Icons", "PingFang TC", "Helvetica Neue", "Helvetica", "Arial", sans-serif
     }
 }
 

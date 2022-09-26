@@ -1831,6 +1831,37 @@ h6 img {
     }
 }
 
+.icon::before, .icon::after, .more::before, .more::after {
+    font-family: "SF Pro Icons";
+    color: inherit;
+    display: inline-block;
+    font-style: normal;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: 1;
+    text-decoration: underline;
+    position: relative;
+    z-index: 1;
+    alt: ''
+}
+
+.icon::before, .icon::after, .more::before, .more::after {
+    text-decoration:none
+}
+
+.icon::before, .more::before {
+    display:none
+}
+
+.icon-after::after, .more::after {
+    padding-left: .3em;
+    top:0
+}
+
+.icon-chevrondown::before, .icon-chevrondown::after {
+    content: "" /** TODO: Add chevron icon **/
+}
+
 .text-center {
     text-align: center
 }
