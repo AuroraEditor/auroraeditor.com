@@ -278,6 +278,11 @@ body[data-supports-auto-color-scheme="false"] label[data-color-scheme-option="au
     justify-content: space-between
 }
 
+.footer-mini-news {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d2d2d7;
+}
+
 @media only screen and (max-width: 767px) {
     .footer-mini-news {
         display: block

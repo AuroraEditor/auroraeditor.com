@@ -482,6 +482,15 @@ html[data-color-scheme="dark"] body .color-scheme-toggle input:checked+.text {
     border-color: var(--color-button-background);
 }
 
+html[data-color-scheme="dark"] body .socials-router-links {
+    background-color: var(--fill-tertiary);
+    color: var(--glyph-gray);
+}
+
+html[data-color-scheme="dark"] body .footer .footer-mini-news {
+    border-color: var(--fill-gray-tertiary);
+}
+
 
 /* ===== dmf opt-in body styles ===== */
 html[data-color-scheme="dark"] body.dmf {
@@ -818,13 +827,4 @@ html[data-color-scheme="dark"] body.dmf#search .sticky {
 
 html[data-color-scheme="dark"] body.dmf#search .shadow-box {
     background-color: var(--fill);
-}
-
-html body .socials-router-links {
-    background-color: var(--fill-tertiary);
-    color: var(--glyph-gray);
-}
-
-html body .socials-router-links a.block span.block-link.more {
-    color: var(--glyph-blue);
 }
