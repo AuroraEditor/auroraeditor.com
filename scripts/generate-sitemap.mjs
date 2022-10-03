@@ -6,12 +6,10 @@ import prettier from 'prettier'
 async function generate() {
   const prettierConfig = await prettier.resolveConfig('./.prettierrc.js')
   const pages = await globby([
-    'pages/*.tsx',
-    'data/**/*.mdx',
-    '!data/*.mdx',
-    '!pages/_*.tsx',
-    '!pages/api',
-    '!pages/404.tsx',
+    'src/pages/*.tsx',
+    '!src/pages/_*.tsx',
+    '!src/pages/api',
+    '!src/pages/404.tsx',
   ])
 
   const sitemap = `
@@ -27,7 +25,7 @@ async function generate() {
             const route = path === '/index' ? '' : path
             return `
               <url>
-                  <loc>${`https://cretu.dev${route}`}</loc>
+                  <loc>${`https://auroraeditor.com/${route}`}</loc>
               </url>
             `
           })
