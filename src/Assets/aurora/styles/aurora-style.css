@@ -186,12 +186,9 @@ html[data-color-scheme="dark"] body#xcode .parallel-testing {
     filter: invert(1);
 }
 
-
-
 .gradient-text {
     background: linear-gradient(to right, red, #7601fd, red);
     background-size: 200% auto;
-    font-style: italic;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
