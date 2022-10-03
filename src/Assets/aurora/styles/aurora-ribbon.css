@@ -42,7 +42,7 @@ html body#home #notice-ribbon.ribbon:not(.hide)+script+aside+input+nav#ac-global
     padding-top: 0.94118em;
     padding-bottom: 0.94118em;
     text-align: center;
-    background-color: #000;
+    background-color: #0077ed;
 }
 
 #notice-ribbon.ribbon .ribbon-content {
@@ -59,7 +59,8 @@ html body#home #notice-ribbon.ribbon:not(.hide)+script+aside+input+nav#ac-global
 }
 
 #notice-ribbon.ribbon .ribbon-link {
-    color: #2997FF;
+    color: white;
+    font-weight: bold;
 }
 
 #notice-ribbon.ribbon #suggest-closer {

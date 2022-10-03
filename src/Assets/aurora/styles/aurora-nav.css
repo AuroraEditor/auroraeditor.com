@@ -1433,14 +1433,19 @@
     }
 }
 
+span.badge {
+    float: right;
+    margin-left: 10px;
+}
+
 .badge {
     display: inline-block;
     padding: 0.2em 0.6em 0.3em;
     font-size: 75%;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1;
-    color: #fff;
-    text-align: center;
+    color: black;
+    align-items: center;
     white-space: nowrap;
     vertical-align: baseline;
     border-radius: 1em;

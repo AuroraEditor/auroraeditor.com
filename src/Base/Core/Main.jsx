@@ -10,6 +10,7 @@ import AuroraDark from "../../Assets/aurora/images/dark/aurora_editor.jpg";
 import AuroraCommandsDark from "../../Assets/aurora/images/dark/aurora_editor_command_palette.jpg";
 import AuroraSourceControlDark from "../../Assets/aurora/images/dark/aurora_editor_source_control.jpg";
 import AuroraExtensionsDark from "../../Assets/aurora/images/dark/aurora_editor_extensions.jpg";
+import Socials from '../Components/Socials';
 
 function Main() {
     return (
@@ -104,6 +105,7 @@ function Main() {
                     </div>
                 </div>
             </section>
+            <Socials/>
         </main>
     )
 }
