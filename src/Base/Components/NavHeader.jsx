@@ -40,10 +40,10 @@ function NavHeader() {
                             </div>
                             <div className="auroranav-action auroranav-action-button">
                                 <div className="button-multi-container">
-                                    <a href="/#" className="auroranav-button button button-compact button-pill button-multi icon icon-chevrondown" id="button-multi-1" aria-expanded="false">Download </a>
+                                    <a href="/#" className="auroranav-button button button-compact button-pill button-multi icon icon-chevrondown" id="button-multi-1" aria-expanded="false">Download</a>
                                     <div className="button-multi-content button-multi-content-right button-multi-content-slide" role="menu">
-                                        <a href="/#" className="button-multi-option" role="menuitem" tabindex="0">Release (Comming Soon)</a>
-                                        <a href="/#" className="button-multi-option" role="menuitem" tabindex="1">Beta (Comming Soon)</a>
+                                        <a href="/#" className="button-multi-option" role="menuitem" tabindex="0">Release <span className="badge">Coming Soon</span></a>
+                                        <a href="/#" className="button-multi-option" role="menuitem" tabindex="1">Beta <span className="badge">Coming Soon</span></a>
                                         <a href="https://nightly.link/AuroraEditor/AuroraEditor/workflows/nightly/main/AuroraEditor_Nightly.zip" className="button-multi-option" role="menuitem" tabindex="2">Nightly</a>
                                     </div>
                                 </div>
