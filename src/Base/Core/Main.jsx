@@ -18,7 +18,7 @@ function Main() {
                 <div className="section-content">
                     <div className="row"> 
                         <div className="column large-centered large-10 text-center">
-                            <h1 className="typography-headline">Aurora Editor</h1>
+                            <h1 className="typography-headline gradient-text">Aurora Editor</h1>
                             <p className="typography-intro"><span className="nowrap">Aurora Editor</span> is an IDE built by the community, for the community, and written entirely in Swift for the best native performance and feel for macOS.</p>
                         </div>
                     </div>
