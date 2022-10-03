@@ -42,7 +42,7 @@ function Main() {
                 <div className="section-content">
                     <div className="row">
                         <div className="column large-offset-1 large-10 small-offset-0">
-                            <h2>Lightweight and Fast</h2>
+                            <h2 className="gradient-text">Lightweight and Fast</h2>
                             <p><span className="nowrap">Aurora Editor</span> lets you build your projects as fast and smoothly as possible. It's not a replacement for Xcode but a mere extensible editor built on its fundamentals.</p>
                             <p>Build your projects in your favorite programming languages with an editor that feels familiar to you, easy to navigate and extensible with no limits.</p>
                         </div>
@@ -65,7 +65,7 @@ function Main() {
                 <div className="section-content">
                     <div className="row">
                         <div className="column large-offset-1 large-10 small-offset-0">
-                            <h2>Integrated Version Control</h2>
+                            <h2 className="gradient-text">Integrated Version Control</h2>
                             <p><span className="nowrap">Aurora Editor</span> has built-in support for Git, no need to install a third-party extension.</p>
                             <p>With support for multiple Git parties like <span className="nowrap">GitHub, Bitbucket and Gitlab</span> commiting and pushing your code without leaving the editor has never been easier.</p>
                         </div>
@@ -88,7 +88,7 @@ function Main() {
                 <div className="section-content">
                     <div className="row">
                         <div className="column large-offset-1 large-10 small-offset-0">
-                            <h2>Extensible and Customizable</h2>
+                            <h2 className="gradient-text">Extensible and Customizable</h2>
                             <p>Want even more features? Install extensions to add new languages, themes and debuggers. Extensions are run in separate processes, ensuring that they won't slow down the editor.</p>
                         </div>
                         <div className="column large-offset-1 large-10 small-offset-0">
