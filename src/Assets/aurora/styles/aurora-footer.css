@@ -1,4 +1,9 @@
 .footer {
+    /* The footer belongs at the bottom, always. */
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    /* .footer */
     font-size: 12px;
     line-height: 1.33337;
     font-weight: 400;
@@ -8,7 +13,6 @@
     color: #1d1d1f;
     min-width: 1024px;
     overflow: hidden;
-    position: relative;
     z-index: 1
 }
 
