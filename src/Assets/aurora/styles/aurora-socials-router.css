@@ -94,3 +94,7 @@
 .theme-dark .router-icon-github {
     background-image: url("../../elements/icons/socials/github.svg");
 }
+
+.contributer-image {
+    border-radius: 50%;
+}

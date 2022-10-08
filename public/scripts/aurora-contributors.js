@@ -1,3 +1,5 @@
+window.didloadcontributors = false;
+
 function httpGet(theUrl, callback) {
     var xmlHttp = new XMLHttpRequest()
     xmlHttp.onreadystatechange = function () {
@@ -8,47 +10,70 @@ function httpGet(theUrl, callback) {
     xmlHttp.send(null)
 }
 
-addEventListener('load', function () {
-    console.log('Getting latest contributors');
-    httpGet("https://raw.githubusercontent.com/AuroraEditor/AuroraEditor/main/.all-contributorsrc", function (contents) {
-        console.log('Parsing latest contributors');
-        var data = JSON.parse(contents);
-        var max = data.contributorsPerLine || 4;
-        var count = 0;
-        var generated = '<aside class="section contributors"><div class="section-content">';
-        var endRow = '</div>';
-        var beginRow = '<div class="row">';
-        var person = `
-        <div class="column large-3 medium-6 small-12">
+function makeUpperCaseAfterCommas(string) {
+    return string
+        // get first character
+        .charAt(0).toUpperCase()
+        // add the rest
+        + string.slice(1)
+            // Make uppercase after comma.
+            .replace(/,\s*([a-z])/g, function (d, e) {
+                return ", " + e.toUpperCase()
+            });
+}
+
+function loadContributorsData() {
+    if (window.didloadcontributors) {
+        // We already did load, ignore request.
+        return
+    }
+
+    if (document.getElementsByClassName("contributors-generator").length > 0) {
+        console.log('Getting latest contributors');
+        httpGet("https://raw.githubusercontent.com/AuroraEditor/AuroraEditor/main/.all-contributorsrc", function (contents) {
+            console.log('Parsing latest contributors');
+            var data = JSON.parse(contents);
+            var max = data.contributorsPerLine || 4;
+            var count = 0;
+            var generated = '<aside class="section contributers-links contributors"><div class="section-content">';
+            var endRow = '</div>';
+            var beginRow = '<div class="row">';
+            var person = `
+        <div class="section-content column large-3 medium-6 small-12">
             <a href="PROFILE" class="block text-center">
-                <img class="rounded" src="AVATAR" width="100" height="100">
+                <img class="contributer-image" src="AVATAR" width="100" height="100">
                 <p><strong>NAME</strong></p>
-                <p>LOGIN</p>
                 <p class="typography-subbody">BIO</p>
             </a>
         </div>`;
-        generated += beginRow;
+            generated += beginRow;
 
-        data.contributors?.forEach(function (contributor) {
-            // if (count == max) {
-            //     console.log("NEW ROW!!!")
-            //     generated += endRow + beginRow;
-            //     count = 0;
-            // }
+            data.contributors?.forEach(function (contributor) {
+                // if (count == max) {
+                //     console.log("NEW ROW!!!")
+                //     generated += endRow + beginRow;
+                //     count = 0;
+                // }
 
-            generated += person
-                .replace('PROFILE', contributor.profile)
-                .replace('AVATAR', contributor.avatar_url)
-                .replace('LOGIN', contributor.login)
-                .replace('NAME', contributor.name)
-                .replace('BIO', contributor.contributions.join(', '));
+                const bio = makeUpperCaseAfterCommas(contributor.contributions.join(", "))
 
-            count += 1;
-        });
+                generated += person
+                    .replace('PROFILE', contributor.profile)
+                    .replace('AVATAR', contributor.avatar_url)
+                    .replace('NAME', contributor.name)
+                    .replace('BIO', bio);
 
-        generated += endRow;
-        generated += '</div></aside>';
+                count += 1;
+            });
 
-        document.getElementsByClassName("contributors-generator")[0].innerHTML = generated;
-    })
-})
+            generated += endRow;
+            generated += '</div></aside>';
+
+            document.getElementsByClassName("contributors-generator")[0].innerHTML = generated;
+            window.didloadcontributors = true;
+        })
+    }
+}
+
+addEventListener('load', loadContributorsData);
+setInterval(loadContributorsData, 1000); // check every second.

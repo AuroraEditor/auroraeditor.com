@@ -4,8 +4,10 @@ import "./Assets/aurora/styles/aurora-global.css"
 import "./Assets/aurora/styles/aurora-footer.css"
 import "./Assets/aurora/styles/aurora-ribbon.css"
 import useScript from './Base/Hooks/useScript';
-import NavHeader from "./Base/Components/NavHeader"
-import MainPage from "./Base/Core/Main"
+import NavHeader from "./Base/Components/NavHeader";
+import MainPage from "./Base/Core/Main";
+import Contributors from "./Base/Core/Contributors";
+import PageNotFound from "./Base/Core/PageNotFound";
 import Included from './Base/Core/Included';
 import Ribbon from './Base/Components/Ribbon';
 import Footer from "./Base/Components/Footer";
@@ -36,7 +38,6 @@ function App() {
             {pathname === "/account" ? <ProfileNavHeader /> :
                 pathname === "/login" || pathname === "/register" ? <AuthNavHeader /> : <NavHeader />
             }
-
             <label id="auroranav-curtain" htmlFor="auroranav-menustate" />
             <div id="auroranav-viewport-emitter" data-viewport-emitter-dispatch="" data-viewport-emitter-state="{&quot;viewport&quot;:&quot;large&quot;,&quot;orientation&quot;:&quot;landscape&quot;,&quot;retina&quot;:false}"></div>
             <main>
@@ -45,8 +46,11 @@ function App() {
                     <Route exact path="/login" element={<Login />} />
                     <Route exact path="/register" element={<Register />} />
                     <Route exact path="/account" element={<Profile/>} />
+                    <Route exact path="/contributors" element={<Contributors />} />
                     <Route exact path="/included" element={<Included />} />
                     <Route exact path="/legal/terms" element={<Terms />} />
+                    <Route exact path="/pnf" element={<PageNotFound />} />
+                    <Route path="*" element={<PageNotFound />} />
                 </Routes>
             </main>
 
