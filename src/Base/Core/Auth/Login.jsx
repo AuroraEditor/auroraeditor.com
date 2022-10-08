@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../../../Assets/aurora/styles/Auth/aurora-login.css"
 
 function Login() {
@@ -17,8 +18,12 @@ function Login() {
                     </div>
                 </form>
             </div>
-            <div class="separator " />
-            <p className="login-forget-password" href="/password_reset"><a>Forgot Aurora ID or password?</a></p>
+            <div class="separator" />
+            <Link to="forgot-password">
+                <p className="login-forget-password">
+                    Forgot Aurora ID or password?
+                </p>
+            </Link>
         </div>
     )
 }

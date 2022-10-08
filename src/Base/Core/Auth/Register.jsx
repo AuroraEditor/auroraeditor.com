@@ -4,27 +4,26 @@ import "../../../Assets/aurora/styles/Auth/aurora-register.css"
 function Register() {
     return (
         <div>
-
             <div className="flow-body no-horizontal-scrollbar clearfix">
                 <div className="intro text-centered">
                     <h1 className="gradient-text">Create Your Aurora&nbsp;ID</h1>
                     <div className="intro-text">One Aurora ID to access everything Aurora Editor related.</div>
                 </div>
-                <div class="flow-section account-info-section">
-                    <div class="container-xs centered">
-                        <div class="form-table">
-                            <div class="form-cell">
-                                <div class="form-sidebyside-textboxes row">
-                                    <div class="column large-6 medium-6 small-6">
-                                        <div class="pop-wrapper field-pop-wrapper">
-                                            <div class="field-wrapper padding">
+                <div className="flow-section account-info-section">
+                    <div className="container-xs centered">
+                        <div className="form-table">
+                            <div className="form-cell">
+                                <div className="form-sidebyside-textboxes row">
+                                    <div className="column large-6 medium-6 small-6">
+                                        <div className="pop-wrapper field-pop-wrapper">
+                                            <div className="field-wrapper padding">
                                                 <input type="text" placeholder="First name" name="login" id="login_field" className="form-control form-textbox" autocapitalize="off" autocorrect="off" autocomplete="name" autofocus="autofocus" />
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="register-column large-6 medium-6 small-6">
-                                        <div class="pop-wrapper field-pop-wrapper">
-                                            <div class="field-wrapper padding">
+                                    <div className="register-column large-6 medium-6 small-6">
+                                        <div className="pop-wrapper field-pop-wrapper">
+                                            <div className="field-wrapper padding">
                                                 <input type="text" placeholder="Last name" name="login" id="login_field" className="form-control form-textbox" autocapitalize="off" autocorrect="off" autocomplete="lastname" autofocus="autofocus" />
                                             </div>
                                         </div>
@@ -51,15 +50,15 @@ function Register() {
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="register-column large-12">
-                                <div class="pop-wrapper field-pop-wrapper">
-                                    <div class="field-wrapper">
+                        <div className="row">
+                            <div className="register-column large-12">
+                                <div className="pop-wrapper field-pop-wrapper">
+                                    <div className="field-wrapper">
                                         <input type="password" placeholder="Password" name="email" id="login_field" className="form-control form-textbox" autocapitalize="off" autocorrect="off" autocomplete="password" autofocus="autofocus" />
                                     </div>
                                 </div>
-                                <div class="pop-wrapper field-pop-wrapper">
-                                    <div class="field-wrapper">
+                                <div className="pop-wrapper field-pop-wrapper">
+                                    <div className="field-wrapper">
                                         <input type="password" placeholder="Confirm password" name="email" id="login_field" className="form-control form-textbox" autocapitalize="off" autocorrect="off" autocomplete="password" autofocus="autofocus" />
                                     </div>
                                 </div>
@@ -69,19 +68,19 @@ function Register() {
                     </div>
                 </div>
 
-                <div class="flow-section">
-                    <div class="container-xs centered updates-section">
-                        <div class="form-element">
-                            <input type="checkbox" id="news" name="news" class="form-choice form-choice-checkbox" can-value="appleUpdates" />
-                            <label class="form-label" for="news">
-                                <span class="form-choice-indicator" />
-                                Announcements <small class="label-small tk-caption">Receive Auror Editor emails and communications including announcements, marketing, recommendations, and updates about Aurora Editor products, extensions and software.</small>
+                <div className="flow-section">
+                    <div className="container-xs centered updates-section">
+                        <div className="form-element">
+                            <input type="checkbox" id="news" name="news" className="form-choice form-choice-checkbox" can-value="appleUpdates" />
+                            <label className="form-label" for="news">
+                                <span className="form-choice-indicator" />
+                                Announcements <small className="label-small tk-caption">Receive Auror Editor emails and communications including announcements, marketing, recommendations, and updates about Aurora Editor products, extensions and software.</small>
                             </label>
                         </div>
-                        <div class="form-element">
-                            <input type="checkbox" id="news" name="news" class="form-choice form-choice-checkbox" can-value="appleUpdates" />
-                            <label class="form-label" for="news">
-                                <span class="form-choice-indicator" />
+                        <div className="form-element">
+                            <input type="checkbox" id="news" name="news" className="form-choice form-choice-checkbox" can-value="appleUpdates" />
+                            <label className="form-label" for="news">
+                                <span className="form-choice-indicator" />
                                 Terms of Service <small class="label-small tk-caption">Receive Apple emails and communications including announcements, marketing, recommendations, and updates about Apple products, services and software.</small>
                             </label>
                         </div>
@@ -90,7 +89,7 @@ function Register() {
                 <div className="label-small text-centered centered tk-caption field-caption details privacy-wrapper">
                     <div className="privacy-icon" />
                     Your Aurora ID information is used to allow you to sign in securely and access your data. Aurora records certain data for security, support and reporting purposes. If you agreed to receiving announcements, Aurora may use the provided Aurora ID information to send you marketing emails, communications and extension updates.
-                    <a href="https://support.apple.com/HT208650" target="_blank">See how your data is managed.</a>
+                    <a href="https://support.apple.com/HT208650">See how your data is managed.</a>
                 </div>
             </div>
 
