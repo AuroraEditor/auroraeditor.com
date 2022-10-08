@@ -27,9 +27,15 @@ function NavHeader() {
                                 <li className="auroranav-menu-item">
                                     <Link to="/included" className="auroranav-menu-link">What’s included</Link>
                                 </li>
+                                { /* 
+                                TODO: Maybe make this a profile icon and add it behind the dowwnload button 
                                 <li className="auroranav-menu-item">
-                                    <Link to="/contributors" className="auroranav-menu-link">Contributors</Link>
+                                    <Link to="/extensions" className="auroranav-menu-link">Extensions</Link>
                                 </li>
+                                <li className="auroranav-menu-item">
+                                    <Link to="/account" className="auroranav-menu-link">Account</Link>
+                                </li>
+                                */ }
                                 <li className="auroranav-menu-item">
                                     <a href="https://github.com/AuroraEditor/AuroraEditor" className="auroranav-menu-link">GitHub</a>
                                 </li>
@@ -48,6 +54,7 @@ function NavHeader() {
                                         <a href="/#" className="button-multi-option" role="menuitem" tabindex="0">Release <span className="badge">Coming Soon</span></a>
                                         <a href="/#" className="button-multi-option" role="menuitem" tabindex="1">Beta <span className="badge">Coming Soon</span></a>
                                         <a href="https://nightly.link/AuroraEditor/AuroraEditor/workflows/nightly/main/AuroraEditor_Nightly.zip" className="button-multi-option" role="menuitem" tabindex="2">Nightly</a>
+                                        <a href="https://github.com/AuroraEditor/AuroraEditor/archive/refs/heads/main.zip" className="button-multi-option" role="menuitem" tabindex="3">Source Code</a>
                                     </div>
                                 </div>
                             </div>

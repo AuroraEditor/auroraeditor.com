@@ -1,0 +1,224 @@
+.no-horizontal-scrollbar {
+    overflow-x: hidden;
+}
+
+.flow-body {
+    background: transparent;
+}
+
+.flow-body .intro {
+    padding-top: 30px;
+}
+
+.intro {
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+.intro-text {
+    font-size: 18px;
+}
+
+.flow-section.account-info-section {
+    padding-top: 15px;
+}
+
+.flow-section {
+    max-width: 1200px;
+    margin: auto;
+    width: 80%;
+}
+
+.flow-section {
+    border-bottom: 1px solid #d2d2d7;
+    padding: 30px 0 20px;
+}
+
+.centered {
+    margin: auto;
+}
+
+.container-xs {
+    max-width: 460px;
+}
+
+.form-table {
+    display: table;
+    width: 100%;
+    text-align: left;
+    position: relative;
+}
+
+.form-cell {
+    display: table-cell;
+    vertical-align: top;
+    direction: ltr;
+}
+
+.form-cell .form-sidebyside-textboxes.row {
+    padding-left: inherit;
+    margin-right: inherit;
+    margin-left: inherit;
+}
+
+.row {
+    z-index: inherit;
+}
+
+@media screen and (min-device-width: 1069px) {
+    .row {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}
+
+.large-6 {
+    width: 50%;
+}
+
+.register-column {
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+    float: left;
+    min-height: 2px;
+}
+
+.pop-wrapper {
+    position: relative;
+    overflow: visible;
+}
+
+.field-pop-wrapper {
+    display: block;
+    width: 100%;
+}
+
+.field-wrapper.padding.right {
+    padding-right: 2px !important;
+}
+
+.field-wrapper.padding.left {
+    padding-left: 2px !important;
+}
+
+.padding {
+    padding: 0.8em !important;
+}
+
+.aid-caption {
+    margin-bottom: 10px;
+}
+
+.field-caption {
+    display: block;
+}
+
+.tk-body-reduced {
+    font-size: 14px;
+    line-height: 1.428;
+    font-weight: 400;
+    letter-spacing: -.016em;
+}
+
+.form-element {
+    z-index: inherit;
+    position: relative;
+}
+
+.form-choice {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+}
+
+.form-choice~.form-label {
+    display: block;
+    padding-left: 26px;
+    margin-top: 13px;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.form-label {
+    font-size: 17px;
+    line-height: 1.234;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    position: relative;
+    vertical-align: top;
+}
+
+.form-choice-indicator {
+    box-sizing: content-box;
+    display: inline-block;
+}
+
+.label-small {
+    display: block;
+    color: gray;
+}
+
+.tk-caption {
+    font-size: 12px;
+    line-height: 1.333;
+    font-weight: 400;
+    letter-spacing: -.01em;
+}
+
+.privacy-wrapper {
+    max-width: 465px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    color: #666;
+    text-align: center;
+}
+
+.privacy-wrapper .privacy-icon {
+    margin: 10px auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width: 35px;
+    height: 28px;
+    background-image: url("../../images/privacy-icon.png");
+}
+
+.register-button {
+    width: 165px;
+}
+
+.idms-step-footer {
+    display: block;
+}
+
+.toolbar-footer {
+    min-height: 40px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    display: flex !important;
+}
+
+.toolbar-footer .flow-controls {
+    margin: auto !important;
+    text-align: center;
+    float: none !important;
+    padding: 0 0 40px;
+}
+
+.button-group {
+    display: flex !important;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+}
+
+.pull-right {
+    float: right !important;
+}
