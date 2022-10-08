@@ -15,9 +15,9 @@ import Socials from '../Components/Socials';
 function Main() {
     return (
         <main id="main" className="main" role="main">
-            <section className="section section-hero" id="part1" style={{  }}>
+            <section className="section section-hero" id="part1" style={{}}>
                 <div className="section-content">
-                    <div className="row"> 
+                    <div className="row">
                         <div className="column large-centered large-10 text-center">
                             <h1 className="typography-headline gradient-text">Aurora Editor</h1>
                             <p className="typography-intro"><span className="nowrap">Aurora Editor</span> is an IDE built by the community, for the community, and written entirely in Swift for the best native performance and feel for macOS.</p>
@@ -39,7 +39,7 @@ function Main() {
                 </figure>
             </section>
 
-            <section className="section section-lighter" style={{  }}>
+            <section className="section section-lighter" style={{}}>
                 <div className="section-content">
                     <div className="row">
                         <div className="column large-offset-1 large-10 small-offset-0">
@@ -105,7 +105,8 @@ function Main() {
                     </div>
                 </div>
             </section>
-            <Socials/>
+            <Socials />
+            <aside className="section contributors-generator"></aside>
         </main>
     )
 }
