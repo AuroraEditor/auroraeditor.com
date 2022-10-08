@@ -13,9 +13,9 @@ function Footer() {
                     <div className="footer-mini-legal">
                         <div className="footer-mini-legal-copyright">Copyright &copy; 2022 <a href="https://auroracompany.dev">Aurora Company.</a> All rights reserved.</div>
                         <div className="footer-mini-legal-links">
-                            <a className="footer-mini-legal-link" href="/legal/tos">Terms of Use</a>
-                            <a className="footer-mini-legal-link" href="/legal/privacy-policy">Privacy Policy</a>
-                            <Link to="/legal/terms">Agreements and Open Source Licenses</Link>
+                            <Link className="footer-mini-legal-link" to="/legal/tos">Terms of Use</Link>
+                            <Link className="footer-mini-legal-link" to="/legal/privacy-policy">Privacy Policy</Link>
+                            <Link className="footer-mini-legal-link" to="/legal/terms">Agreements and Open Source Licenses</Link>
                         </div>
                     </div>
                 </section>
