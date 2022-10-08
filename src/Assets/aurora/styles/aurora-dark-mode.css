@@ -474,17 +474,18 @@ html[data-color-scheme="dark"] .gradient-text {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-animation: shine 10s linear infinite;
-            animation: shine 10s linear infinite;
+    animation: shine 10s linear infinite;
 }
 
 @-webkit-keyframes shine {
     to {
-      background-position: 200% center;
+        background-position: 200% center;
     }
 }
+
 @keyframes shine {
     to {
-      background-position: 200% center;
+        background-position: 200% center;
     }
 }
 
@@ -508,11 +509,6 @@ html[data-color-scheme="dark"] body .color-scheme-toggle input:checked+.text {
 }
 
 html[data-color-scheme="dark"] body .socials-router-links {
-    background-color: var(--fill-tertiary);
-    color: var(--glyph-gray);
-}
-
-html[data-color-scheme="dark"] body .contributers-links {
     background-color: var(--fill-tertiary);
     color: var(--glyph-gray);
 }

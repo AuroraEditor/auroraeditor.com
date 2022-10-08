@@ -4,7 +4,7 @@ import "../../Assets/aurora/styles/aurora-style.css";
 function PageNotFound() {
     return (
         <article>
-            <section className="section section-hero margin-top">
+            <section className="section section-hero">
                 <div className="section-content divider-bottom">
                     <div className="row">
                         <div className="column large-9 small-offset-0">
