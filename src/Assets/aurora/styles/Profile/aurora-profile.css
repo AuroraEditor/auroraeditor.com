@@ -27,12 +27,12 @@
     border-radius: 50%;
 }
 
-[dir=lrt] .image-cropped {
+.image-cropped {
     transform-origin: top left;
 }
 
 .image-cropped {
-    object-fit: none;
+    object-fit: fill;
 }
 
 .account-info-email .account-info-name {
@@ -50,7 +50,7 @@
     line-height: 1.21053;
 }
 
-[dir] .account-info-email {
+.account-info-email {
     margin-top: 2px;
 }
 

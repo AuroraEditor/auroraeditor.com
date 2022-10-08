@@ -1,6 +1,5 @@
 import React from "react";
 import "../../../Assets/aurora/styles/Profile/aurora-profile.css"
-import AccountImage from "../../../Assets/aurora/images/profile.png";
 import ProfileCards from "./Profile-Cards";
 
 function Profile() {
@@ -11,7 +10,7 @@ function Profile() {
                     <div className="account-info">
                         <div className="account-info-image">
                             <div className="account-image-div">
-                                <image className="image image-cropped image-circle account-image" alt="Profile" src={AccountImage} />
+                                <img className="image image-cropped image-circle account-image" alt="Profile" src="https://avatars.githubusercontent.com/u/63672227" />
                             </div>
                         </div>
                         <div class="account-info-name" title="Jane Doe">Jane Doe</div>
@@ -39,7 +38,7 @@ function Profile() {
                 <div>
                     <div className="page">
                         <header className="page-header">
-                            <h1 className="page-title">Account Information</h1>
+                            <h1 className="page-title">Sign-In and Security</h1>
                             <div class="page-description">Manage settings related to signing in to your account, account security, as well as how to recover your data when you’re having trouble signing in.</div>
                         </header>
                         <ProfileCards/>

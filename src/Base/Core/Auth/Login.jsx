@@ -19,7 +19,6 @@ function Login() {
             </div>
             <div class="separator " />
             <p className="login-forget-password" href="/password_reset"><a>Forgot Aurora ID or password?</a></p>
-            <p className="login-callout mt-3">Don't have an Aurora ID? <a>Create one account</a>.</p>
         </div>
     )
 }

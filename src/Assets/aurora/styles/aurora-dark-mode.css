@@ -84,6 +84,7 @@ html[data-color-scheme="dark"] {
     --color-highlight-green: #e4fee6;
     --color-highlight-red: #f8dddd;
     --color-tutorials-teal: #38a39c;
+    --color-text-description: #b2b2b6;
     --color-aside-deprecated: var(--color-figure-orange);
     --color-aside-deprecated-background: var(--color-fill-orange-secondary);
     --color-aside-deprecated-border: var(--color-figure-orange);
@@ -515,6 +516,71 @@ html[data-color-scheme="dark"] body .socials-router-links {
 
 html[data-color-scheme="dark"] body .footer .footer-mini-news {
     border-color: var(--fill-gray-tertiary);
+}
+
+/* Login */
+html[data-color-scheme="dark"] body .form-control {
+    color: white;
+    background-color: #1d1d1f;
+    border: 1px solid #333336;
+}
+
+html[data-color-scheme="dark"] body .separator {
+    background-color: var(--fill-gray-tertiary);
+}
+
+/* Register */
+html[data-color-scheme="dark"] body .flow-section {
+    border-bottom: 1px solid var(--fill-gray-tertiary);
+}
+
+html[data-color-scheme="dark"] body .label-small {
+    color: var(--color-text-description);
+}
+
+html[data-color-scheme="dark"] body .privacy-wrapper {
+    color: var(--color-text-description);
+}
+
+/* Account */
+html[data-color-scheme="dark"] body .account-info-name {
+    color: var(--color-button-text);
+}
+
+html[data-color-scheme="dark"] body .account-info-email {
+    color: var(--color-text-description);
+}
+
+html[data-color-scheme="dark"] body .side-nav-link {
+    color: var(--color-button-text);
+}
+
+html[data-color-scheme="dark"] body .page-title {
+    color: var(--light);
+}
+
+html[data-color-scheme="dark"] body .page-description {
+    color: var(--color-text-description);
+}
+
+html[data-color-scheme="dark"] body .card-theme-module {
+    background-image: linear-gradient(120deg, #121212 45%, #1e1e1e);
+}
+
+html[data-color-scheme="dark"] body .card-border {
+    border: 1px solid #29292a;
+}
+
+html[data-color-scheme="dark"] body .card-shadow {
+    filter: drop-shadow(0 10px 10px #171717);
+}
+
+html[data-color-scheme="dark"] body .card-title {
+    color: var(--light);
+}
+
+html[data-color-scheme="dark"] body .card-line {
+    color: var(--color-text-description);
 }
 
 

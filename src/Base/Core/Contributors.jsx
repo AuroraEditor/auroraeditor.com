@@ -3,20 +3,24 @@ import "../../Assets/aurora/styles/aurora-style.css";
 
 function Contributors() {
     return (
-        <article>
-            <section className="section section-hero">
-                <div className="section-content divider-bottom">
+        <section className="section section-hero">
+            <div className="section-content">
+                <div className="row">
+                    <div className="column large-centered large-10 text-center">
+                        <h1 class="typography-headline gradient-text">Contributors</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="section contributors-generator">
+                <div className="section-content">
                     <div className="row">
-                        <div className="column large-9 small-offset-0">
-                            <h1 class="typography-headline gradient-text">Contributors</h1>
-                            <aside class="section contributors-generator">
-                                <center>LOADING CONTRIBUTORS,<br />Please wait...</center>
-                            </aside>
+                        <div className="column large-centered large-10 text-center">
+                            <p className="text-centred">LOADING CONTRIBUTORS,<br />Please wait...</p>
                         </div>
                     </div>
                 </div>
-            </section>
-        </article>
+            </div>
+        </section>
     )
 }
 

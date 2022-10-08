@@ -29,22 +29,22 @@ function App() {
         <div id="overview" className="dmf" data-color-scheme="light" style={{ scrollBehavior: 'smooth' }}>
 
             {pathname === "/account" ? null :
-                pathname === "/login" || pathname === "/register" ? null : <Ribbon />
+                pathname === "/sign-in" || pathname === "/sign-up" ? null : <Ribbon />
             }
 
             <input type="checkbox" id="auroranav-menustate" className="auroranav-menustate" />
             <div id="auroranav-sticky-placeholder" className="css-sticky auroranav-sticking" />
 
             {pathname === "/account" ? <ProfileNavHeader /> :
-                pathname === "/login" || pathname === "/register" ? <AuthNavHeader /> : <NavHeader />
+                pathname === "/sign-in" || pathname === "/sign-up" ? <AuthNavHeader /> : <NavHeader />
             }
             <label id="auroranav-curtain" htmlFor="auroranav-menustate" />
             <div id="auroranav-viewport-emitter" data-viewport-emitter-dispatch="" data-viewport-emitter-state="{&quot;viewport&quot;:&quot;large&quot;,&quot;orientation&quot;:&quot;landscape&quot;,&quot;retina&quot;:false}"></div>
             <main>
                 <Routes>
                     <Route exact path="/" element={<MainPage />} />
-                    <Route exact path="/login" element={<Login />} />
-                    <Route exact path="/register" element={<Register />} />
+                    <Route exact path="/sign-in" element={<Login />} />
+                    <Route exact path="/sign-up" element={<Register />} />
                     <Route exact path="/account" element={<Profile/>} />
                     <Route exact path="/contributors" element={<Contributors />} />
                     <Route exact path="/included" element={<Included />} />
@@ -54,7 +54,7 @@ function App() {
                 </Routes>
             </main>
 
-            {pathname === "/login" || pathname === "/register" ? null : <Footer />}
+            {pathname === "/sign-in" || pathname === "/sign-up" ? null : <Footer />}
 
         </div>
     );

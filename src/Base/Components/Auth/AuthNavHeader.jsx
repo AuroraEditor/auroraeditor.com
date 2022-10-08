@@ -22,15 +22,15 @@ function AuthNavHeader() {
                         <div className="auroranav-menu-tray">
                             <ul className="auroranav-menu-items">
 
-                            <li className="auroranav-menu-item">
+                                <li className="auroranav-menu-item">
                                     <Link to="/" className="auroranav-menu-link">Home</Link>
                                 </li>
 
-                                {pathname === "/login" ?
+                                {pathname === "/sign-in" ?
                                     <li className="auroranav-menu-item">
-                                        <Link to="/register" className="auroranav-menu-link">Create Aurora ID</Link>
+                                        <Link to="/sign-up" className="auroranav-menu-link">Create Aurora ID</Link>
                                     </li> : <li className="auroranav-menu-item">
-                                        <Link to="/login" className="auroranav-menu-link">Sign In</Link>
+                                        <Link to="/sign-in" className="auroranav-menu-link">Sign In</Link>
                                     </li>
                                 }
 
