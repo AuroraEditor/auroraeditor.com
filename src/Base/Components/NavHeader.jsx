@@ -28,6 +28,9 @@ function NavHeader() {
                                     <Link to="/included" className="auroranav-menu-link">What’s included</Link>
                                 </li>
                                 <li className="auroranav-menu-item">
+                                    <Link to="/contributors" className="auroranav-menu-link">Contributors</Link>
+                                </li>
+                                <li className="auroranav-menu-item">
                                     <a href="https://github.com/AuroraEditor/AuroraEditor" className="auroranav-menu-link">GitHub</a>
                                 </li>
                             </ul>

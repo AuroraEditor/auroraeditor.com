@@ -6,6 +6,7 @@ import "./Assets/aurora/styles/aurora-ribbon.css";
 import useScript from './Base/Hooks/useScript';
 import NavHeader from "./Base/Components/NavHeader";
 import MainPage from "./Base/Core/Main";
+import Contributors from "./Base/Core/Contributors";
 import PageNotFound from "./Base/Core/PageNotFound";
 import Included from './Base/Core/Included';
 import Ribbon from './Base/Components/Ribbon';
@@ -27,6 +28,7 @@ function App() {
             <main>
                 <Routes>
                     <Route exact path="/" element={<MainPage />} />
+                    <Route exact path="/contributors" element={<Contributors />} />
                     <Route exact path="/included" element={<Included />} />
                     <Route exact path="/legal/terms" element={<Terms />} />
                     <Route exact path="/pnf" element={<PageNotFound />} />

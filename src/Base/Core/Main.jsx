@@ -106,7 +106,6 @@ function Main() {
                 </div>
             </section>
             <Socials />
-            <aside className="section contributors-generator"></aside>
         </main>
     )
 }
