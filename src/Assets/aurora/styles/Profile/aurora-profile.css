@@ -299,3 +299,49 @@ nav ul {
 .card-icon {
     fill: #0071e3;
 }
+
+/** Responsive **/
+@media only screen and (max-width: 734px) {
+    .layout-nav {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .layout-section {
+        width: 335px;
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .page-header {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .page-title {
+        font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: .009em;
+        line-height: 1.16667;
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .page-title {
+        font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: .007;
+        line-height: 1.14286;
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .medium-12 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
