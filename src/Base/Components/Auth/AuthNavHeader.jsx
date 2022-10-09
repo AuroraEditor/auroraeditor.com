@@ -39,6 +39,13 @@ function AuthNavHeader() {
                                 </li>
                             </ul>
                         </div>
+                        <div className="auroranav-actions auroranav-actions-center">
+                            <div className="auroranav-action auroranav-action-menucta" aria-hidden="true">
+                                <label for="auroranav-menustate" className="auroranav-menucta">
+                                    <span className="auroranav-menucta-chevron"></span>
+                                </label>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

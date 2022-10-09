@@ -17,14 +17,14 @@ function Register() {
                                     <div className="column large-6 medium-6 small-6">
                                         <div className="pop-wrapper field-pop-wrapper">
                                             <div className="field-wrapper padding">
-                                                <input type="text" placeholder="First name" name="login" id="login_field" className="form-control form-textbox" autocapitalize="off" autocorrect="off" autocomplete="name" autofocus="autofocus" />
+                                                <input type="text" placeholder="First name" name="login" id="login_field" className="form-textbox" autocapitalize="off" autocorrect="off" autocomplete="name" autofocus="autofocus" />
                                             </div>
                                         </div>
                                     </div>
                                     <div className="register-column large-6 medium-6 small-6">
                                         <div className="pop-wrapper field-pop-wrapper">
                                             <div className="field-wrapper padding">
-                                                <input type="text" placeholder="Last name" name="login" id="login_field" className="form-control form-textbox" autocapitalize="off" autocorrect="off" autocomplete="lastname" autofocus="autofocus" />
+                                                <input type="text" placeholder="Last name" name="login" id="login_field" className="form-textbox" autocapitalize="off" autocorrect="off" autocomplete="lastname" autofocus="autofocus" />
                                             </div>
                                         </div>
                                     </div>
@@ -40,7 +40,7 @@ function Register() {
                                 <div className="pop-wrapper field-pop-wrapper">
                                     <div className="field-wrapper position-relative">
                                         <div className="email-input-wrapper email-input">
-                                            <input type="email" placeholder="email@example.com" name="email" id="login_field" className="form-control form-textbox" autocapitalize="off" autocorrect="off" autocomplete="email" autofocus="autofocus" />
+                                            <input type="email" placeholder="email@example.com" name="email" id="login_field" className="form-textbox" autocapitalize="off" autocorrect="off" autocomplete="email" autofocus="autofocus" />
                                         </div>
                                         <div id="aidCaption" class="tk-body-reduced field-caption aid-caption">
                                             This will be your new Aurora&nbsp;ID.
@@ -54,12 +54,12 @@ function Register() {
                             <div className="register-column large-12">
                                 <div className="pop-wrapper field-pop-wrapper">
                                     <div className="field-wrapper">
-                                        <input type="password" placeholder="Password" name="email" id="login_field" className="form-control form-textbox" autocapitalize="off" autocorrect="off" autocomplete="password" autofocus="autofocus" />
+                                        <input type="password" placeholder="Password" name="email" id="login_field" className="form-textbox" autocapitalize="off" autocorrect="off" autocomplete="password" autofocus="autofocus" />
                                     </div>
                                 </div>
                                 <div className="pop-wrapper field-pop-wrapper">
                                     <div className="field-wrapper">
-                                        <input type="password" placeholder="Confirm password" name="email" id="login_field" className="form-control form-textbox" autocapitalize="off" autocorrect="off" autocomplete="password" autofocus="autofocus" />
+                                        <input type="password" placeholder="Confirm password" name="email" id="login_field" className="form-textbox" autocapitalize="off" autocorrect="off" autocomplete="password" autofocus="autofocus" />
                                     </div>
                                 </div>
                             </div>
@@ -71,15 +71,15 @@ function Register() {
                 <div className="flow-section">
                     <div className="container-xs centered updates-section">
                         <div className="form-element">
-                            <input type="checkbox" id="news" name="news" className="form-choice form-choice-checkbox" can-value="appleUpdates" />
+                            <input type="checkbox" id="news" name="news" className="form-choice form-choice-checkbox" can-value="aeUpdates" />
                             <label className="form-label" for="news">
                                 <span className="form-choice-indicator" />
-                                Announcements <small className="label-small tk-caption">Receive Auror Editor emails and communications including announcements, marketing, recommendations, and updates about Aurora Editor products, extensions and software.</small>
+                                Announcements <small className="label-small tk-caption">Receive Aurora Editor emails and communications including announcements, marketing, recommendations, and updates about Aurora Editor products, extensions and software.</small>
                             </label>
                         </div>
                         <div className="form-element">
-                            <input type="checkbox" id="news" name="news" className="form-choice form-choice-checkbox" can-value="appleUpdates" />
-                            <label className="form-label" for="news">
+                            <input type="checkbox" id="terms" name="terms" className="form-choice form-choice-checkbox" can-value="aeTerms" />
+                            <label className="form-label" for="terms">
                                 <span className="form-choice-indicator" />
                                 Terms of Service <small class="label-small tk-caption">Receive Apple emails and communications including announcements, marketing, recommendations, and updates about Apple products, services and software.</small>
                             </label>

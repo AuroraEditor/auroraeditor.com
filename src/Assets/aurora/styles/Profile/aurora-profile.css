@@ -141,7 +141,7 @@ nav ul {
 }
 
 /** Account Cards*/
-.row {
+.row-card {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

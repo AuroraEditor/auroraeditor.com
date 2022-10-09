@@ -3,7 +3,7 @@ import React from "react";
 function ProfileCards() {
     return (
         <div className="section">
-            <div className="row">
+            <div className="row-card">
                 { /** Aurora ID Card */}
                 <div className="card-column large-6 medium-12">
                     <div className="section-item">

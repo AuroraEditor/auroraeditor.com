@@ -519,7 +519,7 @@ html[data-color-scheme="dark"] body .footer .footer-mini-news {
 }
 
 /* Login */
-html[data-color-scheme="dark"] body .form-control {
+html[data-color-scheme="dark"] body .form-textbox {
     color: white;
     background-color: #1d1d1f;
     border: 1px solid #333336;
