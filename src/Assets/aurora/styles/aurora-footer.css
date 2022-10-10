@@ -41,7 +41,7 @@
 
 .footer a:hover {
     color: #1d1d1f;
-    text-decoration: underline;
+    text-decoration: none;
     transition: all 0.2s ease-in-out;
 }
 
