@@ -33,7 +33,7 @@ export function registerUser() {
         });
     } else if (document.getElementById("terms").value === false) {
         console.log("Please agree to our terms and conditions")
-    } else if (password != confirmPassword) {
+    } else if (password !== confirmPassword) {
         console.log("Passwords don't match")
     }
 }
