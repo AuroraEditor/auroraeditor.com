@@ -20,7 +20,7 @@ function Main() {
                     <div className="row">
                         <div className="column large-centered large-10 text-center">
                             <h1 className="typography-headline gradient-text">Aurora Editor</h1>
-                            <p className="typography-intro"><span className="nowrap">Aurora Editor</span> is an IDE built by the community, for the community, and written entirely in Swift for the best native performance and feel for macOS.</p>
+                            <p className="typography-intro"><span className="nowrap">Aurora Editor</span> is an IDE built by the community, for the community, and written entirely in Swift for lightning fast performance and an amazing feel on macOS.</p>
                         </div>
                     </div>
                 </div>
@@ -44,7 +44,7 @@ function Main() {
                     <div className="row">
                         <div className="column large-offset-1 large-10 small-offset-0">
                             <h2 className="gradient-text">Lightweight and Fast</h2>
-                            <p><span className="nowrap">Aurora Editor</span> lets you build your projects as fast and smoothly as possible. It's not a replacement for Xcode but a mere extensible editor built on its fundamentals.</p>
+                            <p><span className="nowrap">Aurora Editor</span> lets you build your projects as quickly and smoothly as possible. It's not a replacement for Xcode but an extensible, superlight editor built on its fundamentals.</p>
                             <p>Build your projects in your favorite programming languages with an editor that feels familiar to you, easy to navigate and extensible with no limits.</p>
                         </div>
                         <div className="column large-offset-1 large-10 small-offset-0">
@@ -90,7 +90,7 @@ function Main() {
                     <div className="row">
                         <div className="column large-offset-1 large-10 small-offset-0">
                             <h2 className="gradient-text">Extensible and Customizable</h2>
-                            <p>Want even more features? Install extensions to add new languages, themes and debuggers. Extensions are run in separate processes, ensuring that they won't slow down the editor.</p>
+                            <p>Want even more features? Install extensions to add new languages, themes, debuggers, and more. Extensions are run in separate processes, ensuring that they will have no impact on the editor's speed and performance.</p>
                         </div>
                         <div className="column large-offset-1 large-10 small-offset-0">
                             <picture className="dark screen-only">

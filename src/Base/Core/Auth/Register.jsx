@@ -7,8 +7,8 @@ function Register() {
         <div>
             <div className="flow-body no-horizontal-scrollbar clearfix">
                 <div className="intro text-centered">
-                    <h1 className="gradient-text">Create Your Aurora&nbsp;ID</h1>
-                    <div className="intro-text">One Aurora ID to access everything Aurora Editor related.</div>
+                    <h1 className="gradient-text">Create Your Aurora ID</h1>
+                    <div className="intro-text">One account to access everything Aurora Editor</div>
                 </div>
                 <div className="flow-section account-info-section">
                     <div className="container-xs centered">
@@ -18,14 +18,14 @@ function Register() {
                                     <div className="column large-6 medium-6 small-6">
                                         <div className="pop-wrapper field-pop-wrapper">
                                             <div className="field-wrapper padding">
-                                                <input type="text" placeholder="First name" name="firstName" id="first_name_field" className="form-textbox" autocapitalize="off" autocorrect="off" autocomplete="name" autofocus="autofocus" />
+                                                <input type="text" placeholder="First name" name="firstName" id="first_name_field" className="form-textbox" autocapitalize="off" autocorrect="off" autocomplete="given-name" autofocus="autofocus" />
                                             </div>
                                         </div>
                                     </div>
                                     <div className="register-column large-6 medium-6 small-6">
                                         <div className="pop-wrapper field-pop-wrapper">
                                             <div className="field-wrapper padding">
-                                                <input type="text" placeholder="Last name" name="lastName" id="last_name_field" className="form-textbox" autocapitalize="off" autocorrect="off" autocomplete="lastname" />
+                                                <input type="text" placeholder="Last name" name="lastName" id="last_name_field" className="form-textbox" autocapitalize="off" autocorrect="off" autocomplete="family-name" />
                                             </div>
                                         </div>
                                     </div>
