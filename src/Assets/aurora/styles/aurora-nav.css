@@ -782,13 +782,15 @@
 .theme-dark .auroranav .auroranav-menu-link,
 .auroranav.theme-dark .auroranav-menu-link {
     color: #fff;
-    opacity: .92
+    opacity: .92;
+    transition: all 0.3s ease;
 }
 
 .theme-dark .auroranav .auroranav-menu-link:hover,
 .auroranav.theme-dark .auroranav-menu-link:hover {
     color: #2997ff;
-    opacity: 1
+    opacity: 1;
+    transition: all 0.3s ease;
 }
 
 .theme-dark .auroranav-menustate:checked~.auroranav .auroranav-menu-link,
@@ -800,12 +802,14 @@
 
 .auroranav.auroranav-hero .auroranav-menu-link {
     color: #fff;
-    opacity: .92
+    opacity: .92;
+    transition: all 0.3s ease;
 }
 
 .auroranav.auroranav-hero .auroranav-menu-link:hover {
     color: #2997ff;
-    opacity: 1
+    opacity: 1;
+    transition: all 0.3s ease;
 }
 
 .auroranav-hero.auroranav.auroranav-sticking .auroranav-menu-link {
@@ -821,13 +825,15 @@
 .theme-dark .auroranav-hero.auroranav.auroranav-sticking .auroranav-menu-link,
 .auroranav-hero.auroranav-sticking.auroranav.theme-dark .auroranav-menu-link {
     color: #fff;
-    opacity: .92
+    opacity: .92;
+    transition: all 0.3s ease;
 }
 
 .theme-dark .auroranav-hero.auroranav.auroranav-sticking .auroranav-menu-link:hover,
 .auroranav-hero.auroranav-sticking.auroranav.theme-dark .auroranav-menu-link:hover {
     color: #2997ff;
-    opacity: 1
+    opacity: 1;
+    transition: all 0.3s ease;
 }
 
 .auroranav-menustate:checked~.auroranav-hero.auroranav .auroranav-menu-link,
@@ -847,7 +853,8 @@
 .auroranav-menustate:checked~.auroranav-hero.auroranav.theme-dark .auroranav-menu-link,
 .auroranav-menustate:target~.auroranav-hero.auroranav.theme-dark .auroranav-menu-link {
     color: #fff;
-    opacity: .92
+    opacity: .92;
+    transition: all 0.3s ease;
 }
 
 .theme-dark .auroranav-menustate:checked~.auroranav-hero.auroranav .auroranav-menu-link:hover,
@@ -855,7 +862,8 @@
 .auroranav-menustate:checked~.auroranav-hero.auroranav.theme-dark .auroranav-menu-link:hover,
 .auroranav-menustate:target~.auroranav-hero.auroranav.theme-dark .auroranav-menu-link:hover {
     color: #2997ff;
-    opacity: 1
+    opacity: 1;
+    transition: all 0.3s ease;
 }
 
 .auroranav-menu-link.current {
@@ -1452,8 +1460,4 @@ span.badge {
 	border: 1px solid;
     border-image: repeating linear-gradient(45deg, red, blue) 1;
     opacity: 0.5;
-}
-
-.badge:hover {
-    opacity: 0.8;
 }
