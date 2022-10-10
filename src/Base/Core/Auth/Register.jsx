@@ -17,14 +17,14 @@ function Register() {
                                     <div className="column large-6 medium-6 small-6">
                                         <div className="pop-wrapper field-pop-wrapper">
                                             <div className="field-wrapper padding">
-                                                <input type="text" placeholder="First name" name="login" id="login_field" className="form-textbox" autocapitalize="off" autocorrect="off" autocomplete="name" autofocus="autofocus" />
+                                                <input type="text" placeholder="First name" name="firstName" id="firstName_field" className="form-textbox" autocapitalize="off" autocorrect="off" autocomplete="name" autofocus="autofocus" />
                                             </div>
                                         </div>
                                     </div>
                                     <div className="register-column large-6 medium-6 small-6">
                                         <div className="pop-wrapper field-pop-wrapper">
                                             <div className="field-wrapper padding">
-                                                <input type="text" placeholder="Last name" name="login" id="login_field" className="form-textbox" autocapitalize="off" autocorrect="off" autocomplete="lastname" autofocus="autofocus" />
+                                                <input type="text" placeholder="Last name" name="lastName" id="lastName_field" className="form-textbox" autocapitalize="off" autocorrect="off" autocomplete="lastname" />
                                             </div>
                                         </div>
                                     </div>
@@ -40,7 +40,7 @@ function Register() {
                                 <div className="pop-wrapper field-pop-wrapper">
                                     <div className="field-wrapper position-relative">
                                         <div className="email-input-wrapper email-input">
-                                            <input type="email" placeholder="email@example.com" name="email" id="login_field" className="form-textbox" autocapitalize="off" autocorrect="off" autocomplete="email" autofocus="autofocus" />
+                                            <input type="email" placeholder="email@example.com" name="email" id="login_field" className="form-textbox" autocapitalize="off" autocorrect="off" autocomplete="email" />
                                         </div>
                                         <div id="aidCaption" class="tk-body-reduced field-caption aid-caption">
                                             This will be your new Aurora&nbsp;ID.
@@ -54,12 +54,22 @@ function Register() {
                             <div className="register-column large-12">
                                 <div className="pop-wrapper field-pop-wrapper">
                                     <div className="field-wrapper">
-                                        <input type="password" placeholder="Password" name="email" id="login_field" className="form-textbox" autocapitalize="off" autocorrect="off" autocomplete="password" autofocus="autofocus" />
+                                        <input type="text" placeholder="Username" name="username" id="username_field" className="form-textbox" autocapitalize="off" autocorrect="off" autocomplete="username" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="row">
+                            <div className="register-column large-12">
+                                <div className="pop-wrapper field-pop-wrapper">
+                                    <div className="field-wrapper">
+                                        <input type="password" placeholder="Password" name="password" id="password_field" className="form-textbox" autocapitalize="off" autocorrect="off" autocomplete="password" />
                                     </div>
                                 </div>
                                 <div className="pop-wrapper field-pop-wrapper">
                                     <div className="field-wrapper">
-                                        <input type="password" placeholder="Confirm password" name="email" id="login_field" className="form-textbox" autocapitalize="off" autocorrect="off" autocomplete="password" autofocus="autofocus" />
+                                        <input type="password" placeholder="Confirm password" name="confirmPassword" id="confirm_password_field" className="form-textbox" autocapitalize="off" autocorrect="off" autocomplete="password" />
                                     </div>
                                 </div>
                             </div>
