@@ -1,5 +1,6 @@
 import React from "react";
 import "../../../Assets/aurora/styles/Auth/aurora-register.css"
+import * as Auth from "../../Backend/Auth"
 
 function Register() {
     return (
@@ -17,14 +18,14 @@ function Register() {
                                     <div className="column large-6 medium-6 small-6">
                                         <div className="pop-wrapper field-pop-wrapper">
                                             <div className="field-wrapper padding">
-                                                <input type="text" placeholder="First name" name="firstName" id="firstName_field" className="form-textbox" autocapitalize="off" autocorrect="off" autocomplete="name" autofocus="autofocus" />
+                                                <input type="text" placeholder="First name" name="firstName" id="first_name_field" className="form-textbox" autocapitalize="off" autocorrect="off" autocomplete="name" autofocus="autofocus" />
                                             </div>
                                         </div>
                                     </div>
                                     <div className="register-column large-6 medium-6 small-6">
                                         <div className="pop-wrapper field-pop-wrapper">
                                             <div className="field-wrapper padding">
-                                                <input type="text" placeholder="Last name" name="lastName" id="lastName_field" className="form-textbox" autocapitalize="off" autocorrect="off" autocomplete="lastname" />
+                                                <input type="text" placeholder="Last name" name="lastName" id="last_name_field" className="form-textbox" autocapitalize="off" autocorrect="off" autocomplete="lastname" />
                                             </div>
                                         </div>
                                     </div>
@@ -40,7 +41,7 @@ function Register() {
                                 <div className="pop-wrapper field-pop-wrapper">
                                     <div className="field-wrapper position-relative">
                                         <div className="email-input-wrapper email-input">
-                                            <input type="email" placeholder="email@example.com" name="email" id="login_field" className="form-textbox" autocapitalize="off" autocorrect="off" autocomplete="email" />
+                                            <input type="email" placeholder="email@example.com" name="email" id="email_field" className="form-textbox" autocapitalize="off" autocorrect="off" autocomplete="email" />
                                         </div>
                                         <div id="aidCaption" class="tk-body-reduced field-caption aid-caption">
                                             This will be your new Aurora&nbsp;ID.
@@ -69,7 +70,7 @@ function Register() {
                                 </div>
                                 <div className="pop-wrapper field-pop-wrapper">
                                     <div className="field-wrapper">
-                                        <input type="password" placeholder="Confirm password" name="confirmPassword" id="confirm_password_field" className="form-textbox" autocapitalize="off" autocorrect="off" autocomplete="password" />
+                                        <input type="password" placeholder="Confirm password" name="confirm_password_field" id="confirm_password_field" className="form-textbox" autocapitalize="off" autocorrect="off" autocomplete="password" />
                                     </div>
                                 </div>
                             </div>
@@ -107,7 +108,7 @@ function Register() {
                 <div className="toolbar-wrapper toolbar-footer">
                     <div className="button-group flow-controls">
                         <div className="primary-button-group">
-                            <button tabindex="0" type="button" className="button button-primary last nav-action pull-right weight-medium">
+                            <button tabindex="0" type="button" className="button button-primary last nav-action pull-right weight-medium" onClick={Auth.registerUser}>
                                 <div className="overflow-text">
                                     Continue
                                 </div>
