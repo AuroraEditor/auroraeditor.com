@@ -59,7 +59,6 @@ h1 {
 }
 
 .form-cell .form-sidebyside-textboxes.row {
-    padding-left: inherit;
     margin-right: inherit;
     margin-left: inherit;
 }
@@ -122,6 +121,7 @@ h1 {
     line-height: 1.428;
     font-weight: 400;
     letter-spacing: -.016em;
+    color: white;
 }
 
 .form-element {
@@ -221,4 +221,16 @@ h1 {
 
 .pull-right {
     float: right !important;
+}
+
+/** Responsive **/
+@media only screen and (max-width: 734px) {
+    .privacy-wrapper {
+        max-width: 365px;
+    }
+
+    .intro-text {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
 }

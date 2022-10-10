@@ -1,0 +1,5 @@
+@media only screen and (min-width: 735px) {
+    .auroranav-action-menucta-profile, .auroranav-menu-tray-profile {
+        display: none;
+    }
+}

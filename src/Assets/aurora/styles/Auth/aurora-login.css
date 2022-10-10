@@ -39,35 +39,6 @@ main {
     margin-bottom: 16px;
 }
 
-.form-textbox {
-    display: block;
-    width: 100%;
-}
-
-.form-control:focus {
-    outline: 4px solid rgba(0, 125, 250, 0.6);
-}
-
-.form-control {
-    padding: 5px 12px;
-    font-size: 14px;
-    font: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
-    line-height: 20px;
-    color: black;
-    vertical-align: middle;
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-position: right 8px center;
-    border: 1px solid #d2d2d7;
-    border-radius: 6px;
-    transition: 80ms cubic-bezier(0.33, 1, 0.68, 1);
-    transition-property: color, background-color, box-shadow, border-color;
-}
-
-.form-control:hover {
-    border-color: #0071e3;
-}
-
 input {
     overflow: visible;
 }
