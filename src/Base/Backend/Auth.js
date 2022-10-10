@@ -8,7 +8,13 @@ export function loginUser() {
             password: document.getElementById("password_field").value
         })
         .then((response) => {
-            console.log(response)
+            console.log("Logged in successfully")
+        })
+        .catch((error) => {
+            if (error.response.status === 401) {
+                console.log(error.response.status)
+                document.getElementById("login_error").hidden = false
+            } 
         });
 }
 
@@ -16,8 +22,6 @@ export function registerUser() {
     const password = document.getElementById("password_field").value
     const confirmPassword = document.getElementById("confirm_password_field").value
     const termsAgreement = document.getElementById("terms").checked
-
-    console.log(termsAgreement)
 
     if (password === confirmPassword && termsAgreement === true) {
         axios

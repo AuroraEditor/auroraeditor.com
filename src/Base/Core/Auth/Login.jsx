@@ -2,6 +2,7 @@ import { React } from "react";
 import { Link } from "react-router-dom";
 import "../../../Assets/aurora/styles/Auth/aurora-login.css"
 import * as Auth from "../../Backend/Auth"
+import ErrorPopup from "../../Components/ErrorPopup"
 
 function Login() {
     return (
@@ -13,6 +14,7 @@ function Login() {
                 <input type="text" placeholder="Email or username" name="login" id="login_field" className="form-textbox js-login-field" autocapitalize="off" autocorrect="off" autocomplete="username" autofocus="autofocus" />
                 <div className="position-relative">
                     <input type="password" placeholder="Password" name="password" id="password_field" className="form-textbox js-password-field" autocomplete="current-password" />
+                    <ErrorPopup/>
                     <input type="submit" name="commit" value="Sign in" className="btn btn-primary btn-block js-sign-in-button" onClick={Auth.loginUser} />
                 </div>
             </div>
