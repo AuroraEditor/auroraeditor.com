@@ -59,7 +59,7 @@ function App() {
         </Routes>
       </main>
 
-      <Footer />
+      {pathname !== "/sign-in" && pathname !== "/sign-up" && <Footer />}
     </div>
   );
 }
