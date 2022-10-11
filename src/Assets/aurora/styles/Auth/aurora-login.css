@@ -1,5 +1,6 @@
 main {
     display: block;
+    min-height: calc(100vh);
 }
 
 .auth-form {
