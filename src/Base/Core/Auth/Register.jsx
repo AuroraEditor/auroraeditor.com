@@ -1,4 +1,3 @@
-import React from "react";
 import "../../../Assets/aurora/styles/Auth/aurora-register.css"
 import * as Auth from "../../Backend/Auth"
 
@@ -43,7 +42,7 @@ function Register() {
                                         <div className="email-input-wrapper email-input">
                                             <input type="email" placeholder="email@example.com" name="email" id="email_field" className="form-textbox" autocapitalize="off" autocorrect="off" autocomplete="email" />
                                         </div>
-                                        <div id="aidCaption" class="tk-body-reduced field-caption aid-caption">
+                                        <div id="aidCaption" className="tk-body-reduced field-caption aid-caption">
                                             This will be your new Aurora&nbsp;ID.
                                         </div>
                                     </div>
@@ -92,7 +91,7 @@ function Register() {
                             <input type="checkbox" id="terms" name="terms" className="form-choice form-choice-checkbox" can-value="aeTerms" />
                             <label className="form-label" for="terms">
                                 <span className="form-choice-indicator" />
-                                Terms of Service <small class="label-small tk-caption">Receive Apple emails and communications including announcements, marketing, recommendations, and updates about Apple products, services and software.</small>
+                                Terms of Service <small className="label-small tk-caption">Receive Apple emails and communications including announcements, marketing, recommendations, and updates about Apple products, services and software.</small>
                             </label>
                         </div>
                     </div>

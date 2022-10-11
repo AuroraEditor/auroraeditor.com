@@ -1,5 +1,3 @@
-import React from "react";
-
 function Ribbon() {
     return (
         <div id="notice-ribbon" className="ribbon">

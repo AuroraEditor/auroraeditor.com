@@ -1,4 +1,3 @@
-import React from "react";
 import "../../Assets/aurora/styles/aurora-socials-router.css"
 
 function Socials() {

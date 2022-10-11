@@ -1,4 +1,3 @@
-import { React } from "react";
 import { Link } from "react-router-dom";
 import "../../../Assets/aurora/styles/Auth/aurora-login.css"
 import * as Auth from "../../Backend/Auth"
@@ -18,7 +17,7 @@ function Login() {
                     <input type="submit" name="commit" value="Sign in" className="btn btn-primary btn-block js-sign-in-button" onClick={Auth.loginUser} />
                 </div>
             </div>
-            <div class="separator" />
+            <div className="separator" />
             <Link to="forgot-password">
                 <p className="login-forget-password">
                     Forgot Aurora ID or password?
