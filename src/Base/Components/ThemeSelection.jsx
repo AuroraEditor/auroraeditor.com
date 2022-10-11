@@ -1,5 +1,3 @@
-import React from "react";
-
 function ThemeSelection() {
     // We should handle on change for theme here
     return (

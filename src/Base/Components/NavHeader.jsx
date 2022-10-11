@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import '../../Assets/aurora/styles/aurora-nav.css';
 
@@ -13,8 +12,8 @@ function NavHeader() {
                     </h2>
 
                     <div className="auroranav-menu">
-                        <a href="#auroranav-menustate" class="auroranav-menucta-anchor auroranav-menucta-anchor-open" id="auroranav-menustate-open">
-                            <span class="auroranav-menucta-anchor-label">Open Menu</span>
+                        <a href="#auroranav-menustate" className="auroranav-menucta-anchor auroranav-menucta-anchor-open" id="auroranav-menustate-open">
+                            <span className="auroranav-menucta-anchor-label">Open Menu</span>
                         </a>
                         <a href="/#" className="auroranav-menucta-anchor auroranav-menucta-anchor-close" id="auroranav-menustate-close">
                             <span className="auroranav-menucta-anchor-label">Close Menu</span>
@@ -27,8 +26,8 @@ function NavHeader() {
                                 <li className="auroranav-menu-item">
                                     <Link to="/included" className="auroranav-menu-link">What’s included</Link>
                                 </li>
-                                { /* 
-                                TODO: Maybe make this a profile icon and add it behind the dowwnload button 
+                                { /*
+                                TODO: Maybe make this a profile icon and add it behind the dowwnload button
                                 <li className="auroranav-menu-item">
                                     <Link to="/extensions" className="auroranav-menu-link">Extensions</Link>
                                 </li>

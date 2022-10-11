@@ -1,4 +1,3 @@
-import React from 'react'
 import { Route, Routes, useLocation } from "react-router-dom";
 import "./Assets/aurora/styles/aurora-global.css"
 import "./Assets/aurora/styles/aurora-footer.css"
@@ -19,45 +18,50 @@ import Profile from './Base/Core/Profile/Profile';
 import ProfileNavHeader from './Base/Components/Profile/ProfileNavHeader';
 
 function App() {
-    useScript("/scripts/aurora-nav.js")
-    useScript("/scripts/color-scheme-toggle.js")
-    useScript("/scripts/aurora-nav-multi-button.js")
+  useScript("/scripts/aurora-nav.js")
+  useScript("/scripts/color-scheme-toggle.js")
+  useScript("/scripts/aurora-nav-multi-button.js")
 
-    const { pathname } = useLocation();
+  const { pathname } = useLocation();
 
-    return (
-        <div id="overview" className="dmf" data-color-scheme="light" style={{ scrollBehavior: 'smooth' }}>
+  var routes = [
+    { path: "/", element: <MainPage />},
+    { path: "sign-in", element: <Login />},
+    { path: "/sign-up", element: <Register />},
+    { path: "/account", element: <Profile />},
+    { path: "/contributors", element: <Contributors/> },
+    { path: "/included", element: <Included/> },
+    { path: "/legal/terms", element: <Terms />},
+    { path: "/pnf", element: <PageNotFound/> }
+  ]
 
-            {pathname === "/account" ? null :
-                pathname === "/sign-in" || pathname === "/sign-up" ? null : <Ribbon />
-            }
+  return (
+    <div id="overview" className="dmf" data-color-scheme="light" style={{ scrollBehavior: 'smooth' }}>
 
-            <input type="checkbox" id="auroranav-menustate" className="auroranav-menustate" />
-            <div id="auroranav-sticky-placeholder" className="css-sticky auroranav-sticking" />
+      {pathname !== "/account" && pathname !== "/sign-in" && pathname !== "/sign-up" && <Ribbon />}
 
-            {pathname === "/account" ? <ProfileNavHeader /> :
-                pathname === "/sign-in" || pathname === "/sign-up" ? <AuthNavHeader /> : <NavHeader />
-            }
-            <label id="auroranav-curtain" htmlFor="auroranav-menustate" />
-            <div id="auroranav-viewport-emitter" data-viewport-emitter-dispatch="" data-viewport-emitter-state="{&quot;viewport&quot;:&quot;large&quot;,&quot;orientation&quot;:&quot;landscape&quot;,&quot;retina&quot;:false}"></div>
-            <main>
-                <Routes>
-                    <Route exact path="/" element={<MainPage />} />
-                    <Route exact path="/sign-in" element={<Login />} />
-                    <Route exact path="/sign-up" element={<Register />} />
-                    <Route exact path="/account" element={<Profile/>} />
-                    <Route exact path="/contributors" element={<Contributors />} />
-                    <Route exact path="/included" element={<Included />} />
-                    <Route exact path="/legal/terms" element={<Terms />} />
-                    <Route exact path="/pnf" element={<PageNotFound />} />
-                    <Route path="*" element={<PageNotFound />} />
-                </Routes>
-            </main>
+      <input type="checkbox" id="auroranav-menustate" className="auroranav-menustate" />
+      <div id="auroranav-sticky-placeholder" className="css-sticky auroranav-sticking" />
 
-            {pathname === "/sign-in" || pathname === "/sign-up" ? null : <Footer />}
+      {
+          pathname === "/account" ? <ProfileNavHeader /> :
+          pathname === "/sign-in" || pathname === "/sign-up" ? <AuthNavHeader /> : <NavHeader />
+      }
 
-        </div>
-    );
+      <label id="auroranav-curtain" htmlFor="auroranav-menustate" />
+      <div id="auroranav-viewport-emitter" data-viewport-emitter-dispatch="" data-viewport-emitter-state="{&quot;viewport&quot;:&quot;large&quot;,&quot;orientation&quot;:&quot;landscape&quot;,&quot;retina&quot;:false}" />
+      <main>
+        <Routes>
+          {routes.map(({ path, element }, key) =>
+            <Route exact path={path} element={element} key={key} />
+          )}
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
+      </main>
+
+      {pathname !== "/sign-in" && pathname !== "/sign-up" && <Footer />}
+    </div>
+  );
 }
 
 export default App;

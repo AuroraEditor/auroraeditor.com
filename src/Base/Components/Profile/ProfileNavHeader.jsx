@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import "../../../Assets/aurora/styles/Profile/aurora-profile-nav.css"
 import '../../../Assets/aurora/styles/aurora-nav.css';
@@ -11,8 +10,8 @@ function ProfileNavHeader() {
                 <div className="auroranav-content">
                     <h2 className="auroranav-title">Aurora ID</h2>
                     <div className="auroranav-menu">
-                        <a href="#auroranav-menustate" class="auroranav-menucta-anchor auroranav-menucta-anchor-open" id="auroranav-menustate-open">
-                            <span class="auroranav-menucta-anchor-label">Open Menu</span>
+                        <a href="#auroranav-menustate" className="auroranav-menucta-anchor auroranav-menucta-anchor-open" id="auroranav-menustate-open">
+                            <span className="auroranav-menucta-anchor-label">Open Menu</span>
                         </a>
                         <a href="/#" className="auroranav-menucta-anchor auroranav-menucta-anchor-close" id="auroranav-menustate-close">
                             <span className="auroranav-menucta-anchor-label">Close Menu</span>

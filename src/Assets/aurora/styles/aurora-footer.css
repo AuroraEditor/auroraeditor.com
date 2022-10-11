@@ -9,7 +9,7 @@
     min-width: 1024px;
     overflow: hidden;
     position: relative;
-    z-index: 1
+    z-index: 1;
 }
 
 .theme-dark .footer,
