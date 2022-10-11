@@ -12,6 +12,7 @@ jobs:
         npm install
         npm run build
         echo "auroraeditor.com" > build/CNAME
+        cp build/index.html build/404.html
         cp -r src/Assets build/Assets
     - name: setup github env
       run: |
