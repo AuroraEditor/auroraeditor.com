@@ -35,13 +35,13 @@ function loadContributorsData() {
             var data = JSON.parse(contents);
             var max = data.contributorsPerLine || 4;
             var count = 0;
-            var generated = '<aside class="section contributers-links contributors"><div class="section-content">';
+            var generated = '<aside class="section contributors-links contributors"><div class="section-content">';
             var endRow = '</div>';
             var beginRow = '<div class="row">';
             var person = `
         <div class="section-content column large-3 medium-6 small-12">
             <a href="PROFILE" class="block text-center">
-                <img class="contributer-image" src="AVATAR" width="100" height="100">
+                <img class="contributor-image" src="AVATAR" width="100" height="100">
                 <p><strong>NAME</strong></p>
                 <p class="typography-subbody">BIO</p>
             </a>

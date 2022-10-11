@@ -15,7 +15,7 @@ function Footer() {
                         <div className="footer-mini-legal-links">
                             <Link className="footer-mini-legal-link" to="/legal/tos">Terms of Use</Link>
                             <Link className="footer-mini-legal-link" to="/legal/privacy-policy">Privacy Policy</Link>
-                            <Link className="footer-mini-legal-link" to="/contributors">Contributers</Link>
+                            <Link className="footer-mini-legal-link" to="/contributors">contributors</Link>
                             <Link className="footer-mini-legal-link" to="/legal/terms">Agreements and Open Source Licenses</Link>
                         </div>
                     </div>
