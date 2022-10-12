@@ -40,7 +40,7 @@ function loadContributorsData() {
             var beginRow = '<div class="row">';
             var person = `
         <div class="section-content column large-3 medium-6 small-12">
-            <a href="PROFILE" class="block text-center">
+            <a href="PROFILE" target="_blank" class="block text-center">
                 <img class="contributor-image" src="AVATAR" width="100" height="100">
                 <p><strong>NAME</strong></p>
                 <p class="typography-subbody">BIO</p>
