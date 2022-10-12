@@ -55,6 +55,8 @@
     #main section .section-content .row {
         margin-left: 0;
         margin-right: 0;
+        flex-direction: column;
+        align-items: center;
     }
 
     #main section .section-content .row>.column {
