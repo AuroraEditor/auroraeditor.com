@@ -1,4 +1,5 @@
-class AuroraNavMultiButton {
+if (typeof AuroraNavMultiButton === 'undefined') {
+  class AuroraNavMultiButton {
     constructor(id) {
         this.id = id;
         this.button = document.getElementById(this.id);
@@ -29,9 +30,12 @@ class AuroraNavMultiButton {
             document.removeEventListener("click", this.hideOnClickOutside, false);
         }
     };
+  }
 }
 
-//Create a btn variable for each button-multi on page
-//call the init()
-const btn1 = new AuroraNavMultiButton("button-multi-1");
-btn1.init();
+if (typeof AuroraNavMultiButton !== 'undefined') {
+  // Create a btn variable for each button-multi on page
+  // call the init()
+  const btn1 = new AuroraNavMultiButton("button-multi-1");
+  btn1.init();
+}
