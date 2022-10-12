@@ -1,3 +1,5 @@
+import "../../Assets/aurora/styles/aurora-ribbon.css"
+
 function Ribbon() {
     return (
         <div id="notice-ribbon" className="ribbon">

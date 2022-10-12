@@ -1,21 +1,33 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import "./Assets/aurora/styles/aurora-global.css"
-import "./Assets/aurora/styles/aurora-footer.css"
-import "./Assets/aurora/styles/aurora-ribbon.css"
 import useScript from './Base/Hooks/useScript';
+
+import ProfileNavHeader from './Base/Components/Profile/ProfileNavHeader';
+import AuthNavHeader from './Base/Components/Auth/AuthNavHeader';
 import NavHeader from "./Base/Components/NavHeader";
+
 import MainPage from "./Base/Core/Main";
-import Contributors from "./Base/Core/Contributors";
-import PageNotFound from "./Base/Core/PageNotFound";
-import Included from './Base/Core/Included';
-import Ribbon from './Base/Components/Ribbon';
-import Footer from "./Base/Components/Footer";
-import Terms from './Base/Core/Terms';
 import Login from "./Base/Core/Auth/Login";
 import Register from './Base/Core/Auth/Register';
-import AuthNavHeader from './Base/Components/Auth/AuthNavHeader';
 import Profile from './Base/Core/Profile/Profile';
-import ProfileNavHeader from './Base/Components/Profile/ProfileNavHeader';
+import Contributors from "./Base/Core/Contributors";
+import Included from './Base/Core/Included';
+import Terms from './Base/Core/Terms';
+import PageNotFound from "./Base/Core/PageNotFound";
+
+import Ribbon from './Base/Components/Ribbon';
+import Footer from "./Base/Components/Footer";
+
+const routes = [
+  { path: "/", element: <MainPage /> },
+  { path: "/sign-in", element: <Login /> },
+  { path: "/sign-up", element: <Register /> },
+  { path: "/account", element: <Profile /> },
+  { path: "/contributors", element: <Contributors /> },
+  { path: "/included", element: <Included /> },
+  { path: "/legal/terms", element: <Terms /> },
+  { path: "/pnf", element: <PageNotFound /> }
+];
 
 function App() {
   useScript("/scripts/aurora-nav.js")
@@ -23,17 +35,6 @@ function App() {
   useScript("/scripts/aurora-nav-multi-button.js")
 
   const { pathname } = useLocation();
-
-  var routes = [
-    { path: "/", element: <MainPage />},
-    { path: "sign-in", element: <Login />},
-    { path: "/sign-up", element: <Register />},
-    { path: "/account", element: <Profile />},
-    { path: "/contributors", element: <Contributors/> },
-    { path: "/included", element: <Included/> },
-    { path: "/legal/terms", element: <Terms />},
-    { path: "/pnf", element: <PageNotFound/> }
-  ]
 
   return (
     <div id="overview" className="dmf" data-color-scheme="light" style={{ scrollBehavior: 'smooth' }}>

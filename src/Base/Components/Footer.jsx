@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import ThemeSelection from "./ThemeSelection"
+import "../../Assets/aurora/styles/aurora-footer.css"
 
 function Footer() {
     return (
