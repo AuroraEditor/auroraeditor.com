@@ -1,3 +1,9 @@
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 120px); 
+}
+
 .row-full {
     display: flex;
     flex-wrap: wrap;
@@ -841,7 +847,7 @@ sub {
 
 @media only screen and (max-width: 734px) {
     .small-offset-0 {
-        margin-left:0
+        margin-left: 0
     }
 
     .small-12 {
@@ -851,17 +857,17 @@ sub {
     }
 
     .small-offset-12 {
-        margin-left:100%
+        margin-left: 100%
     }
 
     .small-centered {
         margin-left: auto;
-        margin-right:auto
+        margin-right: auto
     }
 
     .small-uncentered {
         margin-left: 0;
-        margin-right:0
+        margin-right: 0
     }
 }
 
@@ -1620,21 +1626,21 @@ p+a {
 
 section[class^='section-'] {
     width: 100%;
-    overflow-x:hidden
+    overflow-x: hidden
 }
 
 .section-content {
     margin-left: auto;
     margin-right: auto;
     width: 980px;
-    position:relative
+    position: relative
 }
 
 @media only screen and (min-width: 1441px) {
     .section-content {
         margin-left: auto;
         margin-right: auto;
-        width:980px
+        width: 980px
     }
 }
 
@@ -1642,7 +1648,7 @@ section[class^='section-'] {
     .section-content {
         margin-left: auto;
         margin-right: auto;
-        width:692px
+        width: 692px
     }
 }
 
@@ -1650,42 +1656,42 @@ section[class^='section-'] {
     .section-content {
         margin-left: auto;
         margin-right: auto;
-        width:87.5%
+        width: 87.5%
     }
 }
 
 .section-content .row {
     margin-left: -1.5em;
-    margin-right:-1.5em
+    margin-right: -1.5em
 }
 
 @media only screen and (max-width: 1068px) {
     .section-content .row {
         margin-left: -1em;
-        margin-right:-1em
+        margin-right: -1em
     }
 }
 
 @media only screen and (max-width: 734px) {
     .section-content .row {
         margin-left: 0em;
-        margin-right:0em
+        margin-right: 0em
     }
 }
 
-.section-content .row > .column {
-    padding:1.5em 1.5em
+.section-content .row>.column {
+    padding: 1.5em 1.5em
 }
 
 @media only screen and (max-width: 1068px) {
-    .section-content .row > .column {
-        padding:1.5em 1em
+    .section-content .row>.column {
+        padding: 1.5em 1em
     }
 }
 
 @media only screen and (max-width: 734px) {
-    .section-content .row > .column {
-        padding:1em 0
+    .section-content .row>.column {
+        padding: 1em 0
     }
 }
 
@@ -1851,7 +1857,10 @@ h6 img {
     }
 }
 
-.icon::before, .icon::after, .more::before, .more::after {
+.icon::before,
+.icon::after,
+.more::before,
+.more::after {
     font-family: "SF Pro Icons";
     color: inherit;
     display: inline-block;
@@ -1865,21 +1874,28 @@ h6 img {
     alt: ''
 }
 
-.icon::before, .icon::after, .more::before, .more::after {
-    text-decoration:none
+.icon::before,
+.icon::after,
+.more::before,
+.more::after {
+    text-decoration: none
 }
 
-.icon::before, .more::before {
-    display:none
+.icon::before,
+.more::before {
+    display: none
 }
 
-.icon-after::after, .more::after {
+.icon-after::after,
+.more::after {
     padding-left: .3em;
-    top:0
+    top: 0
 }
 
-.icon-chevrondown::before, .icon-chevrondown::after {
-    content: "" /** TODO: Add chevron icon **/
+.icon-chevrondown::before,
+.icon-chevrondown::after {
+    content: ""
+        /** TODO: Add chevron icon **/
 }
 
 .text-center {

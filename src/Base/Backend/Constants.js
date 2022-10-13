@@ -1,5 +1,6 @@
-export const baseApiURL = "https://api.auroraeditor.com/v1/"
+export const baseApiURL = "http://api.auroraeditor.com:8080/v1/"
 
 // Auth Endpoints
-export const login = "auth/login"
-export const register = "auth/register"
+export const login = "oauth/login"
+export const register = "oauth/register"
+export const verifyAccount = "oauth/email-verification"

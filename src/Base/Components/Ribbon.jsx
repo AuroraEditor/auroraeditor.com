@@ -1,4 +1,4 @@
-import React from "react";
+import "../../Assets/aurora/styles/aurora-ribbon.css"
 
 function Ribbon() {
     return (

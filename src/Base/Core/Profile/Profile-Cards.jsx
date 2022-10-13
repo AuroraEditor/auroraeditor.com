@@ -1,5 +1,3 @@
-import React from "react";
-
 function ProfileCards() {
     return (
         <div className="section">

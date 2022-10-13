@@ -1,6 +1,6 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import ThemeSelection from "./ThemeSelection"
+import "../../Assets/aurora/styles/aurora-footer.css"
 
 function Footer() {
     return (
@@ -15,7 +15,7 @@ function Footer() {
                         <div className="footer-mini-legal-links">
                             <Link className="footer-mini-legal-link" to="/legal/tos">Terms of Use</Link>
                             <Link className="footer-mini-legal-link" to="/legal/privacy-policy">Privacy Policy</Link>
-                            <Link className="footer-mini-legal-link" to="/contributors">contributors</Link>
+                            <Link className="footer-mini-legal-link" to="/contributors">Contributors</Link>
                             <Link className="footer-mini-legal-link" to="/legal/terms">Agreements and Open Source Licenses</Link>
                         </div>
                     </div>
