@@ -14,13 +14,7 @@ import Terms from './Base/Core/Terms';
 import PageNotFound from "./Base/Core/PageNotFound";
 import Ribbon from './Base/Components/Ribbon';
 import Footer from "./Base/Components/Footer";
-import Terms from './Base/Core/Terms';
-import Login from "./Base/Core/Auth/Login";
-import Register from './Base/Core/Auth/Register';
-import AuthNavHeader from './Base/Components/Auth/AuthNavHeader';
-import Profile from './Base/Core/Profile/Profile';
-import ProfileNavHeader from './Base/Components/Profile/ProfileNavHeader';
-import EmailVerification from "./Base/Core/Auth/EmailVerification"
+import EmailVerification from "./Base/Core/Auth/EmailVerification";
 
 function App() {
   useScript("/scripts/aurora-nav.js")
