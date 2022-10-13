@@ -1,14 +1,19 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import '../../Assets/aurora/styles/aurora-nav.css';
 
 function NavHeader() {
+
+    const { pathname } = useLocation();
+
     return (
         <nav id="auroranav" className="auroranav auroranav-scrim css-sticky auroranav-sticking" data-sticky role="navigation">
             <div className="auroranav-wrapper">
                 <div className="auroranav-background"></div>
                 <div className="auroranav-content">
                     <h2 className="auroranav-title">
-                        <Link to="/">Aurora Editor</Link>
+                        {
+                            pathname === "/extension" ? <Link to="/">AE | Extensions</Link> : <Link to="/">Aurora Editor</Link>
+                        }
                     </h2>
 
                     <div className="auroranav-menu">
