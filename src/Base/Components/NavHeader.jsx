@@ -12,7 +12,7 @@ function NavHeader() {
                 <div className="auroranav-content">
                     <h2 className="auroranav-title">
                         {
-                            pathname === "/extension" ? <Link to="/">AE | Extensions</Link> : <Link to="/">Aurora Editor</Link>
+                            pathname === "/extension" ? <Link to="/" className="gradient-text">AE | Extensions</Link> : <Link to="/">Aurora Editor</Link>
                         }
                     </h2>
 
@@ -30,6 +30,9 @@ function NavHeader() {
                                 </li>
                                 <li className="auroranav-menu-item">
                                     <Link to="/included" className="auroranav-menu-link">What’s included</Link>
+                                </li>
+                                <li className="auroranav-menu-item">
+                                    <Link to="/extension" className="auroranav-menu-link">Extensions</Link>
                                 </li>
                                 { /*
                                 TODO: Maybe make this a profile icon and add it behind the dowwnload button

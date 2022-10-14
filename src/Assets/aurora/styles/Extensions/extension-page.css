@@ -34,7 +34,7 @@
 }
 
 .extension-btn {
-    width: 180px;
+    width: 170px;
 }
 
 .clearfix::before {
@@ -128,6 +128,7 @@
 }
 
 .f00-light {
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-size: 40px !important;
 }
 
@@ -184,6 +185,7 @@
 .extension-tag-action, .extension-tag {
     display: inline-block;
     padding: 0 7px;
+    font-family: "SF Pro Rounded", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-size: 12px;
     font-weight: 500;
     white-space: nowrap;
@@ -191,7 +193,7 @@
     padding-right: 10px;
     padding-left: 10px;
     line-height: 22px;
-    color: #0969da;
+    color: #0071e3;
     background-color: #096bda28;
     border: 1px solid rgba(0,0,0,0);
     margin: 0 .5em .5em 0;
@@ -227,7 +229,9 @@
 }
 
 .extension-developer {
-    font-size: 16px;
+    font-family: "SF Pro Rounded", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
 }
 
 .flex-items-center {
@@ -268,13 +272,15 @@
 }
 
 .category-name {
+    font-family: "SF Pro Rounded", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-size: 16px !important;
     font-weight: 500;
 }
 
 .sidebar-title {
+    font-family: "SF Pro Rounded", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-size: 16px !important;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .verified-text {
@@ -283,6 +289,10 @@
 }
 
 .text-muted {
+    color: #b2b2b6;
+}
+
+.extension-page-link .text-muted {
     color: #b2b2b6;
 }
 
@@ -321,7 +331,73 @@ ul, ol {
 }
 
 .works-with {
+    font-family: "SF Pro Rounded", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-size: 14px;
     color: #b2b2b6;
-    font-weight: 100;
+    font-weight: 500;
+}
+
+.details {
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+.project-details-item {
+    font-family: "SF Pro Rounded", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    color: #0071e3;
+}
+
+.developer-links-item {
+    font-family: "SF Pro Rounded", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    color: #0071e3;
+}
+
+.project-details-item a {
+    color: #0071e3;
+}
+
+.developer-links-item a {
+    color: #0071e3;
+}
+
+.text-muted-link a {
+    font-family: "SF Pro Rounded", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    color:#b2b2b6;
+}
+
+.text-muted-link a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.extension-page-link a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.note {
+    min-height: 17px;
+    margin: 4px 0 2px;
+    font-size: 12px;
+    color: #b2b2b6;
+}
+
+.verified-creator {
+    font-family: "SF Pro Rounded", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 14px !important;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.verified-badge {
+    display: inline-block;
+    overflow: visible !important;
+    vertical-align: text-bottom;
+    fill: currentColor;
+}
+
+.verified-badge-color {
+    color: #0969da;
 }
