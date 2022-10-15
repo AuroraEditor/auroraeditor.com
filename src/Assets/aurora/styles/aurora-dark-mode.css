@@ -584,6 +584,11 @@ html[data-color-scheme="dark"] body .card-line {
     color: var(--color-text-description);
 }
 
+/** Extension Page */
+html[data-color-scheme="dark"] body .project-details-item a {
+    color: white;
+}
+
 
 /* ===== dmf opt-in body styles ===== */
 html[data-color-scheme="dark"] body.dmf {

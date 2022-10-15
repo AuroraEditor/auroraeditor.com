@@ -70,7 +70,7 @@
     }
 
     .pl-md-5 {
-        padding-left: 32px !important;
+        padding-left: 80px !important;
     }
 
     .col-md-9 {
@@ -89,7 +89,6 @@
 .md-3 {
     margin-bottom: 16px !important;
 }
-
 
 .extension-icon-large {
     width: 128px;
@@ -130,6 +129,7 @@
 .f00-light {
     font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-size: 40px !important;
+    letter-spacing: .04em;
 }
 
 .content-flex {
@@ -187,7 +187,8 @@
     padding: 0 7px;
     font-family: "SF Pro Rounded", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 600;
+    letter-spacing: .008em;
     white-space: nowrap;
     border-radius: 2em;
     padding-right: 10px;
@@ -230,8 +231,9 @@
 
 .extension-developer {
     font-family: "SF Pro Rounded", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: .02em;
 }
 
 .flex-items-center {
@@ -280,7 +282,8 @@
 .sidebar-title {
     font-family: "SF Pro Rounded", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-size: 16px !important;
-    font-weight: 500;
+    font-weight: 700;
+    letter-spacing: .02em;
 }
 
 .verified-text {
@@ -331,10 +334,11 @@ ul, ol {
 }
 
 .works-with {
-    font-family: "SF Pro Rounded", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    font-size: 14px;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 13px;
     color: #b2b2b6;
     font-weight: 500;
+    letter-spacing: .006em;
 }
 
 .details {
@@ -342,19 +346,32 @@ ul, ol {
 }
 
 .project-details-item {
-    font-family: "SF Pro Rounded", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    font-weight: 400;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: 600;
     color: #0071e3;
+    letter-spacing: .006em;
 }
 
 .developer-links-item {
-    font-family: "SF Pro Rounded", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    font-weight: 400;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: 600;
     color: #0071e3;
+    letter-spacing: .006em;
+}
+
+.project-details-item-repo a {
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: 600;
+    color: #0071e3;
+    letter-spacing: .006em;
 }
 
 .project-details-item a {
-    color: #0071e3;
+    color: black;
+}
+
+.project-details-item span {
+    color: #b2b2b6;
 }
 
 .developer-links-item a {
@@ -362,9 +379,10 @@ ul, ol {
 }
 
 .text-muted-link a {
-    font-family: "SF Pro Rounded", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    font-weight: 500;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: 600;
     color:#b2b2b6;
+    letter-spacing: .006em;
 }
 
 .text-muted-link a:hover {
@@ -382,13 +400,16 @@ ul, ol {
     margin: 4px 0 2px;
     font-size: 12px;
     color: #b2b2b6;
+    font-weight: 500;
 }
 
 .verified-creator {
-    font-family: "SF Pro Rounded", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-size: 14px !important;
     font-weight: 500;
     margin-bottom: 5px;
+    font-weight: 600;
+    letter-spacing: .0001em;
 }
 
 .verified-badge {

@@ -68,24 +68,25 @@ function ExtensionPage() {
                             </li>
                             <li className="mt-2 mb-0 mt-md-0 mb-md-1">
                                 <h5 className="color-fg-muted mb-2 sidebar-title">Works With:</h5>
-                            </li><li className="works-with">
+                            </li>
+                            <li className="works-with mb-2">
                                 <p>Universal</p>
                             </li>
 
                             <li className="py-3 lh-condensed">
                                 <h5 className="color-fg-muted mb-2 sidebar-title">Project Details</h5>
                                 <ul className="list-style-none text-small">
-                                    <li className="mb-1 project-details-item extension-page-link">
+                                    <li className="mb-1 project-details-item-repo extension-page-link">
                                         <a rel="nofollow">GitHub Repo</a>
                                     </li>
                                     <li className="mb-1 project-details-item extension-page-link">
                                         <a rel="nofollow">No Pull Request</a>
                                     </li>
                                     <li className="mb-1 project-details-item extension-page-link">
-                                        <a rel="nofollow">Last Commit: <a className="muted-text">10mins ago</a></a>
+                                        <span className="muted-text"><a>Last Commit: </a>10 mins ago</span>
                                     </li>
                                     <li className="mb-1 project-details-item extension-page-link">
-                                        <a rel="nofollow">Open Issues: <a className="muted-text">0 issues</a></a>
+                                        <span className="muted-text"><a>Open Issues: </a>0 issues</span>
                                     </li>
                                 </ul>
                             </li>
