@@ -32,7 +32,7 @@ function NavHeader() {
                                     <Link to="/included" className="auroranav-menu-link">What’s included</Link>
                                 </li>
                                 <li className="auroranav-menu-item">
-                                    <Link to="/extension" className="auroranav-menu-link">Extensions</Link>
+                                    <Link to="/marketplace" className="auroranav-menu-link">Marketplace</Link>
                                 </li>
                                 { /*
                                 TODO: Maybe make this a profile icon and add it behind the dowwnload button

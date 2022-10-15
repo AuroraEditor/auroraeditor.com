@@ -589,6 +589,30 @@ html[data-color-scheme="dark"] body .project-details-item a {
     color: white;
 }
 
+html[data-color-scheme="dark"] body .section-hero .hero {
+    background-color: var(--dark);
+}
+
+html[data-color-scheme="dark"] body .section-tiles-grid {
+    background-color: var(--dark);
+}
+
+html[data-color-scheme="dark"] body .grid-item {
+    background-color: var(--fill-gradient-gray-start);
+}
+
+html[data-color-scheme="dark"] body .grid-item.theme-blue {
+    background-color: #102C54;
+}
+
+html[data-color-scheme="dark"] body .grid-item.theme-inverted {
+    background-color: #E63244;
+}
+
+html[data-color-scheme="dark"] body .grid-modal .modal-content {
+    background-color: #343E40;
+}
+
 
 /* ===== dmf opt-in body styles ===== */
 html[data-color-scheme="dark"] body.dmf {

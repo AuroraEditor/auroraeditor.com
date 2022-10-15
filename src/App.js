@@ -15,7 +15,8 @@ import PageNotFound from "./Base/Core/PageNotFound";
 import Ribbon from './Base/Components/Ribbon';
 import Footer from "./Base/Components/Footer";
 import EmailVerification from "./Base/Core/Auth/EmailVerification";
-import ExtensionPage from "./Base/Components/Extensions/ExtensionPage";
+import ExtensionPage from "./Base/Core/Extensions/ExtensionPage";
+import MarketplacePage from "./Base/Core/Extensions/Info Page/MarketplacePage";
 
 function App() {
   useScript("/scripts/aurora-nav.js")
@@ -33,7 +34,8 @@ function App() {
     { path: "/contributors", element: <Contributors /> },
     { path: "/included", element: <Included /> },
     { path: "/legal/terms", element: <Terms /> },
-    { path: "/extension", element: <ExtensionPage /> },
+    { path: "/marketplace/:extension-id", element: <ExtensionPage /> },
+    { path: "/marketplace", element: <MarketplacePage /> },
     { path: "/pnf", element: <PageNotFound /> }
   ]
 
