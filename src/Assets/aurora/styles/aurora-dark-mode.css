@@ -9,6 +9,16 @@ html[data-color-scheme="light"] picture.dark {
     visibility: hidden;
 }
 
+html[data-color-scheme="dark"] img.light {
+    display: none;
+    visibility: hidden;
+}
+
+html[data-color-scheme="light"] img.dark {
+    display: none;
+    visibility: hidden;
+}
+
 html[data-color-scheme="light"] {
     --glyph-gray: #000;
 }

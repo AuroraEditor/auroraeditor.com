@@ -49,7 +49,7 @@ function MarketplacePrivacy() {
                         <h3 className="typography-headline-elevated">Extensions are automatically scanned for known malware and breach of privacy.</h3>
                     </section>
                     <section className="grid-item half theme-inverted fact grid-item-health-privacy" data-analytics-section-engagement="name:patient privacy">
-                        <h3 className="typography-facts-long-headline">We care bout your privacy, and by keeping extensions locked away in a vault, we can provide that sense of security.</h3>
+                        <h3 className="typography-facts-long-headline">We care about your privacy, and by keeping extensions locked away in a vault, we can provide that sense of security.</h3>
                     </section>
                     <section className="grid-item full grid-item-data">
                         <div className="flex-content align-items-center align-items-start-small row-reverse flex-column-small">
