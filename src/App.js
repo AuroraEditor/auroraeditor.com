@@ -4,6 +4,7 @@ import useScript from './Base/Hooks/useScript';
 import ProfileNavHeader from './Base/Components/Profile/ProfileNavHeader';
 import AuthNavHeader from './Base/Components/Auth/AuthNavHeader';
 import NavHeader from "./Base/Components/NavHeader";
+import MarketplaceNavHeader from "./Base/Components/Marketplace/MarketplaceNavHeader";
 import MainPage from "./Base/Core/Main";
 import Login from "./Base/Core/Auth/Login";
 import Register from './Base/Core/Auth/Register';
@@ -54,7 +55,10 @@ function App() {
         pathname === "/account" ? <ProfileNavHeader /> :
           pathname === "/sign-in" 
           || pathname === "/sign-up"
-          || pathname === "/oauth/email-verification"  ? <AuthNavHeader /> : <NavHeader />
+          || pathname === "/oauth/email-verification"  ? <AuthNavHeader /> :
+          pathname === "/marketplace" || pathname === "/marketplace/:extension-id"
+          || pathname === "/marketplace/explore" ? <MarketplaceNavHeader/> :
+          <NavHeader />
       }
 
       <label id="auroranav-curtain" htmlFor="auroranav-menustate" />
