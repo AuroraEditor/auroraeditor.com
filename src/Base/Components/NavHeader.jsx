@@ -1,9 +1,11 @@
 import { Link, useLocation } from "react-router-dom";
 import '../../Assets/aurora/styles/aurora-nav.css';
+import { getOS } from "../Utils/DeviceDetection";
 
 function NavHeader() {
 
     const { pathname } = useLocation();
+    const platform = getOS()
 
     return (
         <nav id="auroranav" className="auroranav auroranav-scrim css-sticky auroranav-sticking" data-sticky role="navigation">
@@ -51,7 +53,7 @@ function NavHeader() {
                                     <span className="auroranav-menucta-chevron"></span>
                                 </label>
                             </div>
-                            <div className="auroranav-action auroranav-action-button">
+                            {platform === "macos" ? <div className="auroranav-action auroranav-action-button">
                                 <div className="button-multi-container">
                                     <a href="/#" className="auroranav-button button button-compact button-pill button-multi icon icon-chevrondown" id="button-multi-1" aria-expanded="false">Download</a>
                                     <div className="button-multi-content button-multi-content-right button-multi-content-slide" role="menu">
@@ -61,7 +63,8 @@ function NavHeader() {
                                         <a href="https://github.com/AuroraEditor/AuroraEditor/archive/refs/heads/main.zip" className="button-multi-option" role="menuitem" tabindex="3">Source Code</a>
                                     </div>
                                 </div>
-                            </div>
+                            </div> : null
+                            }
                         </div>
                     </div>
                 </div>
