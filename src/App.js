@@ -18,6 +18,7 @@ import Footer from "./Base/Components/Footer";
 import EmailVerification from "./Base/Core/Auth/EmailVerification";
 import ExtensionPage from "./Base/Core/Extensions/ExtensionPage";
 import MarketplacePage from "./Base/Core/Extensions/Info Page/MarketplacePage";
+import IdeasPage from "./Base/Core/Extensions/Ideas/IdeasPages";
 
 function App() {
   useScript("/scripts/aurora-nav.js")
@@ -37,6 +38,7 @@ function App() {
     { path: "/legal/terms", element: <Terms /> },
     { path: "/marketplace/:extension-id", element: <ExtensionPage /> },
     { path: "/marketplace", element: <MarketplacePage /> },
+    { path: "/marketplace/ideas", element: <IdeasPage /> },
     { path: "/pnf", element: <PageNotFound /> }
   ]
 
@@ -56,8 +58,10 @@ function App() {
           pathname === "/sign-in" 
           || pathname === "/sign-up"
           || pathname === "/oauth/email-verification"  ? <AuthNavHeader /> :
-          pathname === "/marketplace" || pathname === "/marketplace/:extension-id"
-          || pathname === "/marketplace/explore" ? <MarketplaceNavHeader/> :
+          pathname === "/marketplace" 
+          || pathname === "/marketplace/:extension-id"
+          || pathname === "/marketplace/explore"
+          || pathname === "/marketplace/ideas" ? <MarketplaceNavHeader/> :
           <NavHeader />
       }
 
