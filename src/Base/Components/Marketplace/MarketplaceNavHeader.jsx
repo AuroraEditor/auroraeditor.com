@@ -38,13 +38,16 @@ function MarketplaceNavHeader() {
                                     <Link to="/" className="auroranav-menu-link">Aurora Editor</Link>
                                 </li>
                                 <li className="auroranav-menu-item">
-                                    <Link to="/marketplace" className="auroranav-menu-link">About</Link>
-                                </li>
-                                <li className="auroranav-menu-item">
                                     <Link to="/marketplace/explore" className="auroranav-menu-link">Explore</Link>
                                 </li>
                                 <li className="auroranav-menu-item">
+                                    <Link to="/marketplace/ideas" className="auroranav-menu-link">Extension Ideas</Link>
+                                </li>
+                                <li className="auroranav-menu-item">
                                     <Link to="/marketplace/build" className="auroranav-menu-link">Build Extensions</Link>
+                                </li>
+                                <li className="auroranav-menu-item">
+                                    <Link to="/marketplace" className="auroranav-menu-link">About</Link>
                                 </li>
                                 { /*
                                 TODO: Maybe make this a profile icon and add it behind the dowwnload button
