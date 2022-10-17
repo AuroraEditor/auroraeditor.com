@@ -7,14 +7,14 @@ function MarketplaceNavHeader() {
     const { pathname } = useLocation();
     const platform = getOS()
 
-    var launchAuroraEditor = function() {
+    var launchAuroraEditor = function () {
         window.location.replace("auroraeditor://marketplace");
     }
 
     // TODO: Add a fallback url to download the editor
-    var openAuroraEditor = function() {
+    var openAuroraEditor = function () {
         launchAuroraEditor();
-      };
+    };
 
     return (
         <nav id="auroranav" className="auroranav auroranav-scrim css-sticky auroranav-sticking" data-sticky role="navigation">
@@ -22,9 +22,7 @@ function MarketplaceNavHeader() {
                 <div className="auroranav-background"></div>
                 <div className="auroranav-content">
                     <h2 className="auroranav-title">
-                        {
-                            pathname === "/marketplace" || pathname === "/marketplace/:extension-id" ? <Link to="/">Marketplace</Link> : null
-                        }
+                        <Link to="/">Marketplace</Link>
                     </h2>
 
                     <div className="auroranav-menu">
