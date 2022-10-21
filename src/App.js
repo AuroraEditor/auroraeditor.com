@@ -19,6 +19,7 @@ import EmailVerification from "./Base/Core/Auth/EmailVerification";
 import ExtensionPage from "./Base/Core/Extensions/ExtensionPage";
 import MarketplacePage from "./Base/Core/Extensions/Info Page/MarketplacePage";
 import IdeasPage from "./Base/Core/Extensions/Ideas/IdeasPages";
+import ExploreExtensionsPage from "./Base/Core/Extensions/ExploreExtensionsPage";
 
 function App() {
   useScript("/scripts/aurora-nav.js")
@@ -39,6 +40,7 @@ function App() {
     { path: "/marketplace/:extension-id", element: <ExtensionPage /> },
     { path: "/marketplace", element: <MarketplacePage /> },
     { path: "/marketplace/ideas", element: <IdeasPage /> },
+    { path: "/marketplace/explore", element: <ExploreExtensionsPage /> },
     { path: "/pnf", element: <PageNotFound /> }
   ]
 
