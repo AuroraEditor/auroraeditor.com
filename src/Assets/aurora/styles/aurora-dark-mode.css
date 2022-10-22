@@ -623,6 +623,22 @@ html[data-color-scheme="dark"] body .grid-modal .modal-content {
     background-color: #343E40;
 }
 
+/* Extension Explore Page */
+html[data-color-scheme="dark"] body .extension-author {
+    color: var(--color-text-description);
+}
+
+html[data-color-scheme="dark"] body .extension-description {
+    color: var(--color-text-description);
+}
+
+html[data-color-scheme="dark"] body .extension-download {
+    color: var(--color-text-description);
+}
+
+html[data-color-scheme="dark"] body .filter-item {
+    color: var(--color-button-text);
+}
 
 /* ===== dmf opt-in body styles ===== */
 html[data-color-scheme="dark"] body.dmf {
