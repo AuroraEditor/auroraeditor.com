@@ -1,7 +1,11 @@
 import React from "react";
 import "../../../Assets/aurora/styles/Extensions/extension-explore.css"
+import { fetchExtensions } from "../../Backend/Extensions/Explore";
 
 function ExploreExtensionsPage() {
+
+    fetchExtensions()
+
     const categories = [
         'Code Quality',
         'Code Review',
