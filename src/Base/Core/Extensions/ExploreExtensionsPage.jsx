@@ -19,11 +19,29 @@ function ExploreExtensionsPage() {
         'Version Control',
     ].sort();
 
+    // Limit the list to 8 items max
+    const extensions = [
+        'Code Quality',
+        'Code Review',
+        'Deployment',
+        'Learning',
+        'Localization',
+        'Monitoring',
+        'Project Management',
+        'Publishing',
+        'Recently Added',
+        'Security',
+        'Support',
+        'Testing',
+        'Utilities',
+        'Version Control',
+    ].splice(0, 8);
+
     const categoryItems = categories.map(category =>
         <li><a className="filter-item py-2 mb-0">{category}</a></li>
     );
 
-    const extensionItem = categories.map(category =>
+    const extensionItem = extensions.map(category =>
         <a className="col-md-6 mb-4 d-flex no-underline extension-item" href="/marketplace/63672227">
             <div>
                 <div className="extension-icon extension-icon-small" style={{ backgroundColor: "#ffffff" }}>

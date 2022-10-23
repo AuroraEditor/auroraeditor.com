@@ -640,6 +640,11 @@ html[data-color-scheme="dark"] body .filter-item {
     color: var(--color-button-text);
 }
 
+html[data-color-scheme="dark"] body .filter-item:hover {
+    color: #0077ed;
+    text-decoration: none;
+}
+
 /* ===== dmf opt-in body styles ===== */
 html[data-color-scheme="dark"] body.dmf {
     background-color: var(--dark);
