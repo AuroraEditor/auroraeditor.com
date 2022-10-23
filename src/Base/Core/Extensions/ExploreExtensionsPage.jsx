@@ -17,14 +17,14 @@ function ExploreExtensionsPage() {
         'Testing',
         'Utilities',
         'Version Control',
-    ];
+    ].sort();
 
     const categoryItems = categories.map(category =>
         <li><a className="filter-item py-2 mb-0">{category}</a></li>
     );
 
     const extensionItem = categories.map(category =>
-        <a className="col-md-6 mb-4 d-flex no-underline extension-item">
+        <a className="col-md-6 mb-4 d-flex no-underline extension-item" href="/marketplace/63672227">
             <div>
                 <div className="extension-icon extension-icon-small" style={{ backgroundColor: "#ffffff" }}>
                     <img className="extension-image" alt="" src="https://user-images.githubusercontent.com/63672227/193885608-d6217c57-6a12-4470-a0c7-f1ecc80bc3f2.png" />
