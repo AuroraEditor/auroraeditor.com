@@ -1,4 +1,4 @@
-import { Route, Routes, useLocation, redirect } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import "./Assets/aurora/styles/aurora-global.css"
 import useScript from './Base/Hooks/useScript';
 import ProtectedRoute from "./Base/Utils/ProtectedRoute";

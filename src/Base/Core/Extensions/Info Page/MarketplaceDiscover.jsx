@@ -4,7 +4,7 @@ function MarketplaceDiscover() {
     return (
         <section className="section section-discovery section-tiles-grid section-tiles-grid-first">
             <div className="section-content">
-                <h2 className="section-headline" role="heading">Built for everyone.</h2>
+                <h2 className="section-headline">Built for everyone.</h2>
                 <div className="grid-container">
                     <section className="grid-item full grid-item-stories">
                         <div className="flex-content row flex-nowrap align-items-center align-items-start-small flex-column-reverse-small">

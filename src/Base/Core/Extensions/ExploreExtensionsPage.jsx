@@ -1,6 +1,5 @@
 import React from "react";
 import "../../../Assets/aurora/styles/Extensions/extension-explore.css"
-import { fetchExtensions } from "../../Backend/Extensions/Explore";
 import ExtensionItem from "./ExtensionItem";
 
 function ExploreExtensionsPage() {
@@ -22,7 +21,7 @@ function ExploreExtensionsPage() {
     ].sort();
 
     const categoryItems = categories.map(category =>
-        <li><a className="filter-item py-2 mb-0">{category}</a></li>
+        <li><a className="filter-item py-2 mb-0" href={"/marketplace/" + {category}}>{category}</a></li>
     );
 
     return (

@@ -94,13 +94,13 @@ function ExtensionPage() {
                                         <a rel="nofollow" href={githubLinks.github_repo_link}>GitHub Repo</a>
                                     </li>
                                     <li className="mb-1 project-details-item extension-page-link">
-                                        <a rel="nofollow">No Pull Request</a>
+                                        <a rel="nofollow" href={githubLinks.github_repo_link}>No Pull Request</a>
                                     </li>
                                     <li className="mb-1 project-details-item extension-page-link">
-                                        <span className="muted-text"><a>Last Commit: </a>10 mins ago</span>
+                                        <span className="muted-text"><a href={githubLinks.github_repo_link}>Last Commit: </a>10 mins ago</span>
                                     </li>
                                     <li className="mb-1 project-details-item extension-page-link">
-                                        <span className="muted-text"><a>Open Issues: </a>0 issues</span>
+                                        <span className="muted-text"><a href={githubLinks.github_repo_link}>Open Issues: </a>0 issues</span>
                                     </li>
                                 </ul>
                             </li>
@@ -128,7 +128,7 @@ function ExtensionPage() {
                             <li className="py-3 lh-condensed">
                                 <ul className="list-style-none text-small">
                                     <li className="mb-1 text-muted-link">
-                                        <a rel="nofollow">
+                                        <a rel="nofollow" href="/report">
                                             Report this extension
                                         </a>
                                     </li>

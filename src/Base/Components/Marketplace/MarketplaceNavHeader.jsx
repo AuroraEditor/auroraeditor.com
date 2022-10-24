@@ -1,10 +1,9 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import '../../../Assets/aurora/styles/aurora-nav.css';
 import { getOS, openAuroraEditor } from "../../Utils/DeviceDetection";
 
 function MarketplaceNavHeader() {
 
-    const { pathname } = useLocation();
     const platform = getOS()
 
     return (
@@ -28,18 +27,30 @@ function MarketplaceNavHeader() {
                                 <li className="auroranav-menu-item">
                                     <Link to="/" className="auroranav-menu-link">Aurora Editor</Link>
                                 </li>
-                                <li className="auroranav-menu-item">
-                                    <Link to="/marketplace/explore" className="auroranav-menu-link">Explore</Link>
-                                </li>
-                                <li className="auroranav-menu-item">
-                                    <Link to="/marketplace/ideas" className="auroranav-menu-link">Extension Ideas</Link>
-                                </li>
-                                <li className="auroranav-menu-item">
-                                    <Link to="/marketplace/build" className="auroranav-menu-link">Build Extensions</Link>
-                                </li>
-                                <li className="auroranav-menu-item">
-                                    <Link to="/marketplace" className="auroranav-menu-link">About</Link>
-                                </li>
+                                {
+                                    process.env.NODE_ENV !== 'production' ?
+                                        <li className="auroranav-menu-item">
+                                            <Link to="/marketplace/explore" className="auroranav-menu-link">Explore</Link>
+                                        </li> : null
+                                }
+                                {
+                                    process.env.NODE_ENV !== 'production' ?
+                                        <li className="auroranav-menu-item">
+                                            <Link to="/marketplace/ideas" className="auroranav-menu-link">Extension Ideas</Link>
+                                        </li> : null
+                                }
+                                {
+                                    process.env.NODE_ENV !== 'production' ?
+                                        <li className="auroranav-menu-item">
+                                            <Link to="/marketplace/build" className="auroranav-menu-link">Build Extensions</Link>
+                                        </li> : null
+                                }
+                                {
+                                    process.env.NODE_ENV !== 'production' ?
+                                        <li className="auroranav-menu-item">
+                                            <Link to="/marketplace" className="auroranav-menu-link">About</Link>
+                                        </li> : null
+                                }
                                 { /*
                                 TODO: Maybe make this a profile icon and add it behind the dowwnload button
                                 <li className="auroranav-menu-item">

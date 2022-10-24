@@ -3,11 +3,6 @@ import React, { Component } from "react";
 import * as Constants from "../../Backend/Constants"
 
 export default class ExtensionItem extends Component {
-
-    constructor(props) {
-        super(props);
-    }
-
     state = {
         extensions: []
     }
