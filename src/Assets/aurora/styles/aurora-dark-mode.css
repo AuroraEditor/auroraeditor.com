@@ -9,6 +9,16 @@ html[data-color-scheme="light"] picture.dark {
     visibility: hidden;
 }
 
+html[data-color-scheme="dark"] img.light {
+    display: none;
+    visibility: hidden;
+}
+
+html[data-color-scheme="light"] img.dark {
+    display: none;
+    visibility: hidden;
+}
+
 html[data-color-scheme="light"] {
     --glyph-gray: #000;
 }
@@ -60,9 +70,6 @@ html[data-color-scheme="dark"] {
     --fill-gradient-gray-start: #161616;
     --fill-gradient-gray-end: #000;
     --fill-table: #1D1D1F;
-    --app-store-glyph-tile: #EEE;
-    --app-store-fill-tile: #1f1f21;
-    --applemusic: #FF2D55;
     --toggle-color-background: #1D1D1F;
     --toggle-color-text: #0071E3;
     --color-button-background: #0071E3;
@@ -587,6 +594,56 @@ html[data-color-scheme="dark"] body .card-line {
     color: var(--color-text-description);
 }
 
+/** Extension Page */
+html[data-color-scheme="dark"] body .project-details-item a {
+    color: white;
+}
+
+html[data-color-scheme="dark"] body .section-hero .hero {
+    background-color: var(--dark);
+}
+
+html[data-color-scheme="dark"] body .section-tiles-grid {
+    background-color: var(--dark);
+}
+
+html[data-color-scheme="dark"] body .grid-item {
+    background-color: var(--fill-gradient-gray-start);
+}
+
+html[data-color-scheme="dark"] body .grid-item.theme-blue {
+    background-color: #102C54;
+}
+
+html[data-color-scheme="dark"] body .grid-item.theme-inverted {
+    background-color: #E63244;
+}
+
+html[data-color-scheme="dark"] body .grid-modal .modal-content {
+    background-color: #343E40;
+}
+
+/* Extension Explore Page */
+html[data-color-scheme="dark"] body .extension-author {
+    color: var(--color-text-description);
+}
+
+html[data-color-scheme="dark"] body .extension-description {
+    color: var(--color-text-description);
+}
+
+html[data-color-scheme="dark"] body .extension-download {
+    color: var(--color-text-description);
+}
+
+html[data-color-scheme="dark"] body .filter-item {
+    color: var(--color-button-text);
+}
+
+html[data-color-scheme="dark"] body .filter-item:hover {
+    color: #0077ed;
+    text-decoration: none;
+}
 
 /* ===== dmf opt-in body styles ===== */
 html[data-color-scheme="dark"] body.dmf {

@@ -2067,7 +2067,7 @@ input[type='submit'] {
     padding: 5px 12px;
     color: black;
     text-align: left;
-    border: 1px solid #424245;
+    border: 1px solid #cdcaca;
     border-radius: 6px;
     background-color: transparent;
     background-clip: padding-box;
@@ -2075,7 +2075,8 @@ input[type='submit'] {
 }
 
 .form-textbox:focus {
-    outline: 4px solid rgba(0, 125, 250, 0.6);
+    outline: 4px solid #0071e3;
+    border-color: 1px solid #cdcaca;
 }
 
 .form-textbox:hover {

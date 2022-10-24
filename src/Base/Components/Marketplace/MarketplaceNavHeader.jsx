@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import '../../Assets/aurora/styles/aurora-nav.css';
-import { getOS } from "../Utils/DeviceDetection";
+import '../../../Assets/aurora/styles/aurora-nav.css';
+import { getOS, openAuroraEditor } from "../../Utils/DeviceDetection";
 
-function NavHeader() {
+function MarketplaceNavHeader() {
 
     const platform = getOS()
 
@@ -12,7 +12,7 @@ function NavHeader() {
                 <div className="auroranav-background"></div>
                 <div className="auroranav-content">
                     <h2 className="auroranav-title">
-                        <Link to="/">Aurora Editor</Link>
+                        <Link to="/">Marketplace</Link>
                     </h2>
 
                     <div className="auroranav-menu">
@@ -27,21 +27,36 @@ function NavHeader() {
                                 <li className="auroranav-menu-item">
                                     <Link to="/" className="auroranav-menu-link">Aurora Editor</Link>
                                 </li>
-                                <li className="auroranav-menu-item">
-                                    <Link to="/included" className="auroranav-menu-link">What’s included</Link>
-                                </li>
-                                <li className="auroranav-menu-item">
-                                    <Link to="/marketplace" className="auroranav-menu-link">Marketplace</Link>
-                                </li>
+                                {
+                                    process.env.NODE_ENV !== 'production' ?
+                                        <li className="auroranav-menu-item">
+                                            <Link to="/marketplace/explore" className="auroranav-menu-link">Explore</Link>
+                                        </li> : null
+                                }
+                                {
+                                    process.env.NODE_ENV !== 'production' ?
+                                        <li className="auroranav-menu-item">
+                                            <Link to="/marketplace/ideas" className="auroranav-menu-link">Extension Ideas</Link>
+                                        </li> : null
+                                }
+                                {
+                                    process.env.NODE_ENV !== 'production' ?
+                                        <li className="auroranav-menu-item">
+                                            <Link to="/marketplace/build" className="auroranav-menu-link">Build Extensions</Link>
+                                        </li> : null
+                                }
+                                {
+                                    process.env.NODE_ENV !== 'production' ?
+                                        <li className="auroranav-menu-item">
+                                            <Link to="/marketplace" className="auroranav-menu-link">About</Link>
+                                        </li> : null
+                                }
                                 { /*
                                 TODO: Maybe make this a profile icon and add it behind the dowwnload button
                                 <li className="auroranav-menu-item">
                                     <Link to="/account" className="auroranav-menu-link">Account</Link>
                                 </li>
                                 */ }
-                                <li className="auroranav-menu-item">
-                                    <a href="https://github.com/AuroraEditor/AuroraEditor" className="auroranav-menu-link">GitHub</a>
-                                </li>
                             </ul>
                         </div>
                         <div className="auroranav-actions auroranav-actions-center">
@@ -52,13 +67,7 @@ function NavHeader() {
                             </div>
                             {platform === "macos" ? <div className="auroranav-action auroranav-action-button">
                                 <div className="button-multi-container">
-                                    <a href="/#" className="auroranav-button button button-compact button-pill button-multi icon icon-chevrondown" id="button-multi-1" aria-expanded="false">Download</a>
-                                    <div className="button-multi-content button-multi-content-right button-multi-content-slide" role="menu">
-                                        <a href="/#" className="button-multi-option" role="menuitem" tabindex="0">Release <span className="badge">Coming Soon</span></a>
-                                        <a href="/#" className="button-multi-option" role="menuitem" tabindex="1">Beta <span className="badge">Coming Soon</span></a>
-                                        <a href="https://nightly.link/AuroraEditor/AuroraEditor/workflows/nightly/main/AuroraEditor_Nightly.zip" className="button-multi-option" role="menuitem" tabindex="2">Nightly</a>
-                                        <a href="https://github.com/AuroraEditor/AuroraEditor/archive/refs/heads/main.zip" className="button-multi-option" role="menuitem" tabindex="3">Source Code</a>
-                                    </div>
+                                    <button className="auroranav-button button button-compact button-pill button-multi" id="button-multi-1" onClick={openAuroraEditor}>Open in app</button>
                                 </div>
                             </div> : null
                             }
@@ -70,4 +79,4 @@ function NavHeader() {
     )
 }
 
-export default NavHeader;
+export default MarketplaceNavHeader;

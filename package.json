@@ -4,6 +4,7 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
+        "@mui/material": "^5.10.9",
         "@testing-library/jest-dom": "^5.16.5",
         "@testing-library/react": "^13.4.0",
         "@testing-library/user-event": "^14.4.3",
@@ -13,13 +14,17 @@
         "prettier": "^2.5.1",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
+        "react-markdown": "^8.0.3",
         "react-router-dom": "^6.4.2",
         "react-scripts": "^5.0.1",
+        "remark": "^14.0.2",
+        "remark-gfm": "^3.0.1",
+        "remark-github": "^11.2.4",
         "web-vitals": "^3.0.3"
     },
     "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
+        "start": "react-scripts start --env.ENVIRONMENT=development",
+        "build": "react-scripts build --env.ENVIRONMENT=production",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
     },
