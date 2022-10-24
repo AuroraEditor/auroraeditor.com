@@ -1,6 +1,6 @@
+import axios from "axios";
 import React, { Component } from "react";
 import * as Constants from "../../Backend/Constants"
-import SecuredAxios from "../../Utils/SecuredAxios"
 
 export default class ExtensionItem extends Component {
 
@@ -13,10 +13,9 @@ export default class ExtensionItem extends Component {
     }
 
     componentDidMount() {
-        SecuredAxios
-            .get(Constants.extensions)
+        axios
+            .get(Constants.baseApiURL + Constants.extensions)
             .then((response) => {
-                console.log(response.data)
                 const extensions = response.data.map(extension => ({
                     extensionId: extension.id,
                     extensionName: extension.extensionName,

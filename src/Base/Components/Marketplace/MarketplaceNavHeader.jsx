@@ -1,20 +1,11 @@
 import { Link, useLocation } from "react-router-dom";
 import '../../../Assets/aurora/styles/aurora-nav.css';
-import { getOS } from "../../Utils/DeviceDetection";
+import { getOS, openAuroraEditor } from "../../Utils/DeviceDetection";
 
 function MarketplaceNavHeader() {
 
     const { pathname } = useLocation();
     const platform = getOS()
-
-    var launchAuroraEditor = function () {
-        window.location.replace("auroraeditor://marketplace");
-    }
-
-    // TODO: Add a fallback url to download the editor
-    var openAuroraEditor = function () {
-        launchAuroraEditor();
-    };
 
     return (
         <nav id="auroranav" className="auroranav auroranav-scrim css-sticky auroranav-sticking" data-sticky role="navigation">

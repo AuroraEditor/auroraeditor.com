@@ -20,3 +20,12 @@ export function getOS() {
 
     return os;
 }
+
+var launchAuroraEditor = function () {
+    window.location.replace("auroraeditor://marketplace");
+}
+
+// TODO: Add a fallback url to download the editor
+export var openAuroraEditor = function () {
+    launchAuroraEditor();
+};

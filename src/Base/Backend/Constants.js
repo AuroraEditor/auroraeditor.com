@@ -1,4 +1,4 @@
-export const baseApiURL = "http://api.auroraeditor.com:8081/v1/"
+export const baseApiURL = process.env.REACT_APP_API_URL
 
 // Auth Endpoints
 export const login = "oauth/login"
@@ -7,8 +7,8 @@ export const verifyAccount = "oauth/email-verification"
 
 // Marketplace Endpoints
 export const extensions = "extensions"
-export const extensionFindCategory = "extensions/find?category="
-export const extensionFindTag = "extensions/find?tag="
-export const extensionFindID = "extensions/find?extensionId="
+export const extensionFindCategory = "extensions/category?category="
+export const extensionFindTag = "extensions/tag?tag="
+export const extensionFindID = "extensions/id?extensionId="
 export const deleteExtension = "extensions/delete?extensionId="
 export const createExtension = "extensions/create"
