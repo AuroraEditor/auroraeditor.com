@@ -20,7 +20,7 @@
         "remark": "^14.0.2",
         "remark-gfm": "^3.0.1",
         "remark-github": "^11.2.4",
-        "web-vitals": "^3.0.3"
+        "web-vitals": "^3.0.4"
     },
     "scripts": {
         "start": "react-scripts start --env.ENVIRONMENT=development",
