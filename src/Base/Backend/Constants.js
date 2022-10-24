@@ -7,8 +7,8 @@ export const verifyAccount = "oauth/email-verification"
 
 // Marketplace Endpoints
 export const extensions = "extensions"
-export const extensionFindCategory = "extensions/find?category=Editor"
-export const extensionFindTag = "extensions/find?tag=Free"
-export const extensionFindID = "extensions/find?extensionId=082971EF-E50A-4640-AC4E-FD8C6FBFEF9D"
-export const deleteExtension = "extensions/delete?extensionId=6B31571E-D39A-4860-948D-5338571A3739"
+export const extensionFindCategory = "extensions/find?category="
+export const extensionFindTag = "extensions/find?tag="
+export const extensionFindID = "extensions/find?extensionId="
+export const deleteExtension = "extensions/delete?extensionId="
 export const createExtension = "extensions/create"
