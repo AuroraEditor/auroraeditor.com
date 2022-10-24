@@ -18,6 +18,8 @@ jobs:
       run: |
         git config user.name github-actions
         git config user.email github-actions@github.com
+        REACT_APP_API_URL: ${{ secrets.REACT_APP_API_URL }}
+        REACT_APP_GITHUB_TOKEN: ${{ secrets.REACT_APP_GITHUB_TOKEN }}
     - name: push to Github Pages
       run: |
         git --work-tree build add --all
