@@ -1,4 +1,4 @@
-export const baseApiURL = process.env.REACT_APP_API_URL
+export const baseApiURL = "http://api.auroraeditor.com:8081/v1/"
 
 // Auth Endpoints
 export const login = "oauth/login"

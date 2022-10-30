@@ -241,3 +241,110 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
         margin-left: 15px;
     }
 }
+
+
+
+/** Account Verification Modal Styles **/
+.verify-account .context-body {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 466px;
+    padding-top: 36px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.verify-account .context-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.verify-account .context-body .text {
+    color: #000;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    max-width: inherit;
+}
+
+.verify-account .context-body h2 {
+    margin-bottom: 1em;
+}
+
+.verify-account .context-body .email.user-data {
+    white-space: normal;
+}
+
+.user-data {
+    word-wrap: break-word;
+}
+
+.tk-subsection-headline {
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 600;
+    letter-spacing: .0043m;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #000000;
+}
+
+.text-centered {
+    text-align: center;
+}
+
+.centered {
+    margin: auto;
+}
+
+.not-mobile {
+    display: block !important;
+}
+
+.weight-medium {
+    font-weight: 500;
+}
+
+/** Image **/
+.step-verify-code .context-body .icon-splash {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.step-verify-code .context-body .icon-splash {
+    font-size: 70px;
+    text-align: center;
+    color: #e1e1e1;
+}
+
+.icon {
+    font-family: shared-icons;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: inherit;
+    text-transform: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+.icon_mail_new {
+    background-image: url("../../../elements/icons/email.svg");
+    background-position-x: 50%;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: transparent;
+    width: 80px;
+    height: 80px;
+}
+
+.id-step-content {
+    width: 545px;
+    padding: 25px;
+    background-color: #ffffff;
+}

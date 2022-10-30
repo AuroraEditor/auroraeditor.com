@@ -32,7 +32,7 @@ function App() {
   var routes = [
     { path: "/", element: <MainPage /> },
     { path: "/sign-in", element: <Login /> },
-    { path: "/oauth/:email-verification", element: <EmailVerification /> },
+    { path: "/auth/:email-verification", element: <EmailVerification /> },
     { path: "/sign-up", element: <Register /> },
     { path: "/contributors", element: <Contributors /> },
     { path: "/included", element: <Included /> },

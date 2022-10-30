@@ -553,6 +553,18 @@ html[data-color-scheme="dark"] .tk-body-reduced {
     color: var(--color-text-description);
 }
 
+html[data-color-scheme="dark"] .id-step-content {
+    background-color: var(--dark);
+}
+
+html[data-color-scheme="dark"] .tk-subsection-headline {
+    color: var(--color-button-text);
+}
+
+html[data-color-scheme="dark"] .verify-account .context-body .text {
+    color: #FFF;
+}
+
 /* Account */
 html[data-color-scheme="dark"] body .account-info-name {
     color: var(--color-button-text);

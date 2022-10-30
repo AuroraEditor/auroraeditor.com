@@ -1,7 +1,13 @@
+import { useState } from "react"
 import "../../../Assets/aurora/styles/Auth/aurora-register.css"
 import * as Auth from "../../Backend/Auth"
+import Avatar from "../../../Assets/aurora/images/blank_avatar.webp"
+import Dialog from '@mui/material/Dialog';
 
 function Register() {
+    const [open, setOpen] = useState(false);
+    const handleClose = () => setOpen(false);
+
     return (
         <div>
             <div className="flow-body no-horizontal-scrollbar clearfix">
@@ -9,6 +15,7 @@ function Register() {
                     <h1 className="gradient-text">Create Your Aurora ID</h1>
                     <div className="intro-text">One account to access everything Aurora Editor</div>
                 </div>
+                <img alt="" src={Avatar} id="blank_avatar" hidden/>
                 <div className="flow-section account-info-section">
                     <div className="container-xs centered">
                         <div className="form-table">
@@ -91,7 +98,7 @@ function Register() {
                             <input type="checkbox" id="terms" name="terms" className="form-choice form-choice-checkbox" can-value="aeTerms" />
                             <label className="form-label" for="terms">
                                 <span className="form-choice-indicator" />
-                                Terms of Service <small className="label-small tk-caption">Receive Apple emails and communications including announcements, marketing, recommendations, and updates about Apple products, services and software.</small>
+                                Terms of Service <small className="label-small tk-caption">When signing up for an Aurora Editor account you agree to our terms of service.</small>
                             </label>
                         </div>
                     </div>
@@ -107,7 +114,7 @@ function Register() {
                 <div className="toolbar-wrapper toolbar-footer">
                     <div className="button-group flow-controls">
                         <div className="primary-button-group">
-                            <button tabindex="0" type="button" className="button button-primary last nav-action pull-right weight-medium" onClick={Auth.registerUser}>
+                            <button tabindex="0" type="button" className="button button-primary last nav-action pull-right weight-medium" onClick={() => Auth.registerUser(setOpen)}>
                                 <div className="overflow-text">
                                     Continue
                                 </div>
@@ -116,7 +123,27 @@ function Register() {
                     </div>
                 </div>
             </div>
-        </div >
+            <Dialog
+                onClose={handleClose}
+                open={open}>
+                <div className="id-step-content">
+                    <div class="verify-account">
+                        <div class="context-body clearfix">
+                            <div class="text">
+                                <div class="centered text-centered verify-splash-wrapper">
+                                    <i class="icon icon_mail_new icon-splash icon-verify"></i>
+                                </div>
+                                <h2 class="context-subtitle tk-subsection-headline text-centered verify-title not-mobile" tabindex="-1">Verify your email address to create your new Aurora ID.
+                                </h2>
+                                <div class="content-description centered  text-centered">
+                                    An email with a verification link has been sent to <span class="email user-data weight-medium">nanashili@auroraeditor.com</span>.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </Dialog>
+        </div>
     )
 }
 

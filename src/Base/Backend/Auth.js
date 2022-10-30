@@ -19,10 +19,16 @@ export function loginUser() {
         });
 }
 
-export function registerUser() {
+export function registerUser(setIsOpen) {
     const password = document.getElementById("password_field").value
     const confirmPassword = document.getElementById("confirm_password_field").value
     const termsAgreement = document.getElementById("terms").checked
+
+    let config = {
+        headers: {
+            "Content-Type": "application/json"
+        }
+    }
 
     if (password === confirmPassword && termsAgreement === true) {
         axios
@@ -31,10 +37,17 @@ export function registerUser() {
                 lastName: document.getElementById("last_name_field").value,
                 email: document.getElementById("email_field").value,
                 username: document.getElementById("username_field").value,
-                password: document.getElementById("password_field").value
-            })
+                password: document.getElementById("password_field").value,
+                profileImage: {
+                    data: getBase64Image(document.getElementById('blank_avatar')),
+                    contentType: "image/webp"
+                }
+            }, config)
             .then((response) => {
                 console.log(response)
+                setIsOpen(true)
+            }).catch((error) => {
+                console.log(error.response)
             });
     } else if (document.getElementById("terms").value === false) {
         console.log("Please agree to our terms and conditions")
@@ -54,15 +67,16 @@ export function VerifyAccount() {
     const search = useLocation().search;
     const token = new URLSearchParams(search).get("token");
 
-    console.log(token)
+    let config = {
+        headers: {
+            "Content-Type": "application/json"
+        }
+    }
 
     axios
         .get(Constants.baseApiURL + Constants.verifyAccount, {
-            headers: {
-                'Content-Type': 'application/json'
-            },
             token: token
-        })
+        }, config)
         .then(() => {
             document.getElementById("verification-btn").value = "Sign In"
             document.getElementById("verification-text").innerHTML = "Your account has been verified successfully, you can now create and publish extensions."
@@ -71,4 +85,17 @@ export function VerifyAccount() {
             document.getElementById("verification-btn").value = "Contact Support"
             document.getElementById("verification-text").innerHTML = "Failed to verify your Aurora ID, please try again. If the issue persists please contact support."
         });
+}
+
+function getBase64Image(img) {
+    var canvas = document.createElement("canvas");
+
+    canvas.width = img.width;
+    canvas.height = img.height;
+
+    var ctx = canvas.getContext("2d");
+    ctx.drawImage(img, 0, 0);
+
+    var dataURL = canvas.toDataURL("image/webp");
+    return dataURL.replace("data:image/webp;base64,", "");
 }

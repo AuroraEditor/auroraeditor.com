@@ -4,7 +4,9 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
-        "@mui/material": "^5.10.9",
+        "@emotion/react": "^11.10.5",
+        "@emotion/styled": "^11.10.5",
+        "@mui/material": "^5.10.11",
         "@testing-library/jest-dom": "^5.16.5",
         "@testing-library/react": "^13.4.0",
         "@testing-library/user-event": "^14.4.3",
