@@ -1,7 +1,14 @@
+import { useState } from "react";
 import "../../../Assets/aurora/styles/Profile/aurora-profile.css"
 import ProfileCards from "./Profile-Cards";
+import {profileData} from "../../Backend/Account"
 
 function Profile() {
+
+    const [data, setData] = useState([])
+
+    profileData(setData)
+
     return (
         <div className="layout">
             <div className="layout-nav">
@@ -9,11 +16,11 @@ function Profile() {
                     <div className="account-info">
                         <div className="account-info-image">
                             <div className="account-image-div">
-                                <img className="image image-cropped image-circle account-image" alt="Profile" src="https://avatars.githubusercontent.com/u/63672227" />
+                                <img className="image image-cropped image-circle account-image" alt="Profile" src={data.profileImage} />
                             </div>
                         </div>
-                        <div className="account-info-name" title="Jane Doe">Jane Doe</div>
-                        <div className="account-info-email" title="email@example.com"><span className="formatted-account-name"><span className="text">jane@example.com</span></span></div>
+                        <div className="account-info-name" title="Jane Doe">{data.firstName} {data.lastName}</div>
+                        <div className="account-info-email" title="email@example.com"><span className="formatted-account-name"><span className="text">{data.email}</span></span></div>
                     </div>
                     <nav aria-label="Side Navigation">
                         <ul className="side-nav-list">
@@ -40,7 +47,7 @@ function Profile() {
                             <h1 className="page-title">Sign-In and Security</h1>
                             <div className="page-description">Manage settings related to signing in to your account, account security, as well as how to recover your data when you’re having trouble signing in.</div>
                         </header>
-                        <ProfileCards/>
+                        <ProfileCards accountData={data}/>
                     </div>
                 </div>
             </div>

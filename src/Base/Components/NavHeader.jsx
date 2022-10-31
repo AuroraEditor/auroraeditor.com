@@ -33,12 +33,9 @@ function NavHeader() {
                                 <li className="auroranav-menu-item">
                                     <Link to="/marketplace" className="auroranav-menu-link">Marketplace</Link>
                                 </li>
-                                { /*
-                                TODO: Maybe make this a profile icon and add it behind the dowwnload button
                                 <li className="auroranav-menu-item">
                                     <Link to="/account" className="auroranav-menu-link">Account</Link>
                                 </li>
-                                */ }
                                 <li className="auroranav-menu-item">
                                     <a href="https://github.com/AuroraEditor/AuroraEditor" className="auroranav-menu-link">GitHub</a>
                                 </li>

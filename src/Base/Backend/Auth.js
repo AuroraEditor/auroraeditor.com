@@ -1,6 +1,7 @@
 import axios from "axios";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import * as Constants from "../Backend/Constants"
+import SecuredAxios from "../Utils/SecuredAxios"
 
 export function loginUser(setIsOpen, email) {
     axios
@@ -8,8 +9,14 @@ export function loginUser(setIsOpen, email) {
             email: document.getElementById("login_field").value,
             password: document.getElementById("password_field").value
         })
-        .then(() => {
-            console.log("Logged in successfully")
+        .then((response) => {
+            // This is probably not the most secure way to save tokens, the best way
+            // to save them is in-memory but that will come at a later stage after I
+            // do some more research on the topic.
+            window.sessionStorage.setItem("accessToken", response.data.accessToken);
+            window.sessionStorage.setItem("refreshToken", response.data.refreshToken);
+
+            useNavigate("/", {replace: true})
         })
         .catch((error) => {
             if (error.response.status === 401) {
@@ -47,7 +54,7 @@ export function registerUser(setIsOpen, email) {
                     contentType: "image/webp"
                 }
             }, config)
-            .then((response) => {
+            .then(() => {
                 setIsOpen(true)
                 email(document.getElementById("email_field").value)
             }).catch((error) => {
@@ -58,6 +65,19 @@ export function registerUser(setIsOpen, email) {
     } else if (password !== confirmPassword) {
         console.log("Passwords don't match")
     }
+}
+
+export function logoutUser() {
+    SecuredAxios
+        .delete(Constants.baseApiURL + Constants.logout)
+        .then(() => {
+            window.sessionStorage.removeItem("accessToken");
+            window.sessionStorage.removeItem("refreshToken");
+            useNavigate("/", {replace: true})
+        })
+        .catch((error) => {
+            console.log(error)
+        });
 }
 
 // Fetches the email verification token from the url then sends it
@@ -101,12 +121,12 @@ export function sendVerificationEmail(email) {
     axios.post(Constants.baseApiURL + Constants.sendEmailVerification, {
         email: email
     }, config)
-    .then(() => {
-        console.log("Verification email sent!")
-    })
-    .catch((error) => {
-        console.log(error)
-    });
+        .then(() => {
+            console.log("Verification email sent!")
+        })
+        .catch((error) => {
+            console.log(error)
+        });
 }
 
 function getBase64Image(img) {

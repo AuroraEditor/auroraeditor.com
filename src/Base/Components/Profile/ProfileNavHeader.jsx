@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "../../../Assets/aurora/styles/Profile/aurora-profile-nav.css"
 import '../../../Assets/aurora/styles/aurora-nav.css';
+import { logoutUser } from "../../Backend/Auth";
 
 function ProfileNavHeader() {
     return (
@@ -40,7 +41,7 @@ function ProfileNavHeader() {
                             </div>
                             <div className="auroranav-action auroranav-action-button">
                                 <div className="button-multi-container">
-                                    <a href="/#" className="auroranav-button button button-compact button-pill button-multi icon icon-chevrondown" id="button-multi-1" aria-expanded="false">Sign Out</a>
+                                    <a href="/#" className="auroranav-button button button-compact button-pill button-multi icon icon-chevrondown" id="button-multi-1" aria-expanded="false" onClick={logoutUser()}>Sign Out</a>
                                 </div>
                             </div>
                         </div>

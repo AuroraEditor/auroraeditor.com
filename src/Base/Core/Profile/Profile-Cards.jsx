@@ -1,4 +1,4 @@
-function ProfileCards() {
+function ProfileCards({accountData}) {
     return (
         <div className="section">
             <div className="row-card">
@@ -16,7 +16,7 @@ function ProfileCards() {
                                             <div className="card-line">
                                                 <span className="account-id">
                                                     <span className="text">
-                                                        jane@example.com
+                                                        {accountData.email}
                                                     </span>
                                                 </span>
                                             </div>
