@@ -316,7 +316,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
     color: #e1e1e1;
 }
 
-.icon {
+.modal-icon {
     font-family: shared-icons;
     display: inline-block;
     vertical-align: middle;

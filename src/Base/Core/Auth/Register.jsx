@@ -133,7 +133,7 @@ function Register() {
                         <div class="context-body clearfix">
                             <div class="text">
                                 <div class="centered text-centered verify-splash-wrapper">
-                                    <i class="icon icon_mail_new icon-splash icon-verify"></i>
+                                    <i class="modal-icon icon_mail_new icon-splash icon-verify"></i>
                                 </div>
                                 <h2 class="context-subtitle tk-subsection-headline text-centered verify-title not-mobile" tabindex="-1">Verify your email address to create your new Aurora ID.
                                 </h2>
