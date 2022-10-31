@@ -2,19 +2,23 @@ import axios from "axios";
 import { useLocation } from "react-router-dom";
 import * as Constants from "../Backend/Constants"
 
-export function loginUser() {
+export function loginUser(setIsOpen, email) {
     axios
         .post(Constants.baseApiURL + Constants.login, {
             email: document.getElementById("login_field").value,
             password: document.getElementById("password_field").value
         })
-        .then((response) => {
+        .then(() => {
             console.log("Logged in successfully")
         })
         .catch((error) => {
             if (error.response.status === 401) {
                 console.log(error.response.status)
                 document.getElementById("login_error").hidden = false
+            } else if (error.response.data.errorCode === "email_is_not_verified") {
+                setIsOpen(true)
+                email(document.getElementById("login_field").value)
+                sendVerificationEmail(document.getElementById("login_field").value)
             }
         });
 }
@@ -85,6 +89,24 @@ export function VerifyAccount() {
             document.getElementById("verification-btn").value = "Contact Support"
             document.getElementById("verification-text").innerHTML = "Failed to verify your Aurora ID, please try again. If the issue persists please contact support."
         });
+}
+
+export function sendVerificationEmail(email) {
+    let config = {
+        headers: {
+            "Content-Type": "application/json"
+        }
+    }
+
+    axios.post(Constants.baseApiURL + Constants.sendEmailVerification, {
+        email: email
+    }, config)
+    .then(() => {
+        console.log("Verification email sent!")
+    })
+    .catch((error) => {
+        console.log(error)
+    });
 }
 
 function getBase64Image(img) {
