@@ -19,7 +19,7 @@ export function loginUser() {
         });
 }
 
-export function registerUser(setIsOpen) {
+export function registerUser(setIsOpen, email) {
     const password = document.getElementById("password_field").value
     const confirmPassword = document.getElementById("confirm_password_field").value
     const termsAgreement = document.getElementById("terms").checked
@@ -44,8 +44,8 @@ export function registerUser(setIsOpen) {
                 }
             }, config)
             .then((response) => {
-                console.log(response)
                 setIsOpen(true)
+                email(document.getElementById("email_field").value)
             }).catch((error) => {
                 console.log(error.response)
             });
@@ -74,7 +74,7 @@ export function VerifyAccount() {
     }
 
     axios
-        .get(Constants.baseApiURL + Constants.verifyAccount, {
+        .post(Constants.baseApiURL + Constants.verifyAccount, {
             token: token
         }, config)
         .then(() => {

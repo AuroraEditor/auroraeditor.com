@@ -3,7 +3,8 @@ export const baseApiURL = "http://api.auroraeditor.com:8081/v1/"
 // Auth Endpoints
 export const login = "oauth/login"
 export const register = "oauth/register"
-export const verifyAccount = "oauth/email-verification"
+export const verifyAccount = "oauth/verify"
+export const sendEmailVerification = "oauth/verify/send-email"
 
 // Marketplace Endpoints
 export const extensions = "extensions"

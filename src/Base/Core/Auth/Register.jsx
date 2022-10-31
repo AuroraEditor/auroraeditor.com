@@ -8,6 +8,8 @@ function Register() {
     const [open, setOpen] = useState(false);
     const handleClose = () => setOpen(false);
 
+    const [email, setEmail] = useState("");
+
     return (
         <div>
             <div className="flow-body no-horizontal-scrollbar clearfix">
@@ -114,7 +116,7 @@ function Register() {
                 <div className="toolbar-wrapper toolbar-footer">
                     <div className="button-group flow-controls">
                         <div className="primary-button-group">
-                            <button tabindex="0" type="button" className="button button-primary last nav-action pull-right weight-medium" onClick={() => Auth.registerUser(setOpen)}>
+                            <button tabindex="0" type="button" className="button button-primary last nav-action pull-right weight-medium" onClick={() => Auth.registerUser(setOpen, setEmail)}>
                                 <div className="overflow-text">
                                     Continue
                                 </div>
@@ -136,7 +138,7 @@ function Register() {
                                 <h2 class="context-subtitle tk-subsection-headline text-centered verify-title not-mobile" tabindex="-1">Verify your email address to create your new Aurora ID.
                                 </h2>
                                 <div class="content-description centered  text-centered">
-                                    An email with a verification link has been sent to <span class="email user-data weight-medium">nanashili@auroraeditor.com</span>.
+                                    An email with a verification link has been sent to <span class="email user-data weight-medium">{email}</span>.
                                 </div>
                             </div>
                         </div>
