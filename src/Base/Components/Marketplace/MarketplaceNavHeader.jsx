@@ -3,6 +3,8 @@ import '../../../Assets/aurora/styles/aurora-nav.css';
 import { getOS, openAuroraEditor } from "../../Utils/DeviceDetection";
 
 function MarketplaceNavHeader() {
+    const platform = getOS();
+
     return (
         <nav id="auroranav" className="auroranav auroranav-scrim css-sticky auroranav-sticking" data-sticky role="navigation">
             <div className="auroranav-wrapper">
