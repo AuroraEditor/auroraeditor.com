@@ -2,7 +2,7 @@ class AuroraNavMultiButton {
     constructor(id) {
         this.id = id;
         this.button = document.getElementById(this.id);
-        this.buttonSibling = this.button.nextElementSibling;
+        this.buttonSibling = this.button.nextElementSibling || this.button;
         this.isClicked = false;
     }
     init = () => {
