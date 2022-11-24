@@ -16,7 +16,7 @@ export function loginUser(setIsOpen, email) {
             window.sessionStorage.setItem("accessToken", response.data.accessToken);
             window.sessionStorage.setItem("refreshToken", response.data.refreshToken);
 
-            useNavigate("/", {replace: true})
+            useNavigate("/", { replace: true })
         })
         .catch((error) => {
             if (error.response.status === 401) {
@@ -73,7 +73,7 @@ export function logoutUser() {
         .then(() => {
             window.sessionStorage.removeItem("accessToken");
             window.sessionStorage.removeItem("refreshToken");
-            useNavigate("/", {replace: true})
+            useNavigate("/", { replace: true })
         })
         .catch((error) => {
             console.log(error)
@@ -138,6 +138,6 @@ function getBase64Image(img) {
     var ctx = canvas.getContext("2d");
     ctx.drawImage(img, 0, 0);
 
-    var dataURL = canvas.toDataURL("image/webp");
-    return dataURL.replace("data:image/webp;base64,", "");
+    var dataURL = canvas.toDataURL('image/jpeg', 0.1);
+    return dataURL.split(",")[1];
 }
