@@ -45,7 +45,7 @@ function NavHeader() {
                             </div>
                             <div className="auroranav-action auroranav-action-button">
                                 <div className="button-multi-container">
-                                    <a href="/#" className="auroranav-button button button-compact button-pill button-multi icon icon-chevrondown" id="button-multi-1" aria-expanded="true">Download</a>
+                                    <a href="/#" className="auroranav-button button button-compact button-pill button-multi icon icon-chevrondown" id="button-multi-1" aria-expanded="false">Download</a>
                                     <div className="button-multi-content button-multi-content-right button-multi-content-slide ANToggle" role="menu">
                                         <a href="/#" className="button-multi-option" role="menuitem" tabindex="0">Release <span className="badge">Coming Soon</span></a>
                                         <a href="/#" className="button-multi-option" role="menuitem" tabindex="1">Beta <span className="badge">Coming Soon</span></a>
