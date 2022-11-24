@@ -27,3 +27,5 @@ yarn-error.log*
 .vscode
 .env.development
 .env
+
+public_html
