@@ -5,7 +5,10 @@ function detectColorScheme() {
         theme = "dark"
     }
 
-    document.querySelector("input[type=radio][name=colorToggle][value=auto]").checked = true
+    var colorToggle = document.querySelector("input[type=radio][name=colorToggle][value=auto]")
+    if (typeof colorToggle !== 'undefined') {
+        colorToggle.checked = true
+    }
 
     if (window.localStorage.getItem('themeColor') !== 'undefined') {
         if (['dark', 'light'].includes(window.localStorage.getItem('themeColor'))) {
