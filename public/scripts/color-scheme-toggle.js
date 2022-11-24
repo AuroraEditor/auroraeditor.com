@@ -6,7 +6,7 @@ function detectColorScheme() {
     }
 
     var colorToggle = document.querySelector("input[type=radio][name=colorToggle][value=auto]")
-    if (typeof colorToggle !== null) {
+    if (colorToggle !== null) {
         colorToggle.checked = true
     }
 

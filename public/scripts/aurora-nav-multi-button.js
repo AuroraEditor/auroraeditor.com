@@ -1,41 +1,27 @@
-class AuroraNavMultiButton {
-    constructor(id) {
-        this.id = id;
-        this.button = document.getElementById(this.id);
-        if (this.button !== null) {
-            this.buttonSibling = this.button.nextElementSibling;
-        }
-        this.isClicked = false;
+var AuroraNavIgnoreClick = false;
+
+function AuroraNavToggle() {
+    if (AuroraNavIgnoreClick) {
+        // For some reason, the click is firing twice, so we need to ignore the second one
+        return;
     }
-    init = () => {
-        this.button.addEventListener("click", (evt) => {
-            evt.preventDefault();
-            this.isClicked = !this.isClicked;
-            if (this.isClicked) {
-                this.toggleVisible();
-                document.addEventListener("click", this.hideOnClickOutside);
-            } else {
-                this.toggleVisible();
-                document.removeEventListener("click", this.hideOnClickOutside, false);
-            }
-        });
-    };
-    toggleVisible = () => {
-        if (typeof this.buttonSibling !== "undefined") {
-            this.buttonSibling.classList.toggle("button-multi-option-active");
-        }
-    };
-    hideOnClickOutside = (evt) => {
-        const target = evt.target;
-        if (!this.button.parentElement.contains(target)) {
-            this.toggleVisible();
-            this.isClicked = !this.isClicked;
-            document.removeEventListener("click", this.hideOnClickOutside, false);
-        }
-    };
+
+    document.querySelector('.ANToggle').classList.toggle('button-multi-option-active');
+    AuroraNavIgnoreClick = true;
+
+    setTimeout(function () {
+        // Enable button clicks again
+        AuroraNavIgnoreClick = false;
+    }, 100);
 }
 
-//Create a btn variable for each button-multi on page
-//call the init()
-const btn1 = new AuroraNavMultiButton("button-multi-1");
-btn1.init();
+function AuroraNavClose() {
+    // Close menu after click
+    document.querySelector('.ANToggle').classList.remove('button-multi-option-active');
+}
+
+document.querySelector("main").addEventListener('click', AuroraNavClose);
+
+if (document.getElementById("button-multi-1")) {
+    document.getElementById("button-multi-1").addEventListener('click', AuroraNavToggle);
+}
