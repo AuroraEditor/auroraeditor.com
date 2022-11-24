@@ -17,7 +17,9 @@ function AuroraNavToggle() {
 
 function AuroraNavClose() {
     // Close menu after click
-    document.querySelector('.ANToggle').classList.remove('button-multi-option-active');
+    if (document.querySelector('.ANToggle')) {
+        document.querySelector('.ANToggle').classList.remove('button-multi-option-active');
+    }
 }
 
 document.querySelector("main").addEventListener('click', AuroraNavClose);
