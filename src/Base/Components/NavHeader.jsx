@@ -3,9 +3,6 @@ import '../../Assets/aurora/styles/aurora-nav.css';
 import { getOS } from "../Utils/DeviceDetection";
 
 function NavHeader() {
-
-    const platform = getOS()
-
     return (
         <nav id="auroranav" className="auroranav auroranav-scrim css-sticky auroranav-sticking" data-sticky role="navigation">
             <div className="auroranav-wrapper">
@@ -47,18 +44,17 @@ function NavHeader() {
                                     <span className="auroranav-menucta-chevron"></span>
                                 </label>
                             </div>
-                            {platform === "macos" ? <div className="auroranav-action auroranav-action-button">
+                            <div className="auroranav-action auroranav-action-button">
                                 <div className="button-multi-container">
-                                    <a href="/#" className="auroranav-button button button-compact button-pill button-multi icon icon-chevrondown" id="button-multi-1" aria-expanded="false">Download</a>
-                                    <div className="button-multi-content button-multi-content-right button-multi-content-slide" role="menu">
+                                    <a href="/#" className="auroranav-button button button-compact button-pill button-multi icon icon-chevrondown" id="button-multi-1" aria-expanded="true">Download</a>
+                                    <div className="button-multi-content button-multi-content-right button-multi-content-slide ANToggle" role="menu">
                                         <a href="/#" className="button-multi-option" role="menuitem" tabindex="0">Release <span className="badge">Coming Soon</span></a>
                                         <a href="/#" className="button-multi-option" role="menuitem" tabindex="1">Beta <span className="badge">Coming Soon</span></a>
                                         <a href="https://nightly.link/AuroraEditor/AuroraEditor/workflows/nightly/main/AuroraEditor_Nightly.zip" className="button-multi-option" role="menuitem" tabindex="2">Nightly</a>
                                         <a href="https://github.com/AuroraEditor/AuroraEditor/archive/refs/heads/main.zip" className="button-multi-option" role="menuitem" tabindex="3">Source Code</a>
                                     </div>
                                 </div>
-                            </div> : null
-                            }
+                            </div>
                         </div>
                     </div>
                 </div>

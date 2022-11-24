@@ -27,5 +27,6 @@ function auroranavUpdate() {
         })
     });
 }
+
 auroranavUpdate();
 window.addEventListener('DOMContentLoaded', auroranavUpdate);
