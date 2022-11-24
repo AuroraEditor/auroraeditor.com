@@ -2,7 +2,9 @@ class AuroraNavMultiButton {
     constructor(id) {
         this.id = id;
         this.button = document.getElementById(this.id);
-        this.buttonSibling = this.button.nextElementSibling || this.button;
+        if (this.button !== null) {
+            this.buttonSibling = this.button.nextElementSibling;
+        }
         this.isClicked = false;
     }
     init = () => {
@@ -19,7 +21,9 @@ class AuroraNavMultiButton {
         });
     };
     toggleVisible = () => {
-        this.buttonSibling.classList.toggle("button-multi-option-active");
+        if (typeof this.buttonSibling !== "undefined") {
+            this.buttonSibling.classList.toggle("button-multi-option-active");
+        }
     };
     hideOnClickOutside = (evt) => {
         const target = evt.target;
