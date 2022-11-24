@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import '../../Assets/aurora/styles/aurora-nav.css';
-import { getOS } from "../Utils/DeviceDetection";
 
 function NavHeader() {
     return (
