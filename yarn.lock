@@ -1435,33 +1435,33 @@
   version "2.0.4"
   resolved "https://registry.npmjs.org/@leichtgewicht/ip-codec/-/ip-codec-2.0.4.tgz"
 
-"@mui/base@5.0.0-alpha.106":
-  version "5.0.0-alpha.106"
-  resolved "https://registry.npmjs.org/@mui/base/-/base-5.0.0-alpha.106.tgz"
+"@mui/base@5.0.0-alpha.107":
+  version "5.0.0-alpha.107"
+  resolved "https://registry.yarnpkg.com/@mui/base/-/base-5.0.0-alpha.107.tgz#5547bf3aaea148b58456e6898f74bc183bdcffa9"
   dependencies:
     "@babel/runtime" "^7.20.1"
     "@emotion/is-prop-valid" "^1.2.0"
     "@mui/types" "^7.2.1"
-    "@mui/utils" "^5.10.14"
+    "@mui/utils" "^5.10.15"
     "@popperjs/core" "^2.11.6"
     clsx "^1.2.1"
     prop-types "^15.8.1"
     react-is "^18.2.0"
 
-"@mui/core-downloads-tracker@^5.10.14":
-  version "5.10.14"
-  resolved "https://registry.npmjs.org/@mui/core-downloads-tracker/-/core-downloads-tracker-5.10.14.tgz"
+"@mui/core-downloads-tracker@^5.10.15":
+  version "5.10.15"
+  resolved "https://registry.yarnpkg.com/@mui/core-downloads-tracker/-/core-downloads-tracker-5.10.15.tgz#490f3dea5327c892f063496a0219c48301da0fa0"
 
-"@mui/material@^5.10.14":
-  version "5.10.14"
-  resolved "https://registry.npmjs.org/@mui/material/-/material-5.10.14.tgz"
+"@mui/material@^5.10.15":
+  version "5.10.15"
+  resolved "https://registry.yarnpkg.com/@mui/material/-/material-5.10.15.tgz#37345f5a3d71c662703af7b5be0cca229b2a1416"
   dependencies:
     "@babel/runtime" "^7.20.1"
-    "@mui/base" "5.0.0-alpha.106"
-    "@mui/core-downloads-tracker" "^5.10.14"
-    "@mui/system" "^5.10.14"
+    "@mui/base" "5.0.0-alpha.107"
+    "@mui/core-downloads-tracker" "^5.10.15"
+    "@mui/system" "^5.10.15"
     "@mui/types" "^7.2.1"
-    "@mui/utils" "^5.10.14"
+    "@mui/utils" "^5.10.15"
     "@types/react-transition-group" "^4.4.5"
     clsx "^1.2.1"
     csstype "^3.1.1"
@@ -1469,12 +1469,12 @@
     react-is "^18.2.0"
     react-transition-group "^4.4.5"
 
-"@mui/private-theming@^5.10.14":
-  version "5.10.14"
-  resolved "https://registry.npmjs.org/@mui/private-theming/-/private-theming-5.10.14.tgz"
+"@mui/private-theming@^5.10.15":
+  version "5.10.15"
+  resolved "https://registry.yarnpkg.com/@mui/private-theming/-/private-theming-5.10.15.tgz#f039181e197d04d100630829c58b5c33ede209bc"
   dependencies:
     "@babel/runtime" "^7.20.1"
-    "@mui/utils" "^5.10.14"
+    "@mui/utils" "^5.10.15"
     prop-types "^15.8.1"
 
 "@mui/styled-engine@^5.10.14":
@@ -1486,15 +1486,15 @@
     csstype "^3.1.1"
     prop-types "^15.8.1"
 
-"@mui/system@^5.10.14":
-  version "5.10.14"
-  resolved "https://registry.npmjs.org/@mui/system/-/system-5.10.14.tgz"
+"@mui/system@^5.10.15":
+  version "5.10.15"
+  resolved "https://registry.yarnpkg.com/@mui/system/-/system-5.10.15.tgz#4bb58d1d1a531137559b775038a18d6050d9ee57"
   dependencies:
     "@babel/runtime" "^7.20.1"
-    "@mui/private-theming" "^5.10.14"
+    "@mui/private-theming" "^5.10.15"
     "@mui/styled-engine" "^5.10.14"
     "@mui/types" "^7.2.1"
-    "@mui/utils" "^5.10.14"
+    "@mui/utils" "^5.10.15"
     clsx "^1.2.1"
     csstype "^3.1.1"
     prop-types "^15.8.1"
@@ -1503,9 +1503,9 @@
   version "7.2.1"
   resolved "https://registry.npmjs.org/@mui/types/-/types-7.2.1.tgz"
 
-"@mui/utils@^5.10.14":
-  version "5.10.14"
-  resolved "https://registry.npmjs.org/@mui/utils/-/utils-5.10.14.tgz"
+"@mui/utils@^5.10.15":
+  version "5.10.15"
+  resolved "https://registry.yarnpkg.com/@mui/utils/-/utils-5.10.15.tgz#54fc1b373508d20dd5568070b2dcc0818e6bebba"
   dependencies:
     "@babel/runtime" "^7.20.1"
     "@types/prop-types" "^15.7.5"
