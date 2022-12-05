@@ -6996,9 +6996,9 @@ react-is@^18.0.0, react-is@^18.2.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react-is/-/react-is-18.2.0.tgz"
 
-react-markdown@^8.0.3:
-  version "8.0.3"
-  resolved "https://registry.npmjs.org/react-markdown/-/react-markdown-8.0.3.tgz"
+react-markdown@^8.0.4:
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/react-markdown/-/react-markdown-8.0.4.tgz#b5ff1f0f29ead71a7a6f98815eb1a70bcc2a036e"
   dependencies:
     "@types/hast" "^2.0.0"
     "@types/prop-types" "^15.0.0"
