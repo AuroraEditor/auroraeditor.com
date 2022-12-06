@@ -223,11 +223,11 @@ html[data-color-scheme="dark"] body#xcode .parallel-testing {
   display: inline-block;
   position: relative; 
   
-  -webkit-animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards; 
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-name: shimmerEffect;
-  -webkit-animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-fill-mode: forwards; 
+  animation-iteration-count: infinite;
+  animation-name: shimmerEffect;
+  animation-timing-function: linear;
 }
 
 @keyframes shimmerEffect {
