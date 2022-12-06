@@ -222,6 +222,7 @@ html[data-color-scheme="dark"] body#xcode .parallel-testing {
   background-size: 800px 104px; 
   display: inline-block;
   position: relative; 
+  color: transparent;
   
   animation-duration: 1s;
   animation-fill-mode: forwards; 
