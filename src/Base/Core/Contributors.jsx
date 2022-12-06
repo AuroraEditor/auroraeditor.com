@@ -14,6 +14,8 @@ function Contributors() {
                 </div>
             </div>
             <div className="section contributors-generator">
+             <div className="section-content">
+              <div className="row">
                 <ContributorPlaceholder />
                 <ContributorPlaceholder />
                 <ContributorPlaceholder />
@@ -26,6 +28,8 @@ function Contributors() {
                 <ContributorPlaceholder />
                 <ContributorPlaceholder />
                 <ContributorPlaceholder />
+              </div>
+            </div>
           </div>
         </section>
     )
