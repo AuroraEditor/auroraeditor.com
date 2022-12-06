@@ -35,7 +35,7 @@ function ContributorPlaceholder() {
     return (
       <div class="section-content column large-3 medium-6 small-12">
         <span class="block text-center">
-          <img class="contributor-image shimmer" alt="Loading image" src="https://avatars.githubusercontent.com/u/106490518?s=128&v=4" width="100" height="100" />
+          <img class="contributor-image shimmer" alt="Loading contributors" src="https://avatars.githubusercontent.com/u/106490518?s=128&v=4" width="100" height="100" />
           <p><strong class="shimmer">LOADING NAME</strong></p>
           <p class="typography-subbody shimmer">FUNC1, FUNC2, FUNC3, FUNC4</p>
         </span>
