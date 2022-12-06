@@ -175,4 +175,6 @@
 
 .contributor-image {
     border-radius: 50%;
+    min-width: 99px;
+    min-height: 99px;
 }
