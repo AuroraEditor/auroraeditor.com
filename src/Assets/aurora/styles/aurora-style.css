@@ -217,33 +217,15 @@ html[data-color-scheme="dark"] body#xcode .parallel-testing {
 
 .shimmer {
   background: #edeef1;
-  /*background-image: linear-gradient(to right, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);*/
   background-repeat: no-repeat;
   background-size: 800px 104px; 
   display: inline-block;
   position: relative; 
   color: transparent;
-  
-  /*
-  animation-duration: 1s;
-  animation-fill-mode: forwards; 
-  animation-iteration-count: infinite;
-  animation-name: shimmerEffect;
-  animation-timing-function: linear;
-  */
   mask: linear-gradient(-60deg,#000 30%,#0005,#000 70%) right/300% 100%;
-  animation: shimmer 2.5s infinite;
+  animation: shimmerEffect 2.5s infinite;
 }
 
 @keyframes shimmerEffect {
-  0% {
-    background-position: -468px 0;
-  }
-  100% {
-    background-position: 468px 0; 
-  }
-}
-
-@keyframes shimmer {
   100% {mask-position:left;}
 }
