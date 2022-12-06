@@ -14,16 +14,34 @@ function Contributors() {
                 </div>
             </div>
             <div className="section contributors-generator">
-                <div className="section-content">
-                    <div className="row">
-                        <div className="column large-centered large-10 text-center">
-                            <p className="text-centred">LOADING CONTRIBUTORS,<br />Please wait...</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <ContributorPlaceholder />
+                <ContributorPlaceholder />
+                <ContributorPlaceholder />
+                <ContributorPlaceholder />
+                <ContributorPlaceholder />
+                <ContributorPlaceholder />
+                <ContributorPlaceholder />
+                <ContributorPlaceholder />
+                <ContributorPlaceholder />
+                <ContributorPlaceholder />
+                <ContributorPlaceholder />
+                <ContributorPlaceholder />
+          </div>
         </section>
     )
 }
+
+function ContributorPlaceholder() {
+    return (
+      <div class="section-content column large-3 medium-6 small-12">
+        <a href="#" class="block text-center">
+          <img class="contributor-image shimmer" src="https://avatars.githubusercontent.com/u/106490518?s=128&v=4" width="100" height="100">
+          <p><strong class="shimmer">LOADING NAME</strong></p>
+          <p class="typography-subbody shimmer">FUNC1, FUNC2, FUNC3, FUNC4</p>
+        </a>
+      </div>
+    )
+}
+
 
 export default Contributors;
