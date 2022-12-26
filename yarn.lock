@@ -1435,33 +1435,33 @@
   version "2.0.4"
   resolved "https://registry.npmjs.org/@leichtgewicht/ip-codec/-/ip-codec-2.0.4.tgz"
 
-"@mui/base@5.0.0-alpha.110":
-  version "5.0.0-alpha.110"
-  resolved "https://registry.yarnpkg.com/@mui/base/-/base-5.0.0-alpha.110.tgz#61174f64b23e667387708b2cbb31339e58c714cf"
+"@mui/base@5.0.0-alpha.111":
+  version "5.0.0-alpha.111"
+  resolved "https://registry.yarnpkg.com/@mui/base/-/base-5.0.0-alpha.111.tgz#fffec7f6393fc45c0d3a200ee5820820a4b92403"
   dependencies:
     "@babel/runtime" "^7.20.6"
     "@emotion/is-prop-valid" "^1.2.0"
     "@mui/types" "^7.2.3"
-    "@mui/utils" "^5.11.0"
+    "@mui/utils" "^5.11.1"
     "@popperjs/core" "^2.11.6"
     clsx "^1.2.1"
     prop-types "^15.8.1"
     react-is "^18.2.0"
 
-"@mui/core-downloads-tracker@^5.11.0":
-  version "5.11.0"
-  resolved "https://registry.yarnpkg.com/@mui/core-downloads-tracker/-/core-downloads-tracker-5.11.0.tgz#7ae98a3df113270097f3024c713c4efce5537c6a"
+"@mui/core-downloads-tracker@^5.11.1":
+  version "5.11.1"
+  resolved "https://registry.yarnpkg.com/@mui/core-downloads-tracker/-/core-downloads-tracker-5.11.1.tgz#5130682392203916bd9d947bac35dfd38f533654"
 
-"@mui/material@^5.11.0":
-  version "5.11.0"
-  resolved "https://registry.yarnpkg.com/@mui/material/-/material-5.11.0.tgz#01ead6ca389de440fbc78b2dbb8547845ca40f93"
+"@mui/material@^5.11.1":
+  version "5.11.1"
+  resolved "https://registry.yarnpkg.com/@mui/material/-/material-5.11.1.tgz#89ebc860abae0f146d9ac69b85baa691f09cfb47"
   dependencies:
     "@babel/runtime" "^7.20.6"
-    "@mui/base" "5.0.0-alpha.110"
-    "@mui/core-downloads-tracker" "^5.11.0"
-    "@mui/system" "^5.11.0"
+    "@mui/base" "5.0.0-alpha.111"
+    "@mui/core-downloads-tracker" "^5.11.1"
+    "@mui/system" "^5.11.1"
     "@mui/types" "^7.2.3"
-    "@mui/utils" "^5.11.0"
+    "@mui/utils" "^5.11.1"
     "@types/react-transition-group" "^4.4.5"
     clsx "^1.2.1"
     csstype "^3.1.1"
@@ -1469,12 +1469,12 @@
     react-is "^18.2.0"
     react-transition-group "^4.4.5"
 
-"@mui/private-theming@^5.11.0":
-  version "5.11.0"
-  resolved "https://registry.yarnpkg.com/@mui/private-theming/-/private-theming-5.11.0.tgz#14e545e74d6da4c20df25702d8c606187b300072"
+"@mui/private-theming@^5.11.1":
+  version "5.11.1"
+  resolved "https://registry.yarnpkg.com/@mui/private-theming/-/private-theming-5.11.1.tgz#8e6a6c33c6f04cadba17b6f3320e22bd64413655"
   dependencies:
     "@babel/runtime" "^7.20.6"
-    "@mui/utils" "^5.11.0"
+    "@mui/utils" "^5.11.1"
     prop-types "^15.8.1"
 
 "@mui/styled-engine@^5.11.0":
@@ -1486,15 +1486,15 @@
     csstype "^3.1.1"
     prop-types "^15.8.1"
 
-"@mui/system@^5.11.0":
-  version "5.11.0"
-  resolved "https://registry.yarnpkg.com/@mui/system/-/system-5.11.0.tgz#9938d5beeddfee3e419911ec43e5f9a6f55fe161"
+"@mui/system@^5.11.1":
+  version "5.11.1"
+  resolved "https://registry.yarnpkg.com/@mui/system/-/system-5.11.1.tgz#86c85472f5c2d4eaf739acd426c7b1ccce38eda2"
   dependencies:
     "@babel/runtime" "^7.20.6"
-    "@mui/private-theming" "^5.11.0"
+    "@mui/private-theming" "^5.11.1"
     "@mui/styled-engine" "^5.11.0"
     "@mui/types" "^7.2.3"
-    "@mui/utils" "^5.11.0"
+    "@mui/utils" "^5.11.1"
     clsx "^1.2.1"
     csstype "^3.1.1"
     prop-types "^15.8.1"
@@ -1503,9 +1503,9 @@
   version "7.2.3"
   resolved "https://registry.yarnpkg.com/@mui/types/-/types-7.2.3.tgz#06faae1c0e2f3a31c86af6f28b3a4a42143670b9"
 
-"@mui/utils@^5.11.0":
-  version "5.11.0"
-  resolved "https://registry.yarnpkg.com/@mui/utils/-/utils-5.11.0.tgz#06d1d907935391f3f8bc58c669800194c77e6601"
+"@mui/utils@^5.11.1":
+  version "5.11.1"
+  resolved "https://registry.yarnpkg.com/@mui/utils/-/utils-5.11.1.tgz#8d12b3c2245efd9a1c0595658dcb4c86f6625206"
   dependencies:
     "@babel/runtime" "^7.20.6"
     "@types/prop-types" "^15.7.5"
