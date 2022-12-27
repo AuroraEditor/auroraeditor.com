@@ -33,6 +33,15 @@ function Socials() {
                             <p className="typography-subbody">Wanna play around and discover how <b>Aurora Editor</b> was built? Check out the Github Repo to find out.</p>
                         </a>
                     </div>
+                    <div className="column large-3 medium-6 small-12">
+                        <a href="https://www.producthunt.com/posts/aurora-editor?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-aurora&#0045;editor" className="block text-center">
+                            <figure className="router-icon">
+                                <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=372771&theme=light" alt="AuroraEditor | Product Hunt" />
+                            </figure>
+                            <p><strong>Product Hunt</strong></p>
+                            <p className="typography-subbody">Wanna support <b>Aurora Editor</b> on Product Hunt? Check out the Product Hunt page.</p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </aside>
