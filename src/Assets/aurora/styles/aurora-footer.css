@@ -254,7 +254,7 @@ body {
     --color-button-background-hover: rgb(0, 119, 237)
 }
 
-@media screen {
+@media screen and (prefers-color-scheme: light) {
     html[data-color-scheme="dark"] body {
         --color-fill-blue: #0071e3;
         --color-figure-blue: #2997ff
@@ -262,7 +262,7 @@ body {
 }
 
 @media screen and (prefers-color-scheme: dark) {
-    body[data-color-scheme="auto"] {
+    html[data-color-scheme="dark"] body {
         --color-fill-blue: #0071e3;
         --color-figure-blue: #2997ff
     }
