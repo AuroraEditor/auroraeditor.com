@@ -52,6 +52,15 @@
     background-position: center;
 }
 
+.alt-router-icon {
+    margin: 4px 0px 10px;
+    height: 50px;
+    width: 50px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .router-icon-discord {
     background-image: url("../../elements/icons/socials/discord.svg");
     transition: all 0.2s ease-in-out;
