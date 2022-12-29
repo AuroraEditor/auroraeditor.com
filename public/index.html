@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-color-scheme="dark">
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
@@ -49,19 +49,23 @@
     <script type="text/javascript" async src="https://www.wdgwv.com/stats/count.js"></script>
     <style>
         html:not([data-color-scheme]) * {
-            opacity: 0 !important;
+            opacity: 0;
         }
 
         @media (prefers-color-scheme: dark) {
             html:not([data-color-scheme]) * {
-                background-color: black  !important;
+                background-color: black;
             }
         }
 
         @media (prefers-color-scheme: light) {
             html:not([data-color-scheme]) * {
-                background-color: white  !important;
+                background-color: white;
             }
+        }
+        
+        html:not([data-color-scheme]) #root {
+            opacity: 0;
         }
     </style>
 </head>
