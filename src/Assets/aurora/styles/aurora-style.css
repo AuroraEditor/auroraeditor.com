@@ -7,6 +7,24 @@
     pointer-events: none;
 }
 
+@media (prefers-color-scheme: dark) {
+  html:not([data-color-scheme]) {
+    background-color: black;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  html:not([data-color-scheme]) {
+    background-color: white;
+    color: black;
+  }
+}
+
+html:not([data-color-scheme]) body {
+  display: none;
+}
+
 @supports (-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px)) {
 
     /* Blur Navigation Bar */
