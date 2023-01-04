@@ -46,7 +46,7 @@ function Socials() {
                         <a href="http://reddit.com/r/AuroraEditor" className="block text-center">
                             <figure className="router-icon router-icon-reddit"></figure>
                             <p><strong>Reddit</strong></p>
-                            <p className="typography-subbody">Join our community on Reddit where we discuss and collaborate on all things of Aurora Editor<</p>
+                            <p className="typography-subbody">Join our community on Reddit where we discuss and collaborate on all things of Aurora Editor</p>
                         </a>
                     </div>
                 </div>
