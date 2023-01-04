@@ -42,6 +42,13 @@ function Socials() {
                             <p className="typography-subbody">Wanna support <b>Aurora Editor</b> on Product Hunt? Check out the Product Hunt page.</p>
                         </a>
                     </div>
+                    <div className="column large-3 medium-6 small-12">
+                        <a href="http://reddit.com/r/AuroraEditor" className="block text-center">
+                            <figure className="router-icon router-icon-reddit"></figure>
+                            <p><strong>Reddit</strong></p>
+                            <p className="typography-subbody">Join our community on Reddit where we discuss and collaborate on all things of Aurora Editor<</p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </aside>
