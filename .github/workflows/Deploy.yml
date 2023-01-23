@@ -19,9 +19,9 @@ jobs:
         REACT_APP_GITHUB_TOKEN: ${{ secrets.REACT_APP_GITHUB_TOKEN }}
     - name: setup github env
       run: |
-          git config --global user.name 'AuroraCompanyBot'
-          git config --global user.email 'AuroraCompanyBot@users.noreply.github.com'
-          git remote set-url --push origin https://AuroraCompanyBot:$BOT_TOKEN@github.com/AuroraEditor/auroraeditor.com
+            git config --global user.name 'aurora-editor-bot'
+            git config --global user.email 'aurora-editor-bot@users.noreply.github.com'
+            git remote set-url --push origin https://aurora-editor-bot:$BOT_TOKEN@github.com/AuroraEditor/AuroraEditor
     - name: push to Github Pages
       run: |
         git --work-tree build add --all
