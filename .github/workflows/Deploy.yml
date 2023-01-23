@@ -17,12 +17,12 @@ jobs:
       env:
         REACT_APP_API_URL: ${{ secrets.REACT_APP_API_URL }}
         REACT_APP_GITHUB_TOKEN: ${{ secrets.REACT_APP_GITHUB_TOKEN }}
-    - name: setup github env
+    - name: Setup GitHub environment
       run: |
             git config --global user.name 'aurora-editor-bot'
             git config --global user.email 'aurora-editor-bot@users.noreply.github.com'
             git remote set-url --push origin https://aurora-editor-bot:$BOT_TOKEN@github.com/AuroraEditor/auroraeditor.com
-    - name: push to Github Pages
+    - name: Push to Github Pages
       run: |
         git --work-tree build add --all
         git commit -m "Automatic Deploy action"
