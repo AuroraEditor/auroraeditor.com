@@ -1451,9 +1451,9 @@
   version "5.11.9"
   resolved "https://registry.yarnpkg.com/@mui/core-downloads-tracker/-/core-downloads-tracker-5.11.9.tgz#0d3b20c2ef7704537c38597f9ecfc1894fe7c367"
 
-"@mui/material@^5.11.9":
-  version "5.11.9"
-  resolved "https://registry.yarnpkg.com/@mui/material/-/material-5.11.9.tgz#fd5b81551f50e4acea2d80feed33728710386f28"
+"@mui/material@^5.11.10":
+  version "5.11.10"
+  resolved "https://registry.yarnpkg.com/@mui/material/-/material-5.11.10.tgz#d1a7e1691b36eb6aab0f41a82e9c5c564699f599"
   dependencies:
     "@babel/runtime" "^7.20.13"
     "@mui/base" "5.0.0-alpha.118"
