@@ -1444,9 +1444,9 @@
   version "2.0.4"
   resolved "https://registry.npmjs.org/@leichtgewicht/ip-codec/-/ip-codec-2.0.4.tgz"
 
-"@mui/base@5.0.0-alpha.125":
-  version "5.0.0-alpha.125"
-  resolved "https://registry.yarnpkg.com/@mui/base/-/base-5.0.0-alpha.125.tgz#6bb3df0760d87aa9186ed9add29b3ae96dee4aa8"
+"@mui/base@5.0.0-alpha.126":
+  version "5.0.0-alpha.126"
+  resolved "https://registry.yarnpkg.com/@mui/base/-/base-5.0.0-alpha.126.tgz#99555a5876a60e7dad772d75eb171e3d1336321d"
   dependencies:
     "@babel/runtime" "^7.21.0"
     "@emotion/is-prop-valid" "^1.2.0"
@@ -1457,18 +1457,18 @@
     prop-types "^15.8.1"
     react-is "^18.2.0"
 
-"@mui/core-downloads-tracker@^5.12.0":
-  version "5.12.0"
-  resolved "https://registry.yarnpkg.com/@mui/core-downloads-tracker/-/core-downloads-tracker-5.12.0.tgz#2f0dcbf07d4b032bc6f743fdb96fc2c10681da6e"
+"@mui/core-downloads-tracker@^5.12.1":
+  version "5.12.1"
+  resolved "https://registry.yarnpkg.com/@mui/core-downloads-tracker/-/core-downloads-tracker-5.12.1.tgz#f828554889e6ab7345395626bb46e561c113435e"
 
-"@mui/material@^5.12.0":
-  version "5.12.0"
-  resolved "https://registry.yarnpkg.com/@mui/material/-/material-5.12.0.tgz#ab553e61f4446cf3325667adfbd4effb3c1e1237"
+"@mui/material@^5.12.1":
+  version "5.12.1"
+  resolved "https://registry.yarnpkg.com/@mui/material/-/material-5.12.1.tgz#3297ffc6836f426a26568332d68357c1398f0630"
   dependencies:
     "@babel/runtime" "^7.21.0"
-    "@mui/base" "5.0.0-alpha.125"
-    "@mui/core-downloads-tracker" "^5.12.0"
-    "@mui/system" "^5.12.0"
+    "@mui/base" "5.0.0-alpha.126"
+    "@mui/core-downloads-tracker" "^5.12.1"
+    "@mui/system" "^5.12.1"
     "@mui/types" "^7.2.4"
     "@mui/utils" "^5.12.0"
     "@types/react-transition-group" "^4.4.5"
@@ -1495,9 +1495,9 @@
     csstype "^3.1.2"
     prop-types "^15.8.1"
 
-"@mui/system@^5.12.0":
-  version "5.12.0"
-  resolved "https://registry.yarnpkg.com/@mui/system/-/system-5.12.0.tgz#b47e73917d28db00535c79c043ad04edc5906475"
+"@mui/system@^5.12.1":
+  version "5.12.1"
+  resolved "https://registry.yarnpkg.com/@mui/system/-/system-5.12.1.tgz#8452bc03159f0a6725b96bde1dee1316e308231b"
   dependencies:
     "@babel/runtime" "^7.21.0"
     "@mui/private-theming" "^5.12.0"
