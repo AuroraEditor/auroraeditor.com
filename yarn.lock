@@ -1447,17 +1447,17 @@
     prop-types "^15.8.1"
     react-is "^18.2.0"
 
-"@mui/core-downloads-tracker@^5.14.1":
-  version "5.14.1"
-  resolved "https://registry.yarnpkg.com/@mui/core-downloads-tracker/-/core-downloads-tracker-5.14.1.tgz#af156cb3e15b202f5c09f66e7d8b71ca86aef525"
+"@mui/core-downloads-tracker@^5.14.2":
+  version "5.14.2"
+  resolved "https://registry.yarnpkg.com/@mui/core-downloads-tracker/-/core-downloads-tracker-5.14.2.tgz#d8fcacdb1d37e621fce33ea808180fa5a590f908"
 
-"@mui/material@^5.14.1":
-  version "5.14.1"
-  resolved "https://registry.yarnpkg.com/@mui/material/-/material-5.14.1.tgz#2711e4ca5c9bdc67b916d01faee650a7a5260bb8"
+"@mui/material@^5.14.2":
+  version "5.14.2"
+  resolved "https://registry.yarnpkg.com/@mui/material/-/material-5.14.2.tgz#13b113489a61021145d62e0383912ca487a46375"
   dependencies:
     "@babel/runtime" "^7.22.6"
     "@mui/base" "5.0.0-beta.8"
-    "@mui/core-downloads-tracker" "^5.14.1"
+    "@mui/core-downloads-tracker" "^5.14.2"
     "@mui/system" "^5.14.1"
     "@mui/types" "^7.2.4"
     "@mui/utils" "^5.14.1"
