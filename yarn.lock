@@ -1572,9 +1572,9 @@
   version "2.11.8"
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.8.tgz#6b79032e760a0899cd4204710beede972a3a185f"
 
-"@remix-run/router@1.8.0":
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.8.0.tgz#e848d2f669f601544df15ce2a313955e4bf0bafc"
+"@remix-run/router@1.9.0":
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.9.0.tgz#9033238b41c4cbe1e961eccb3f79e2c588328cf6"
 
 "@rollup/plugin-babel@^5.2.0":
   version "5.3.1"
@@ -7003,18 +7003,18 @@ react-refresh@^0.11.0:
   version "0.11.0"
   resolved "https://registry.npmjs.org/react-refresh/-/react-refresh-0.11.0.tgz"
 
-react-router-dom@^6.15.0:
-  version "6.15.0"
-  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-6.15.0.tgz#6da7db61e56797266fbbef0d5e324d6ac443ee40"
+react-router-dom@^6.16.0:
+  version "6.16.0"
+  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-6.16.0.tgz#86f24658da35eb66727e75ecbb1a029e33ee39d9"
   dependencies:
-    "@remix-run/router" "1.8.0"
-    react-router "6.15.0"
+    "@remix-run/router" "1.9.0"
+    react-router "6.16.0"
 
-react-router@6.15.0:
-  version "6.15.0"
-  resolved "https://registry.yarnpkg.com/react-router/-/react-router-6.15.0.tgz#bf2cb5a4a7ed57f074d4ea88db0d95033f39cac8"
+react-router@6.16.0:
+  version "6.16.0"
+  resolved "https://registry.yarnpkg.com/react-router/-/react-router-6.16.0.tgz#abbf3d5bdc9c108c9b822a18be10ee004096fb81"
   dependencies:
-    "@remix-run/router" "1.8.0"
+    "@remix-run/router" "1.9.0"
 
 react-scripts@^5.0.1:
   version "5.0.1"
