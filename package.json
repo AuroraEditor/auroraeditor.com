@@ -21,7 +21,7 @@
         "react-scripts": "^5.0.1",
         "remark": "^14.0.3",
         "remark-gfm": "^3.0.1",
-        "remark-github": "^11.2.4",
+        "remark-github": "^12.0.0",
         "web-vitals": "^3.4.0"
     },
     "scripts": {
