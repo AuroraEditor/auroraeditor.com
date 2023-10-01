@@ -158,6 +158,17 @@
     }
 }
 
+
+.router-icon-reddit {
+    background-image: url("../../elements/icons/socials/reddit.png");
+    transition: all 0.2s ease-in-out;
+}
+
+.router-icon-reddit:hover {
+    animation: infinite 0.5s linear 0s normal none running tweet;
+    transition: all 0.2s ease-in-out;
+}
+
 .theme-dark .socials-router-links {
     background-color: #1d1d1f;
 }
