@@ -248,10 +248,3 @@ html[data-color-scheme="dark"] body#xcode .parallel-testing {
 @keyframes shimmerEffect {
   100% {-webkit-mask-position:left;mask-position:left;}
 }
-
-.gradient-text-sub {
-    background: linear-gradient(to right, #9C84FA, #68DC7C, #FAD66A);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
