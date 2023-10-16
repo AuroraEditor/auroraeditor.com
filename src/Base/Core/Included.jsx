@@ -5,7 +5,7 @@ function Included() {
                 <div className="section-content">
                     <div className="row">
                         <div className="column large-centered large-10 small-12 text-center">
-                            <h1 className="typography-headline margin-top-small">What’s included in&nbsp;Aurora Editor</h1>
+                            <h1 className="typography-headline margin-top-small gradient-text">What’s included in&nbsp;Aurora Editor</h1>
                             <p className="typography-intro">Learn about the key features available in Aurora Editor, the integrated development environment for building apps in various languages and great performance. For detailed information on updates in the latest released versions, including each beta release, visit the <span className="nowrap"><a href="https://www.auroraeditor.com">Aurora Editor Release Notes</a>.</span></p>
                         </div>
                     </div>
