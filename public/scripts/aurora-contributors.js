@@ -53,12 +53,6 @@ function loadContributorsData() {
                     return
                 }
 
-                // if (count == max) {
-                //     console.log("NEW ROW!!!")
-                //     generated += endRow + beginRow;
-                //     count = 0;
-                // }
-
                 generated += person
                     .replace('PROFILE_URL', contributor.html_url)
                     .replace('AVATAR', contributor.avatar_url)
