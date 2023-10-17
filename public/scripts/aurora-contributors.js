@@ -3,7 +3,7 @@ window.didloadcontributors = false;
 function httpGet(theUrl, callback) {
     var xmlHttp = new XMLHttpRequest()
     xmlHttp.onreadystatechange = function () {
-        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+        if (xmlHttp.readyState === 4 && xmlHttp.status === 200)
             callback(xmlHttp.responseText)
     }
     xmlHttp.open("GET", theUrl, true)
@@ -30,38 +30,40 @@ function loadContributorsData() {
 
     if (document.getElementsByClassName("contributors-generator").length > 0) {
         console.log('Getting latest contributors');
-        httpGet("https://raw.githubusercontent.com/AuroraEditor/AuroraEditor/development/.all-contributorsrc", function (contents) {
+        httpGet("https://api.github.com/repos/AuroraEditor/AuroraEditor/contributors?per_page=100", function (contents) {
             console.log('Parsing latest contributors');
             var data = JSON.parse(contents);
-            var max = data.contributorsPerLine || 4;
+            var max = 4;
             var count = 0;
             var generated = '<aside class="section contributors-links contributors"><div class="section-content">';
             var endRow = '</div>';
             var beginRow = '<div class="row">';
             var person = `
         <div class="section-content column large-3 medium-6 small-12">
-            <a href="PROFILE" target="_blank" class="block text-center">
-                <img class="contributor-image" src="AVATAR" width="100" height="100">
+            <a href="PROFILE_URL" target="_blank" class="block text-center">
+                <img class="contributor-image" src="AVATAR" onload="this.classList.remove('shimmer');" class="shimmer" width="100" height="100" loading="lazy">
                 <p><strong>NAME</strong></p>
                 <p class="typography-subbody">BIO</p>
             </a>
         </div>`;
             generated += beginRow;
 
-            data.contributors?.forEach(function (contributor) {
+            data.forEach(function (contributor) {
+                if (contributor.login.includes('[bot]')) {
+                    return
+                }
+
                 // if (count == max) {
                 //     console.log("NEW ROW!!!")
                 //     generated += endRow + beginRow;
                 //     count = 0;
                 // }
 
-                const bio = makeUpperCaseAfterCommas(contributor.contributions.join(", "))
-
                 generated += person
-                    .replace('PROFILE', contributor.profile)
+                    .replace('PROFILE_URL', contributor.html_url)
                     .replace('AVATAR', contributor.avatar_url)
-                    .replace('NAME', contributor.name)
-                    .replace('BIO', bio);
+                    .replace('NAME', contributor.login)
+                    .replace('BIO', contributor.contributions + ' contributions');
 
                 count += 1;
             });
