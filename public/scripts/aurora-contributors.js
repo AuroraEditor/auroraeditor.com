@@ -39,7 +39,7 @@ function loadContributorsData() {
             var endRow = '</div>';
             var beginRow = '<div class="row">';
             var person = `
-        <div class="section-content column large-3 medium-6 small-12">
+        <div class="section-content column large-3 medium-6">
             <a href="PROFILE_URL" target="_blank" class="block text-center">
                 <img class="contributor-image" src="AVATAR" onload="this.classList.remove('shimmer');" class="shimmer" width="100" height="100" loading="lazy">
                 <p><strong>NAME</strong></p>
