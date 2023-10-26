@@ -1,5 +1,5 @@
-window.didloadcontributors = false;
-window.isLoadingContributors = false;
+window.didloadcontributors = false
+window.isLoadingContributors = false
 
 function httpGetAsJSON(theUrl, callback) {
     var xmlHttp = new XMLHttpRequest()
@@ -21,7 +21,7 @@ function loadContributorsData() {
     }
 
     // We are loading.
-    window.isLoadingContributors = true;
+    window.isLoadingContributors = true
 
     if (document.getElementsByClassName("contributors-generator").length > 0) {
         var ddata = {
@@ -30,18 +30,18 @@ function loadContributorsData() {
             contributorsListener: function (val) { },
 
             set contributors(val) {
-                this.contributorsInternal = val;
-                this.contributorsListener(val);
+                this.contributorsInternal = val
+                this.contributorsListener(val)
             },
 
             get contributors() {
-                return this.contributorsInternal;
+                return this.contributorsInternal
             },
 
             registerListener: function (listener) {
-                this.contributorsListener = listener;
+                this.contributorsListener = listener
             }
-        };
+        }
 
         // Load AuroraEditor repos.
         httpGetAsJSON("https://api.github.com/users/AuroraEditor/repos", function (AuroraEditorReposJSON) {
@@ -49,48 +49,48 @@ function loadContributorsData() {
                 return
             }
 
-            console.log(AuroraEditorReposJSON);
+            console.log(AuroraEditorReposJSON)
 
             AuroraEditorReposJSON.forEach(function (repo) {
-                console.log(repo.name);
+                console.log(repo.name)
 
                 // Load contributors for each repo.
                 httpGetAsJSON("https://api.github.com/repos/AuroraEditor/" + repo.name + "/contributors?per_page=100", function (ContributorsJSON) {
-                    ddata.contributors[repo.name] = ContributorsJSON;
-                });
-            });
-        });
+                    ddata.contributors[repo.name] = ContributorsJSON
+                })
+            })
+        })
 
         ddata.registerListener(function (newValue) {
-            var max = 4;
-            var count = 0;
-            var generated = '<aside class="section contributors-links contributors"><div class="section-content">';
-            var endRow = '</div>';
-            var beginRow = '<div class="row">';
+            var max = 4
+            var count = 0
+            var generated = '<aside class="section contributors-links contributors"><div class="section-content">'
+            var endRow = '</div>'
+            var beginRow = '<div class="row">'
             var person = `
         <div class="section-content column large-3 medium-6 small-12">
             <a href="PROFILE_URL" target="_blank" class="block text-center">
-                <img class="contributor-image" src="AVATAR" onload="this.classList.remove('shimmer');" class="shimmer" width="100" height="100" loading="lazy">
+                <img class="contributor-image" src="AVATAR" onload="this.classList.remove('shimmer')" class="shimmer" width="100" height="100" loading="lazy">
                 <p><strong>NAME</strong></p>
                 <p class="typography-subbody">BIO</p>
             </a>
-        </div>`;
-            generated += beginRow;
+        </div>`
+            generated += beginRow
 
-            var data = {};
+            var data = {}
 
             newValue.forEach(function (repo) {
                 repo.forEach(function (contributor) {
                     if (typeof data[contributor.login] === 'undefined') {
-                        data[contributor.login] = contributor;
+                        data[contributor.login] = contributor
                     } else {
-                        data[contributor.login].contributions += contributor.contributions;
+                        data[contributor.login].contributions += contributor.contributions
                     }
-                });
-            });
+                })
+            })
 
             Object.values(data).forEach(function (contributor) {
-                console.log(contributor);
+                console.log(contributor)
 
                 if (contributor.login.includes('[bot]')) {
                     return
@@ -100,19 +100,19 @@ function loadContributorsData() {
                     .replace('PROFILE_URL', contributor.html_url)
                     .replace('AVATAR', contributor.avatar_url)
                     .replace('NAME', contributor.login)
-                    .replace('BIO', contributor.contributions + ' contributions');
+                    .replace('BIO', contributor.contributions + ' contributions')
 
-                count += 1;
-            });
+                count += 1
+            })
 
-            generated += endRow;
-            generated += '</div></aside>';
+            generated += endRow
+            generated += '</div></aside>'
 
-            document.getElementsByClassName("contributors-generator")[0].innerHTML = generated;
-            window.didloadcontributors = true;
-        });
+            document.getElementsByClassName("contributors-generator")[0].innerHTML = generated
+            window.didloadcontributors = true
+        })
     }
 }
 
-addEventListener('load', loadContributorsData);
-setInterval(loadContributorsData, 1000); // check every second.
+addEventListener('load', loadContributorsData)
+setInterval(loadContributorsData, 1000) // check every second.
