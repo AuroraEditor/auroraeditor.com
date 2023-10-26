@@ -1,38 +1,67 @@
 window.didloadcontributors = false;
+window.isLoadingContributors = false;
 
-function httpGet(theUrl, callback) {
+function httpGetAsJSON(theUrl, callback) {
     var xmlHttp = new XMLHttpRequest()
     xmlHttp.onreadystatechange = function () {
-        if (xmlHttp.readyState === 4 && xmlHttp.status === 200)
-            callback(xmlHttp.responseText)
+        if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
+            callback(JSON.parse(xmlHttp.responseText))
+        } else {
+            callback([])
+        }
     }
     xmlHttp.open("GET", theUrl, true)
     xmlHttp.send(null)
 }
 
-function makeUpperCaseAfterCommas(string) {
-    return string
-        // get first character
-        .charAt(0).toUpperCase()
-        // add the rest
-        + string.slice(1)
-            // Make uppercase after comma.
-            .replace(/,\s*([a-z])/g, function (d, e) {
-                return ", " + e.toUpperCase()
-            });
-}
-
 function loadContributorsData() {
-    if (window.didloadcontributors) {
-        // We already did load, ignore request.
+    if (window.isLoadingContributors || window.didloadcontributors) {
+        // We already did load or are loading, ignore request.
         return
     }
 
+    // We are loading.
+    window.isLoadingContributors = true;
+
     if (document.getElementsByClassName("contributors-generator").length > 0) {
-        console.log('Getting latest contributors');
-        httpGet("https://api.github.com/repos/AuroraEditor/AuroraEditor/contributors?per_page=100", function (contents) {
-            console.log('Parsing latest contributors');
-            var data = JSON.parse(contents);
+        var ddata = {
+            contributorsInternal: {},
+
+            contributorsListener: function (val) { },
+
+            set contributors(val) {
+                this.contributorsInternal = val;
+                this.contributorsListener(val);
+            },
+
+            get contributors() {
+                return this.contributorsInternal;
+            },
+
+            registerListener: function (listener) {
+                this.contributorsListener = listener;
+            }
+        };
+
+        // Load AuroraEditor repos.
+        httpGetAsJSON("https://api.github.com/users/AuroraEditor/repos", function (AuroraEditorReposJSON) {
+            if (AuroraEditorReposJSON.length === 0) {
+                return
+            }
+
+            console.log(AuroraEditorReposJSON);
+
+            AuroraEditorReposJSON.forEach(function (repo) {
+                console.log(repo.name);
+
+                // Load contributors for each repo.
+                httpGetAsJSON("https://api.github.com/repos/AuroraEditor/" + repo.name + "/contributors?per_page=100", function (ContributorsJSON) {
+                    ddata.contributors[repo.name] = ContributorsJSON;
+                });
+            });
+        });
+
+        ddata.registerListener(function (newValue) {
             var max = 4;
             var count = 0;
             var generated = '<aside class="section contributors-links contributors"><div class="section-content">';
@@ -48,7 +77,21 @@ function loadContributorsData() {
         </div>`;
             generated += beginRow;
 
-            data.forEach(function (contributor) {
+            var data = {};
+
+            newValue.forEach(function (repo) {
+                repo.forEach(function (contributor) {
+                    if (typeof data[contributor.login] === 'undefined') {
+                        data[contributor.login] = contributor;
+                    } else {
+                        data[contributor.login].contributions += contributor.contributions;
+                    }
+                });
+            });
+
+            Object.values(data).forEach(function (contributor) {
+                console.log(contributor);
+
                 if (contributor.login.includes('[bot]')) {
                     return
                 }
@@ -67,7 +110,7 @@ function loadContributorsData() {
 
             document.getElementsByClassName("contributors-generator")[0].innerHTML = generated;
             window.didloadcontributors = true;
-        })
+        });
     }
 }
 
