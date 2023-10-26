@@ -25,19 +25,24 @@ function loadContributorsData() {
 
     if (document.getElementsByClassName("contributors-generator").length > 0) {
         var ddata = {
+            // Internal variable for contributors.
             contributorsInternal: {},
 
+            // Listener for contributors.
             contributorsListener: function (val) { },
 
+            // Setter for contributors.
             set contributors(val) {
                 this.contributorsInternal = val
                 this.contributorsListener(val)
             },
 
+            // Getter for contributors.
             get contributors() {
                 return this.contributorsInternal
             },
 
+            // Register a listener for contributors.
             registerListener: function (listener) {
                 this.contributorsListener = listener
             }
@@ -82,16 +87,21 @@ function loadContributorsData() {
             newValue.forEach(function (repo) {
                 repo.forEach(function (contributor) {
                     if (typeof data[contributor.login] === 'undefined') {
+                        // Add contributor.
                         data[contributor.login] = contributor
                     } else {
+                        // Update contributor.
                         data[contributor.login].contributions += contributor.contributions
                     }
                 })
             })
 
-            Object.values(data).forEach(function (contributor) {
-                console.log(contributor)
+            // Flatten Object to Array and Sort by contributions.
+            var sortedData = Object.values(data).sort(function (a, b) {
+                return b.contributions - a.contributions
+            })
 
+            sortedData.forEach(function (contributor) {
                 if (contributor.login.includes('[bot]')) {
                     return
                 }
