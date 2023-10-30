@@ -40,10 +40,12 @@ function loadContributorsData() {
             var beginRow = '<div class="row">';
             var person = `
         <div class="section-content column large-3 medium-6">
-            <a href="PROFILE_URL" target="_blank" class="block text-center">
-                <img class="contributor-image" src="AVATAR" onload="this.classList.remove('shimmer');" class="shimmer" width="100" height="100" loading="lazy">
-                <p><strong>NAME</strong></p>
-                <p class="typography-subbody">BIO</p>
+            <a href="USER_PROFILE_URL" target="_blank" class="block text-center">
+                <img class="contributor-image" src="USER_AVATAR" onload="this.classList.remove('shimmer');" class="shimmer" width="100" height="100" loading="lazy">
+                <p><strong>USER_NAME</strong></p>
+            </a>
+            <a href="https://github.com/AuroraEditor/AuroraEditor/commits?author=USER_NAME" target="_blank" class="block text-center">
+                <p class="typography-subbody">USER_COMMITS</p>
             </a>
         </div>`;
             generated += beginRow;
@@ -54,10 +56,10 @@ function loadContributorsData() {
                 }
 
                 generated += person
-                    .replace('PROFILE_URL', contributor.html_url)
-                    .replace('AVATAR', contributor.avatar_url)
-                    .replace('NAME', contributor.login)
-                    .replace('BIO', contributor.contributions + ' contributions');
+                    .replace('USER_PROFILE_URL', contributor.html_url)
+                    .replace('USER_AVATAR', contributor.avatar_url)
+                    .replace('USER_NAME', contributor.login)
+                    .replace('USER_COMMITS', contributor.contributions + ' contributions');
 
                 count += 1;
             });
