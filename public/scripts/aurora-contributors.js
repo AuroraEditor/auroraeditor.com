@@ -56,10 +56,10 @@ function loadContributorsData() {
                 }
 
                 generated += person
-                    .replace('USER_PROFILE_URL', contributor.html_url)
-                    .replace('USER_AVATAR', contributor.avatar_url)
-                    .replace('USER_NAME', contributor.login)
-                    .replace('USER_COMMITS', contributor.contributions + ' contributions');
+                    .replaceAll(/USER_PROFILE_URL/g, contributor.html_url)
+                    .replaceAll(/USER_AVATAR/g, contributor.avatar_url)
+                    .replaceAll(/USER_NAME/g, contributor.login)
+                    .replaceAll(/USER_COMMITS/g, contributor.contributions + ' contributions');
 
                 count += 1;
             });
