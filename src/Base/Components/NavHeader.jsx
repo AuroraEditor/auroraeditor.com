@@ -47,9 +47,9 @@ function NavHeader() {
                                 <div className="button-multi-container">
                                     <a href="/#" className="auroranav-button button button-compact button-pill button-multi icon icon-chevrondown" id="button-multi-1" aria-expanded="false">Download</a>
                                     <div className="button-multi-content button-multi-content-right button-multi-content-slide ANToggle" role="menu">
-                                        <a href="/#?=https://nightly.link/AuroraEditor/AuroraEditor/workflows/nightly/main/AuroraEditor_Stable.zip" className="button-multi-option" role="menuitem" tabindex="0">Release <span className="badge">Coming Soon</span></a>
-                                        <a href="/#?=https://nightly.link/AuroraEditor/AuroraEditor/workflows/nightly/beta/AuroraEditor_Beta.zip" className="button-multi-option" role="menuitem" tabindex="1">Beta <span className="badge">Coming Soon</span></a>
-                                        <a href="https://nightly.link/AuroraEditor/AuroraEditor/workflows/nightly/development/AuroraEditor_Nightly.zip" className="button-multi-option" role="menuitem" tabindex="2">Nightly</a>
+                                        <a href="https://nightly.link/AuroraEditor/AuroraEditor/workflows/build/main/AuroraEditor.zip" className="button-multi-option" role="menuitem" tabindex="0">Release <span className="badge">Coming Soon</span></a>
+                                        <a href="=https://nightly.link/AuroraEditor/AuroraEditor/workflows/build/beta/AuroraEditor.zip" className="button-multi-option" role="menuitem" tabindex="1">Beta <span className="badge">Coming Soon</span></a>
+                                        <a href="https://nightly.link/AuroraEditor/AuroraEditor/workflows/build/development/AuroraEditor.zip" className="button-multi-option" role="menuitem" tabindex="2">Nightly</a>
                                         <a href="https://github.com/AuroraEditor/AuroraEditor/archive/refs/heads/main.zip" className="button-multi-option" role="menuitem" tabindex="3">Source Code</a>
                                     </div>
                                 </div>
