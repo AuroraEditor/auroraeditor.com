@@ -20,4 +20,4 @@ jobs:
           PR_URL: ${{github.event.pull_request.html_url}}
           # GitHub provides this variable in the CI env. You don't
           # need to add anything to the secrets vault.
-          GITHUB_TOKEN: $BOT_TOKEN
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
