@@ -13,7 +13,7 @@
         "axios": "^1.6.5",
         "bulma": "^0.9.4",
         "globby": "14.0.0",
-        "prettier": "^3.2.2",
+        "prettier": "^3.2.4",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-markdown": "^9.0.1",
