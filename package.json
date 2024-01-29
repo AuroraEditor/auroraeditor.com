@@ -10,7 +10,7 @@
         "@testing-library/jest-dom": "^6.2.0",
         "@testing-library/react": "^14.1.2",
         "@testing-library/user-event": "^14.5.2",
-        "axios": "^1.6.5",
+        "axios": "^1.6.7",
         "bulma": "^0.9.4",
         "globby": "14.0.0",
         "prettier": "^3.2.4",
