@@ -8,7 +8,7 @@
         "@emotion/styled": "^11.11.0",
         "@mui/material": "^5.15.6",
         "@testing-library/jest-dom": "^6.3.0",
-        "@testing-library/react": "^14.1.2",
+        "@testing-library/react": "^14.2.1",
         "@testing-library/user-event": "^14.5.2",
         "axios": "^1.6.7",
         "bulma": "^0.9.4",
