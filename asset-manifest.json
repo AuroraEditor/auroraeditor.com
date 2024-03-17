@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cb8aaa68.css",
+    "main.js": "/static/js/main.37bea0ec.js",
+    "static/js/496.35edf43b.chunk.js": "/static/js/496.35edf43b.chunk.js",
+    "static/media/aurora_editor_command_palette_light.jpg": "/static/media/aurora_editor_command_palette_light.88587f497d9e19ac273f.jpg",
+    "static/media/aurora_editor_source_control.jpg": "/static/media/aurora_editor_source_control.03132b0cdaa170aeb4e2.jpg",
+    "static/media/aurora_editor_command_palette.jpg": "/static/media/aurora_editor_command_palette.3769fbaba20341658b37.jpg",
+    "static/media/aurora_editor.jpg": "/static/media/aurora_editor.f7775406a7cbcbce1708.jpg",
+    "static/media/aurora_editor_extensions.jpg": "/static/media/aurora_editor_extensions.0232449559d4f4dc1411.jpg",
+    "static/media/aurora_editor_source_control_light.jpg": "/static/media/aurora_editor_source_control_light.fe57abb8441f8fe0e04a.jpg",
+    "static/media/aurora_editor_extensions_light.jpg": "/static/media/aurora_editor_extensions_light.96f9838576360f026358.jpg",
+    "static/media/aurora_editor_light.jpg": "/static/media/aurora_editor_light.c9d0750fcd20b5917bb7.jpg",
+    "static/media/large.png": "/static/media/large.98e5868a22f9487e31d1.png",
+    "static/media/medium.png": "/static/media/medium.0cce0235b55a4e606003.png",
+    "static/media/small.png": "/static/media/small.2adc2b9043d8ee6220fc.png",
+    "static/media/blank_avatar.webp": "/static/media/blank_avatar.efadb13dba95b5bc918b.webp",
+    "index.html": "/index.html",
+    "static/media/github.svg": "/static/media/github.d68abb530fe455963617.svg",
+    "static/media/marketplace_dark.svg": "/static/media/marketplace_dark.6290bd823cee5861430d29bfd5df273c.svg",
+    "static/media/marketplace_light.svg": "/static/media/marketplace_light.ec2f717b0b5e97fc949e800352818e47.svg",
+    "static/media/slack.svg": "/static/media/slack.b57cc4b9168913392236.svg",
+    "static/media/email.svg": "/static/media/email.07d00993b9ac691dcac2.svg",
+    "static/media/twitter.svg": "/static/media/twitter.fe06d572bd13680e66f4.svg",
+    "static/media/discord.svg": "/static/media/discord.99f0863429baa34cfbbd.svg",
+    "main.cb8aaa68.css.map": "/static/css/main.cb8aaa68.css.map",
+    "main.37bea0ec.js.map": "/static/js/main.37bea0ec.js.map",
+    "496.35edf43b.chunk.js.map": "/static/js/496.35edf43b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cb8aaa68.css",
+    "static/js/main.37bea0ec.js"
+  ]
+}
