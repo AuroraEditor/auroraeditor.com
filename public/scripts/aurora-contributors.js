@@ -30,7 +30,7 @@ function loadContributorsData() {
 
     if (document.getElementsByClassName("contributors-generator").length > 0) {
         console.log('Getting latest contributors');
-        httpGet("https://auroraeditor.github.io/AEContributorBot/contributors.json", function (contents) {
+        httpGet("https://auroraeditor.com/data/contributors.json", function (contents) {
             console.log('Parsing latest contributors');
             var data = JSON.parse(contents);
             var max = 4;
