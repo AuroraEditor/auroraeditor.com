@@ -77,7 +77,7 @@ function MarketplacePrivacy() {
                                 </span>
                             </label>
                             <div className="modal-content" id="content-toggle-data" role="group" aria-label="More content about, You choose what extensions have access to. And when." aria-hidden="true">
-                                <div className="grid-item-copy extra-padding" style={{ overflowY: "visible" }}>
+                                <div className="grid-item-copy extra-padding" id="scroll-hidden" style={{ overflowY: "visible" }}>
                                     <div className="top-gradient" style={{ display: "none" }}></div>
                                     <p><span className="typography-eyebrow-reduced">You choose what extensions have access to. And when.</span></p>
                                     <p>Each extension is required to ask for your permission so you can choose what access it is allowed to have. The first time a third‑party extension wants to access your information — like your project files, git details, code, or notifications — you receive an alert. Even if you grant access once, you can revoke it later. We also ensure that extensions are denied access to certain sensitive data in your project, are unable to modify your project or code, and are prohibited from obtaining and sending your project details to third-paties.</p>

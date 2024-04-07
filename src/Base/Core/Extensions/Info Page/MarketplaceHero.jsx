@@ -19,7 +19,7 @@ function MarketplaceHero() {
             </div>
             <div className="hero-intro">
                 <div className="section-content">
-                    <p className="hero-copy typography-callout">
+                    <p className="hero-copy typography-callout" id="padding-auto">
                         The Extensions Marketplace is a curated space where developers from all over can discover extensions to improve their developer experience and upload their own extension to share with the world.
                     </p>
                 </div>

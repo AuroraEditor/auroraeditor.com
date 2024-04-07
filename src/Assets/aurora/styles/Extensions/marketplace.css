@@ -248,7 +248,13 @@ html.reduced-motion .section-hero .marketplace-icon {
 
 .grid-modal .modal-content .grid-item-copy.extra-padding {
     padding-bottom: 20px;
+    /* overflow-y: scroll;    */
+     /* save */
+    /* overflow-x: hidden; */
 }
+/* .grid-modal::webkit-scrollbar {
+    display: none;
+} */
 
 .grid-modal .modal-content .grid-item-copy {
     margin-top: 0;
@@ -396,7 +402,12 @@ html.reduced-motion .section-hero .marketplace-icon {
     .section-content {
         margin-left: auto !important;
         margin-right: auto !important;
-        width: 87.5% !important;
+        width: auto !important;  /* Changed this to auto so it works better over different screen sizes */
+    }
+
+    #padding-20px {
+        padding-left: 50px !important;
+        padding-right: 40px !important;
     }
 
     .section-hero .marketplace-icon {
@@ -409,14 +420,10 @@ html.reduced-motion .section-hero .marketplace-icon {
         height: 72px;
     }
 
-    .section-hero .hero .hero-headline {
-        margin: 0;
-    }
 
     .section-hero .hero .hero-headline {
         max-width: 430px !important;
         padding-top: 38px !important;
-        text-align: left;
     }
 
     .section-tiles-grid {
@@ -520,6 +527,57 @@ html.reduced-motion .section-hero .marketplace-icon {
         height: 227px;
     }
 }
+@media screen and (max-width: 400px) {
+    .section-hero .hero .hero-headline {
+        max-width: 430px !important;
+        font-size: 43px !important;
+        padding-left: 15px; 
+        padding-right: 15px;
+    }
+}
+@media (min-width: 645px) and (max-width: 735px ){
+    #padding-auto {
+        padding-left: 140px !important;
+        padding-right: 80px !important; 
+    }
+}
+@media (min-width: 600px) and (max-width: 645px ){
+    #padding-auto {
+        padding-left: 120px !important;
+        padding-right: 80px !important; 
+    }
+}
+@media (min-width: 575px) and (max-width: 600px ){
+    #padding-auto {
+        padding-left: 115px !important;
+        padding-right: 75px !important; 
+    }
+}
+@media (min-width: 540px) and (max-width: 575px ){
+    #padding-auto {
+        padding-left: 95px !important;
+        padding-right: 70px !important; 
+    }
+}
+@media (min-width: 500px) and (max-width: 540px ){
+    #padding-auto {
+        padding-left: 75px !important;
+        padding-right: 50px !important; 
+    }
+}
+@media (min-width: 475px) and (max-width: 500px ){
+    #padding-auto {
+        padding-left: 56px !important;
+        padding-right: 40px !important; 
+    }
+}
+@media screen and (max-width: 475px ){
+    #padding-auto {
+        padding-left: 45px !important;
+        padding-right: 35px !important; 
+    }
+}
+
 
 @media only screen and (max-width: 1068px) {
     .section-hero .hero .section-content {
@@ -658,6 +716,15 @@ html.reduced-motion .section-hero .marketplace-icon {
     font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
+#scroll-hidden {
+    /* overflow-y: scroll; */
+    overflow-x: hidden;
+}
+#scroll-hidden::-webkit-scrollbar {
+    display: none;
+    scrollbar-width: none;
+}
+
 .typography-headline-elevated {
     font-size: 54px;
     line-height: 1.0625;
@@ -706,7 +773,7 @@ html.reduced-motion .section-hero .marketplace-icon {
     }
 
     .typography-tiles-headline {
-        font-size: 32px !important;
+        font-size: 30px !important;
         line-height: 1.125 !important;
         font-weight: 600 Im !important;
         letter-spacing: -.004em !important;
@@ -716,6 +783,15 @@ html.reduced-motion .section-hero .marketplace-icon {
     .typography-headline-elevated {
         font-size: 40px !important;
         line-height: 1.1 !important;
+        font-weight: 600 !important;
+        letter-spacing: 0em !important;
+        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .typography-headline-elevated {
+        font-size: 37px !important;
+        line-height: 1.2 !important;
         font-weight: 600 !important;
         letter-spacing: 0em !important;
         font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
