@@ -39,8 +39,8 @@ html body#home #notice-ribbon.ribbon:not(.hide)+script+aside+input+nav#ac-global
 }
 
 #notice-ribbon.ribbon .ribbon-content-wrapper {
-    padding-top: 0.3em;
-    padding-bottom: 0.4em;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
     text-align: center;
     background-color: #0077ed;
 }

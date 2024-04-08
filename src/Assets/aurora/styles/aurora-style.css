@@ -207,7 +207,7 @@ html[data-color-scheme="dark"] body#xcode .parallel-testing {
 }
 
 .gradient-text {
-    background: linear-gradient(to right, #F36D6D, #F278F8, #9C84FA, #68DC7C, #F06EBE, #FAD66A);
+    background: linear-gradient(90deg,#f36d6d,#f278f8,#9c84fa,#68dc7c,#f06ebe,#fad66a, #f36d6d);
     background-size: 200% auto;
     background-clip: text;
     -webkit-background-clip: text;
