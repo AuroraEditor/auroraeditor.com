@@ -476,7 +476,7 @@ html[data-color-scheme="dark"] .badge {
 }
 
 html[data-color-scheme="dark"] .gradient-text {
-    background: linear-gradient(to right, #F5B3B3, #E6ACE9, #C4B6FF, #A4DCAD, #F1B3D9, #F1DEA7);
+    background: linear-gradient(90deg,#f36d6d,#f278f8,#9c84fa,#68dc7c,#f06ebe,#fad66a, #f36d6d);
     background-size: 200% auto;
     background-clip: text;
     -webkit-background-clip: text;

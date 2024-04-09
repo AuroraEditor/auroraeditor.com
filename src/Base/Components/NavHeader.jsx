@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
 import '../../Assets/aurora/styles/aurora-nav.css';
+
+import { Link } from "react-router-dom";
 
 function NavHeader() {
     return (
@@ -23,12 +24,12 @@ function NavHeader() {
                                 <li className="auroranav-menu-item">
                                     <Link to="/" className="auroranav-menu-link">Aurora Editor</Link>
                                 </li>
-                                <li className="auroranav-menu-item">
+                                {/* <li className="auroranav-menu-item">
                                     <Link to="/included" className="auroranav-menu-link">What’s included</Link>
-                                </li>
-                                <li className="auroranav-menu-item">
+                                </li> */}
+                                {/* <li className="auroranav-menu-item">
                                     <Link to="/marketplace" className="auroranav-menu-link">Marketplace</Link>
-                                </li>
+                                </li> */}
                                 {/*
                                 <li className="auroranav-menu-item">
                                     <Link to="/account" className="auroranav-menu-link">Account</Link>
