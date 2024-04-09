@@ -1,26 +1,21 @@
-import { Route, Routes, useLocation } from "react-router-dom";
 import "./Assets/aurora/styles/aurora-global.css"
-import useScript from './Base/Hooks/useScript';
-import ProtectedRoute from "./Base/Utils/ProtectedRoute";
-import ProfileNavHeader from './Base/Components/Profile/ProfileNavHeader';
+
+import { Route, Routes, useLocation } from "react-router-dom";
+
 import AuthNavHeader from './Base/Components/Auth/AuthNavHeader';
-import NavHeader from "./Base/Components/NavHeader";
-import MarketplaceNavHeader from "./Base/Components/Marketplace/MarketplaceNavHeader";
-import MainPage from "./Base/Core/Main";
-import Login from "./Base/Core/Auth/Login";
-import Register from './Base/Core/Auth/Register';
-import Profile from './Base/Core/Profile/Profile';
 import Contributors from "./Base/Core/Contributors";
-import Included from './Base/Core/Included';
-import Terms from './Base/Core/Terms';
-import PageNotFound from "./Base/Core/PageNotFound";
-import Ribbon from './Base/Components/Ribbon';
-import Footer from "./Base/Components/Footer";
 import EmailVerification from "./Base/Core/Auth/EmailVerification";
-import ExtensionPage from "./Base/Core/Extensions/ExtensionPage";
-import MarketplacePage from "./Base/Core/Extensions/Info Page/MarketplacePage";
-import IdeasPage from "./Base/Core/Extensions/Ideas/IdeasPages";
-import ExploreExtensionsPage from "./Base/Core/Extensions/ExploreExtensionsPage";
+import Footer from "./Base/Components/Footer";
+import MainPage from "./Base/Core/Main";
+import MarketplaceNavHeader from "./Base/Components/Marketplace/MarketplaceNavHeader";
+import NavHeader from "./Base/Components/NavHeader";
+import PageNotFound from "./Base/Core/PageNotFound";
+import Profile from './Base/Core/Profile/Profile';
+import ProfileNavHeader from './Base/Components/Profile/ProfileNavHeader';
+import ProtectedRoute from "./Base/Utils/ProtectedRoute";
+import Ribbon from './Base/Components/Ribbon';
+import Terms from './Base/Core/Terms';
+import useScript from './Base/Hooks/useScript';
 
 function App() {
     useScript("/scripts/aurora-nav.js")
@@ -31,16 +26,16 @@ function App() {
 
     var routes = [
         { path: "/", element: <MainPage /> },
-        { path: "/sign-in", element: <Login /> },
+        // { path: "/sign-in", element: <Login /> },
         { path: "/auth/:email-verification", element: <EmailVerification /> },
-        { path: "/sign-up", element: <Register /> },
+        // { path: "/sign-up", element: <Register /> },
         { path: "/contributors", element: <Contributors /> },
-        { path: "/included", element: <Included /> },
+        // { path: "/included", element: <Included /> },
         { path: "/legal/terms", element: <Terms /> },
-        { path: "/marketplace/:id", element: <ExtensionPage /> },
-        { path: "/marketplace", element: <MarketplacePage /> },
-        { path: "/marketplace/ideas", element: <IdeasPage /> },
-        { path: "/marketplace/explore", element: <ExploreExtensionsPage /> },
+        // { path: "/marketplace/:id", element: <ExtensionPage /> },
+        // { path: "/marketplace", element: <MarketplacePage /> },
+        // { path: "/marketplace/ideas", element: <IdeasPage /> },
+        // { path: "/marketplace/explore", element: <ExploreExtensionsPage /> },
         { path: "/pnf", element: <PageNotFound /> }
     ]
 
