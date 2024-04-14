@@ -22,8 +22,8 @@ function Socials() {
                     <div className="column large-3 medium-6 small-12">
                         <a href="https://twitter.com/Aurora_Editor" target="_blank" rel="noreferrer" className="block text-center">
                             <figure className="router-icon router-icon-twitter"></figure>
-                            <p><strong>Twitter</strong></p>
-                            <p className="typography-subbody">Discover the latest in <b>Aurora Editor</b> by following us on Twitter.</p>
+                            <p><strong>X (Twitter)</strong></p>
+                            <p className="typography-subbody">Discover the latest in <b>Aurora Editor</b> by following us on X.</p>
                         </a>
                     </div>
                     <div className="column large-3 medium-6 small-12">
