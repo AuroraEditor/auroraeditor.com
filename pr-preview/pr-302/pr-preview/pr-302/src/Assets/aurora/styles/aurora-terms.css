@@ -1,0 +1,333 @@
+.has-modal {
+    overflow: hidden;
+}
+
+.has-modal-full-viewport {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.has-modal-full-viewport body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.modal {
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+}
+
+.modal-standard {
+    overflow: auto;
+    padding: 54px 0;
+    background: rgba(0, 0, 0, 0.48);
+    -webkit-overflow-scrolling: touch;
+}
+
+.modal-standard .content-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-standard .content-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.modal-standard .content-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+}
+
+@media only screen and (min-width: 1441px) {
+    .modal-standard .content-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        width: 980px;
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .modal-standard .content-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        width: 692px;
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .modal-standard .content-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        width: 87.5%;
+    }
+}
+
+.modal-standard .content-padding {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+    padding: 80px 8.33333%;
+    background: white;
+    border-radius: 18px;
+}
+
+@media only screen and (max-width: 734px) {
+    .modal-standard .content-padding {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .modal-standard .modal-close {
+        left: 22px;
+    }
+}
+
+.theme-dark .modal-standard .content-padding,
+.modal-standard.theme-dark .content-padding {
+    background: #1d1d1f;
+}
+
+.modal-full-viewport {
+    background: white;
+    padding: 96px 0;
+}
+
+@media only screen and (max-width: 1068px) {
+    .modal-full-viewport {
+        padding: 80px 0;
+    }
+}
+
+.modal-full-viewport.remove-container-padding {
+    padding: 0;
+}
+
+.theme-dark .modal-full-viewport,
+.modal-full-viewport.theme-dark {
+    background: black;
+}
+
+.modal-full-viewport.modal-open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-open {
+    display: block;
+    z-index: 11000;
+}
+
+.modal-open:focus {
+    outline-offset: -4px;
+}
+
+.modal video {
+    max-height: 100vh;
+    width: 100vw;
+    max-width: 1280px;
+}
+
+.modal-close {
+    position: absolute;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 9999;
+    overflow: hidden;
+    top: 24px;
+    left: 24px;
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    line-height: 1;
+    cursor: pointer;
+    background: none;
+    border: 0;
+    color: rgba(134, 134, 139, 0.8);
+}
+
+.modal-close::before,
+.modal-close::after {
+    font-family: "SF Pro Icons";
+    color: inherit;
+    display: inline-block;
+    font-style: normal;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: 1;
+    text-decoration: underline;
+    position: relative;
+    z-index: 1;
+    alt: '';
+}
+
+.modal-close::before,
+.modal-close::after {
+    text-decoration: none;
+}
+
+.modal-close::before {
+    display: none;
+}
+
+.modal-close::before,
+.modal-close::after {
+    content: "ïž";
+}
+
+.modal-close:hover {
+    color: #86868b;
+}
+
+.theme-dark .modal-close {
+    color: rgba(110, 110, 115, 0.8);
+}
+
+.theme-dark .modal-close:hover {
+    color: #6e6e73;
+}
+
+.modal-close::after {
+    width: 0.9em;
+    height: 0.9em;
+    top: 0.05em;
+    padding: 0;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 1068px) {
+    .modal-close {
+        top: 20px;
+        left: 20px;
+        font-size: 32px;
+    }
+}
+
+main h3.typography-label {
+    margin-top: 1.6em;
+}
+
+main h3.typography-label,
+main p:not(.typography-intro):not(.category-intro) {
+    margin-left: 82px;
+}
+
+.router-icon-document {
+    margin-top: 2.4em;
+    float: left;
+    width: 64px;
+    height: 64px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../elements/icons/document.svg");
+}
+
+.inline-link {
+    display: inline-block;
+}
+
+.inline-link+.open-modal {
+    position: absolute;
+    left: 260px;
+}
+
+.modal ul {
+    columns: 2;
+}
+
+#main section.section {
+    padding-top: 4em;
+    padding-bottom: 0;
+}
+
+#main section.section:last-of-type {
+    padding-bottom: 4em;
+}
+
+#main section:not(:last-of-type) .section-content {
+    padding-bottom: 4em;
+}
+
+#main section .section-content .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#main section .section-content .row>.column {
+    padding: 0;
+}
+
+@media only screen and (max-width: 1068px) {
+    #main section .section-content .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #main section .section-content .row>.column {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    #main section.section {
+        padding-top: 2em;
+        padding-bottom: 0;
+    }
+
+    #main section.section:last-of-type {
+        padding-bottom: 2em;
+    }
+
+    #main section:not(:last-of-type) .section-content {
+        padding-bottom: 2em;
+    }
+
+    #main section .section-content .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #main section .section-content .row>.column {
+        padding: 1em 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .inline-link {
+        display: block;
+    }
+
+    .inline-link+.open-modal {
+        position: relative;
+        left: 0;
+        margin-top: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+
+    main h3.typography-label,
+    main p:not(.typography-intro):not(.category-intro) {
+        margin-left: 44px;
+    }
+
+    .router-icon-document {
+        margin-top: 2.2em;
+        width: 32px;
+        height: 32px;
+    }
+}

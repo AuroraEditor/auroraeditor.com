@@ -1,0 +1,7 @@
+# robots.txt for http://auroraeditor.com/
+# robots.txt for http://auroraeditor.com/
+User-agent: *
+Allow: /*
+Disallow: /click/
+Disallow: /temp/
+Sitemap: http://auroraeditor.com/sitemap.xml
