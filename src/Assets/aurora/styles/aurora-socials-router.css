@@ -24,6 +24,11 @@
     .contributors-generator.fixed-width .block {
         width: 216px;
     }
+    .social-link-content {
+        margin-left: auto;
+        margin-right: auto;
+        width: 251px;
+    }
 }
 
 @media only screen and (max-width: 735px) {
