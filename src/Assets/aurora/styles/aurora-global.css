@@ -1681,6 +1681,7 @@ section[class^='section-'] {
 
 .section-content .row>.column {
     padding: 1.5em 1.5em
+
 }
 
 @media only screen and (max-width: 1068px) {
