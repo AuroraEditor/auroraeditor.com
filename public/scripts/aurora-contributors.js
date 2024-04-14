@@ -30,7 +30,7 @@ function loadContributorsData() {
 
     if (document.getElementsByClassName("contributors-generator").length > 0) {
         console.log('Getting latest contributors');
-        httpGet("https://api.github.com/repos/AuroraEditor/AuroraEditor/contributors?per_page=100", function (contents) {
+        httpGet("https://auroraeditor.com/data/contributors.json", function (contents) {
             console.log('Parsing latest contributors');
             var data = JSON.parse(contents);
             var max = 4;
@@ -59,7 +59,7 @@ function loadContributorsData() {
                     .replaceAll(/USER_PROFILE_URL/g, contributor.html_url)
                     .replaceAll(/USER_AVATAR/g, contributor.avatar_url)
                     .replaceAll(/USER_NAME/g, contributor.login)
-                    .replaceAll(/USER_COMMITS/g, contributor.contributions + '  contribution' + (parseInt(contributor.contributions) > 1 ? 's':''));
+                    .replaceAll(/USER_COMMITS/g, contributor.contributions + '  contribution' + (parseInt(contributor.contributions) > 1 ? 's' : ''));
 
                 count += 1;
             });
