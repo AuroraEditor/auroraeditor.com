@@ -36,9 +36,12 @@ function Socials() {
                     <div className="column large-3 medium-6 small-12">
                         <a href="https://www.producthunt.com/posts/aurora-editor?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-aurora&#0045;editor" target="_blank" rel="noreferrer" className="block text-center">
                             <div className="social-link-content">
-                                <figure className="alt-router-icon">
+                                <picture className="alt-router-icon">
+                                    <source className="center-image" srcset="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=372771&theme=light" alt="AuroraEditor | Product Hunt" media="(prefers-color-scheme: light)" />
+                                    <source className="center-image" srcset="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=372771&theme=dark" alt="AuroraEditor | Product Hunt" media="(prefers-color-scheme: dark)" />
+
                                     <img className="center-image" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=372771&theme=light" alt="AuroraEditor | Product Hunt" />
-                                </figure>
+                                </picture>
                             </div>
                             <p><strong>Product Hunt</strong></p>
                             <p className="typography-subbody">Wanna support <b>Aurora Editor</b> on Product Hunt? Check out the Product Hunt page.</p>
