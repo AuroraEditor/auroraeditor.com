@@ -1,0 +1,330 @@
+.explore-body {
+    position: relative;
+}
+
+.container-lg {
+    max-width: 1012px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.flex-items-center {
+    align-items: center !important;
+}
+
+.min-width-0 {
+    min-width: 0 !important;
+}
+
+.flex-auto {
+    flex: auto !important;
+}
+
+.flex-wrap {
+    flex-wrap: wrap !important;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.d-block {
+    display: block !important;
+}
+
+.list-style-none {
+    list-style: none;
+}
+
+.position-relative {
+    position: relative !important;
+}
+
+.position-absolute {
+    position: absolute !important;
+}
+
+.width-full {
+    width: 100% !important;
+}
+
+.filter-item {
+    position: relative;
+    display: block;
+    padding: 8px 16px;
+    margin-bottom: 4px;
+    overflow: hidden;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    border-radius: 6px;
+    color: #1d1d1f;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    letter-spacing: -.015em;
+    line-height: 1.42859;
+}
+
+.filter-item:hover {
+    color: #0077ed;
+    text-decoration: none;
+}
+
+.extension-item:hover {
+    cursor: pointer;
+}
+
+/**Images*/
+.extension-icon-small {
+    width: 56px;
+    height: 56px;
+}
+
+.search-icon {
+    display: inline-block;
+    overflow: visible;
+    vertical-align: text-bottom;
+    fill: currentColor;
+}
+
+.download-icon {
+    display: inline-block;
+    overflow: visible;
+    vertical-align: text-bottom;
+    fill: currentColor;
+}
+
+.chevron-right-icon {
+    display: inline-block;
+    overflow: visible;
+    vertical-align: text-bottom;
+    fill: currentColor;
+}
+
+/**Extension Item*/
+.px-3 {
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+}
+
+.wb-break-word {
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+}
+
+.lh-condensed {
+    line-height: 1.25 !important;
+}
+
+.text-muted {
+    color: #b2b2b6;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.no-underline {
+    text-decoration: none !important;
+}
+
+/**Tooltip*/
+.tooltipped {
+    position: relative;
+}
+
+/** Margins */
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.mb-half {
+    margin-bottom: 2px !important;
+}
+
+.mb-3 {
+    margin-bottom: 16px !important;
+}
+
+.mb-6 {
+    margin-bottom: 40px !important;
+}
+
+.mb-4 {
+    margin-bottom: 24px !important;
+}
+
+.mt-1 {
+    margin-top: 4px !important;
+}
+
+.mt-6 {
+    margin-top: 60px !important;
+}
+
+.ml-n2 {
+    margin-left: 8px !important;
+}
+
+/** Padings*/
+.pl-3 {
+    padding-left: 16px !important;
+}
+
+.pr-3 {
+    padding-right: 16px !important;
+}
+
+.pt-3 {
+    padding-top: 16px !important;
+}
+
+/** Repsonsive */
+.p-responsive {
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+}
+
+@media (min-width: 544px) {
+    .explore-body {
+        z-index: 2;
+    }
+
+    .p-responsive {
+        padding-right: 40px !important;
+        padding-left: 40px !important;
+    }
+
+    .d-sm-flex {
+        display: flex !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .d-md-flex {
+        display: flex !important;
+    }
+
+    .col-md-6 {
+        width: 49.99999998%;
+    }
+
+    .ml-md-0 {
+        margin-left: 0 !important;
+    }
+
+    .mt-md-0 {
+        margin-top: 0 !important;
+    }
+
+    .flex-md-justify-end {
+        justify-content: flex-end !important;
+    }
+
+    .pb-md-12 {
+        padding-bottom: 128px !important;
+    }
+
+    .pr-md-5 {
+        padding-right: 32px !important;
+    }
+
+    .pt-md-2 {
+        padding-top: 8px !important;
+    }
+
+    .pl-md-0 {
+        padding-left: 0 !important;
+    }
+
+    .f4 {
+        font-size: 16px !important;
+    }
+}
+
+@media (min-width: 1012px) {
+    .p-responsive {
+        padding-right: 16px !important;
+        padding-left: 16px !important;
+    }
+
+    .float-lg-right {
+        float: right !important;
+    }
+
+    .float-lg-left {
+        float: left !important;
+    }
+
+    .col-lg-3 {
+        width: 24.99999999%;
+    }
+
+    .col-lg-9 {
+        width: 74.99999997%;
+    }
+
+    .d-lg-block {
+        display: block !important;
+    }
+}
+
+/** Typography */
+.label-secondary {
+    color: #b2b2b6;
+    border-color: #d0d7de;
+}
+
+.label {
+    display: inline-block;
+    padding: 0 7px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    white-space: nowrap;
+    border: 1px solid transparent;
+    border-radius: 2em;
+}
+
+.f4 {
+    font-size: 16px !important;
+}
+
+.extension-name {
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: .012em;
+    line-height: 1.21053;
+}
+
+.extension-author {
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: .016em;
+    line-height: 1.21053;
+    color: #515154;
+    margin-top: 0;
+}
+
+.extension-description {
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: .016em;
+    line-height: 1.21053;
+    color: #515154;
+    margin-top: 0;
+}
+
+.extension-download {
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    color: #515154;
+    margin-top: 0;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: .016em;
+    line-height: 1.21053;
+}

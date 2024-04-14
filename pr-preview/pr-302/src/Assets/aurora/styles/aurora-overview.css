@@ -1,0 +1,94 @@
+.bg-gradient {
+    background: linear-gradient(to bottom, #d5e4f3 -10%, #fff 100%);
+}
+
+.bg-alt {
+    background-color: #f5f5f7;
+}
+
+.column-flex-center {
+    align-self: center;
+}
+
+.device-hero {
+    margin-top: 2em;
+}
+
+.screen-only {
+    display: block;
+    width: 816px;
+    height: auto;
+    margin: 2em 0 0;
+}
+
+.screen-only img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.callout {
+    background: linear-gradient(to bottom, #d5e4f3 0%, #fff 130%);
+    border: 1px solid #fff;
+}
+
+@media only screen and (max-width: 1068px) {
+    .screen-only {
+        width: 576px;
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .screen-only {
+        width: 100%;
+        max-width: 576px;
+    }
+}
+
+
+/* ========== Grid ========== */
+#main section.section {
+    padding-top: 0;
+    padding-bottom: 4em;
+}
+
+#main section.section.section-hero {
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+#main section.section.section-xcode-cloud {
+    padding-top: 0;
+}
+
+#main section.section.section-resources {
+    padding-top: 4em;
+    padding-bottom: 0;
+}
+
+@media only screen and (max-width: 735px) {
+    #main section.section {
+        padding-top: 0;
+        padding-bottom: 3em;
+    }
+
+    #main section.section.section-hero {
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+
+    #main section .section-content .row>.column {
+        padding: 0;
+    }
+}
+
+
+/* DARK MODE */
+html[data-color-scheme="dark"] body.dmf .callout {
+    background: linear-gradient(to bottom, #3f668d -20%, #000 120%);
+    border-color: #111;
+}
+
+html[data-color-scheme="dark"] body.dmf .screen-only img {
+    border-color: #555;
+}
