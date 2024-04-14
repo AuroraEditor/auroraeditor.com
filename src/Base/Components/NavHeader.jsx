@@ -77,37 +77,37 @@ function NavHeader() {
                   <span className="auroranav-menucta-chevron"></span>
                 </label>
               </div>
-              {platform === "macos" ? (
-                <div className="auroranav-action auroranav-action-button">
-                  <div className="button-multi-container">
+              <div className="auroranav-action auroranav-action-button">
+                <div className="button-multi-container">
+                  <a
+                    href="/#"
+                    className="auroranav-button button button-compact button-pill button-multi icon icon-chevrondown"
+                    id="button-multi-1"
+                    aria-expanded="false"
+                  >
+                    Download
+                  </a>
+                  <div
+                    className="button-multi-content button-multi-content-right button-multi-content-slide ANToggle"
+                    role="menu"
+                  >
                     <a
-                      href="/#"
-                      className="auroranav-button button button-compact button-pill button-multi icon icon-chevrondown"
-                      id="button-multi-1"
-                      aria-expanded="false"
+                      href="https://nightly.link/AuroraEditor/AuroraEditor/workflows/build-editor/main/AuroraEditor.zip"
+                      className="button-multi-option"
+                      role="menuitem"
+                      tabindex="0"
                     >
-                      Download
+                      Release <span className="badge">Coming Soon</span>
                     </a>
-                    <div
-                      className="button-multi-content button-multi-content-right button-multi-content-slide ANToggle"
-                      role="menu"
+                    <a
+                      href="https://nightly.link/AuroraEditor/AuroraEditor/workflows/build-editor/beta/AuroraEditor.zip"
+                      className="button-multi-option"
+                      role="menuitem"
+                      tabindex="1"
                     >
-                      <a
-                        href="https://nightly.link/AuroraEditor/AuroraEditor/workflows/build-editor/main/AuroraEditor.zip"
-                        className="button-multi-option"
-                        role="menuitem"
-                        tabindex="0"
-                      >
-                        Release <span className="badge">Coming Soon</span>
-                      </a>
-                      <a
-                        href="https://nightly.link/AuroraEditor/AuroraEditor/workflows/build-editor/beta/AuroraEditor.zip"
-                        className="button-multi-option"
-                        role="menuitem"
-                        tabindex="1"
-                      >
-                        Beta <span className="badge">Coming Soon</span>
-                      </a>
+                      Beta <span className="badge">Coming Soon</span>
+                    </a>
+                    {platform === "macos" ? (
                       <a
                         href="https://nightly.link/AuroraEditor/AuroraEditor/workflows/build-editor/development/AuroraEditor.zip"
                         className="button-multi-option"
@@ -116,18 +116,27 @@ function NavHeader() {
                       >
                         Nightly
                       </a>
+                    ) : (
                       <a
-                        href="https://github.com/AuroraEditor/AuroraEditor/archive/refs/heads/main.zip"
+                        href="https://nightly.link/AuroraEditor/AuroraEditor/workflows/build-editor/development/AuroraEditor.zip"
                         className="button-multi-option"
                         role="menuitem"
-                        tabindex="3"
+                        tabindex="2"
                       >
-                        Source Code
+                        Nightly <span className="badge-notice">Requires a Mac</span>
                       </a>
-                    </div>
+                    )}
+                    <a
+                      href="https://github.com/AuroraEditor/AuroraEditor/archive/refs/heads/main.zip"
+                      className="button-multi-option"
+                      role="menuitem"
+                      tabindex="3"
+                    >
+                      Source Code
+                    </a>
                   </div>
                 </div>
-              ) : null}
+              </div>
             </div>
           </div>
         </div>
