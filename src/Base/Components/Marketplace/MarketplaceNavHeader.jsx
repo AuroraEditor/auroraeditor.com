@@ -1,6 +1,8 @@
-import { Link } from "react-router-dom";
 import '../../../Assets/aurora/styles/aurora-nav.css';
+
 import { getOS, openAuroraEditor } from "../../Utils/DeviceDetection";
+
+import { Link } from "react-router-dom";
 
 function MarketplaceNavHeader() {
     const platform = getOS();
