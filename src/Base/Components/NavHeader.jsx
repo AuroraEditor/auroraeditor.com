@@ -47,6 +47,11 @@ function NavHeader() {
                     Contributors
                   </Link>
                 </li>
+                <li className="auroranav-menu-item">
+                  <Link to="https://docs.auroraeditor.com" className="auroranav-menu-link">
+                    Documentation
+                  </Link>
+                </li>
                 {/* <li className="auroranav-menu-item">
                                     <Link to="/included" className="auroranav-menu-link">What’s included</Link>
                                 </li> */}
