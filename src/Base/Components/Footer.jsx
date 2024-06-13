@@ -16,6 +16,7 @@ function Footer() {
                             <Link className="footer-mini-legal-link" to="/legal/tos">Terms of Use</Link>
                             <Link className="footer-mini-legal-link" to="/legal/privacy-policy">Privacy Policy</Link>
                             <Link className="footer-mini-legal-link" to="/contributors">Contributors</Link>
+                            <Link className="footer-mini-legal-link" to="https://docs.auroraeditor.com">Documentation</Link>
                             <Link className="footer-mini-legal-link" to="/legal/terms">Agreements and Open Source Licenses</Link>
                         </div>
                     </div>
