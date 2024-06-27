@@ -47,13 +47,6 @@ function NavHeader() {
                     Contributors
                   </Link>
                 </li>
-                <li className="auroranav-menu-item">
-                  <a 
-                    href="https://docs.auroraeditor.com"
-                    className="auroranav-menu-link">
-                    Documentation
-                  </a>
-                </li>
                 {/* <li className="auroranav-menu-item">
                                     <Link to="/included" className="auroranav-menu-link">What’s included</Link>
                                 </li> */}
@@ -65,6 +58,14 @@ function NavHeader() {
                                     <Link to="/account" className="auroranav-menu-link">Account</Link>
                                 </li>
                                 */}
+                <li className="auroranav-menu-item">
+                  <a
+                    href="https://docs.auroraeditor.com"
+                    className="auroranav-menu-link"
+                  >
+                    Documentation
+                  </a>
+                </li>
                 <li className="auroranav-menu-item">
                   <a
                     href="https://github.com/AuroraEditor/AuroraEditor"
