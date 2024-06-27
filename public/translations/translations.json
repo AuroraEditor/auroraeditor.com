@@ -1,0 +1,144 @@
+{
+  "languages": {
+    "en": {
+      "name": "English",
+      "version": "0.1"
+    },
+    "es": {
+      "name": "Spanish",
+      "version": "0.1"
+    },
+    "fr": {
+      "name": "French",
+      "version": "0.1"
+    },
+    "zh-Hans": {
+      "name": "Chinese Simplified",
+      "version": "0.1"
+    },
+    "zh-Hant": {
+      "name": "Chinese Traditional",
+      "version": "0.1"
+    },
+    "zh-Hant-HK": {
+      "name": "Chinese Traditional (Hong Kong)",
+      "version": "0.1"
+    },
+    "af": {
+      "name": "Afrikaans",
+      "version": "0.1"
+    },
+    "hr": {
+      "name": "Croatian",
+      "version": "0.1"
+    },
+    "cs": {
+      "name": "Czech",
+      "version": "0.1"
+    },
+    "da": {
+      "name": "Danish",
+      "version": "0.1"
+    },
+    "nl": {
+      "name": "Dutch",
+      "version": "0.1"
+    },
+    "fil": {
+      "name": "Filipino",
+      "version": "0.1"
+    },
+    "fi": {
+      "name": "Finnish",
+      "version": "0.1"
+    },
+    "de": {
+      "name": "German",
+      "version": "0.1"
+    },
+    "el": {
+      "name": "Greek",
+      "version": "0.1"
+    },
+    "hi": {
+      "name": "Hindi",
+      "version": "0.1"
+    },
+    "ga-IE": {
+      "name": "Irish (Ireland)",
+      "version": "0.1"
+    },
+    "it": {
+      "name": "Italian",
+      "version": "0.1"
+    },
+    "ms": {
+      "name": "Malay",
+      "version": "0.1"
+    },
+    "ja": {
+      "name": "Japanese",
+      "version": "0.1"
+    },
+    "mt-MT": {
+      "name": "Maltese (Malta)",
+      "version": "0.1"
+    },
+    "ne": {
+      "name": "Nepali",
+      "version": "0.1"
+    },
+    "no": {
+      "name": "Norwegian",
+      "version": "0.1"
+    },
+    "pl": {
+      "name": "Polish",
+      "version": "0.1"
+    },
+    "pt": {
+      "name": "Portuguese",
+      "version": "0.1"
+    },
+    "ro": {
+      "name": "Romanian",
+      "version": "0.1"
+    },
+    "ru": {
+      "name": "Russian",
+      "version": "0.1"
+    },
+    "sv": {
+      "name": "Swedish",
+      "version": "0.1"
+    },
+    "th": {
+      "name": "Thai",
+      "version": "0.1"
+    },
+    "tn": {
+      "name": "Tswana",
+      "version": "0.1"
+    },
+    "uk": {
+      "name": "Ukrainian",
+      "version": "0.1"
+    },
+    "vi": {
+      "name": "Vietnamese",
+      "version": "0.1"
+    },
+    "cy-GB": {
+      "name": "Welsh (United Kingdom)",
+      "version": "0.1"
+    },
+    "xh": {
+      "name": "Xhosa",
+      "version": "0.1"
+    },
+    "zu": {
+      "name": "Zulu",
+      "version": "0.1"
+    }
+  }
+}
