@@ -32,3 +32,4 @@ function auroranavUpdate() {
 
 auroranavUpdate();
 window.addEventListener('DOMContentLoaded', auroranavUpdate);
+window.addEventListener('hashchange', auroranavUpdate);
