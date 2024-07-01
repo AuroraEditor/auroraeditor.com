@@ -12,13 +12,15 @@ function auroranavUpdate() {
     String.prototype.basicPath = basicPath;
 
     // eslint-disable-next-line no-restricted-globals
-    var page = location.pathname.basicPath();
+    var page = "/" + (location.hash || "#/");
     var navItems = document.querySelectorAll('#auroranav .auroranav-menu-link');
 
     navItems.forEach(function (navItem) {
         if (navItem.href.basicPath() === page) {
             navItem.classList.add('current');
             navItem.setAttribute('aria-disabled', 'true');
+        } else {
+            navItem.classList.remove('current');
         }
 
         navItem.addEventListener("click", function (e) {
