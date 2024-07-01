@@ -32,4 +32,14 @@ function auroranavUpdate() {
 
 auroranavUpdate();
 window.addEventListener('DOMContentLoaded', auroranavUpdate);
-window.addEventListener('hashchange', auroranavUpdate);
+
+// React on changed history state to update menu.
+(function() {
+    var previousState = window.history.state;
+    setInterval(function() {
+        if (previousState !== window.history.state) {
+            previousState = window.history.state;
+            auroranavUpdate();
+        }
+    }, 100);
+})();
