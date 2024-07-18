@@ -11,7 +11,7 @@ function Footer() {
                         <ThemeSelection />
                     </div>
                     <div className="footer-mini-legal">
-                        <div className="footer-mini-legal-copyright">Copyright &copy; 2022 <a href="https://auroracompany.dev" target="_blank" rel="noreferrer">Aurora Company.</a> All rights reserved.</div>
+                        <div className="footer-mini-legal-copyright">Copyright &copy; 2022-2024 <a href="https://auroracompany.dev" target="_blank" rel="noreferrer">Aurora Company.</a> All rights reserved.</div>
                         <div className="footer-mini-legal-links">
                             <Link className="footer-mini-legal-link" to="/legal/tos">Terms of Use</Link>
                             <Link className="footer-mini-legal-link" to="/legal/privacy-policy">Privacy Policy</Link>
