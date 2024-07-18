@@ -22,9 +22,6 @@ function Footer() {
                     </div>
                 </section>
             </div>
-            <div style="visibility:none">
-                <a rel="me" href="https://mastodon.social/@AuroraEditor">Mastodon</a>
-            </div>
         </footer>
     )
 }
