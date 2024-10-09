@@ -54,6 +54,13 @@ function Socials() {
                             <p className="typography-subbody">Join our community on Reddit where we discuss and collaborate on all things of Aurora Editor</p>
                         </a>
                     </div>
+                    <div className="column large-3 medium-6 small-12">
+                        <a href="https://mastodon.social/@AuroraEditor" target="_blank" rel="noreferrer" className="block text-center">
+                            <figure className="router-icon router-icon-mastodon"></figure>
+                            <p><strong>Mastodon</strong></p>
+                            <p className="typography-subbody">Discover the latest in <b>Aurora Editor</b> by following us on Mastodon.</p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </aside>
