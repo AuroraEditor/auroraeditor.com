@@ -173,6 +173,34 @@
     transition: all 0.2s ease-in-out;
 }
 
+@keyframes mastodon-shake-y {
+    10%, 90% {
+        transform: translate3d(0, -1px, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(0, 2px, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(0, -4px, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(0, 4px, 0);
+    }
+}
+
+.router-icon-mastodon {
+    background-image: url("../../elements/icons/socials/mastodon.png");
+    transition: all 0.2s ease-in-out;
+}
+
+.router-icon-mastodon:hover {
+    animation: mastodon-shake-y 0.82s cubic-bezier(.36,.07,.19,.97) infinite;
+    transition: all 0.2s ease-in-out;
+}
+
 .theme-dark .socials-router-links {
     background-color: #1d1d1f;
 }
