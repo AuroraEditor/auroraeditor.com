@@ -867,13 +867,9 @@
 }
 
 .auroranav-menu-link.current {
-    color: #000;
-    opacity: .56;
-    cursor: default
-}
-
-.auroranav-menu-link.current:hover {
-    color: #000
+    color: var(--color-figure-blue);
+    opacity: 1;
+    cursor: default;
 }
 
 .auroranav-menustate:checked~.auroranav .auroranav-menu-link.current,

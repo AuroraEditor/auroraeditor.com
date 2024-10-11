@@ -268,8 +268,8 @@ html[data-color-scheme="dark"] body .auroranav.auroranav-menu-link:hover {
 }
 
 html[data-color-scheme="dark"] body .auroranav .auroranav-menu .auroranav-menu-link.current {
-    color: var(--glyph-gray) !important;
-    opacity: .5;
+    color: var(--color-figure-blue) !important;
+    opacity: 1;
 }
 
 html[data-color-scheme="dark"] body .auroranav-menustate:checked~.auroranav .auroranav-menu-link,
