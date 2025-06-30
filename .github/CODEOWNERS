@@ -1,7 +1,0 @@
-# Settings are under control by @wdg and @nanashili (aka. @AuroraEditor/scripts)
-* @AuroraEditor/scripts
-
-# Website part is owned by @AuroraEditor/website
-/src  @AuroraEditor/website
-/public @AuroraEditor/website
-/package* @AuroraEditor/website
