@@ -18,7 +18,7 @@ function Main() {
         <div className="section-content">
           <div className="row">
             <div className="column large-centered large-10 text-center">
-              <h1 className="typography-headline gradient-text">Aurora Editor Sunset Announcement</a>
+              <h1 className="typography-headline gradient-text">Aurora Editor Sunset Announcement</h1>
               <p className="typography-intro">After much thought and consideration, we have decided to officially sunset Aurora Editor.<br>
               Aurora started as a community-driven effort to build a fast, lightweight, and truly native IDE for macOS developers. It grew out of passion, collaboration, and a shared vision for an open alternative. Along the way, contributors poured in their time, energy, and creativity to shape what Aurora became.<br>
               But as with all projects, there comes a time to reflect on sustainability and focus. With limited resources, shifting priorities, and new tools emerging in the developer ecosystem, we believe it’s the right moment to bring Aurora Editor’s journey to a graceful close.<br>
