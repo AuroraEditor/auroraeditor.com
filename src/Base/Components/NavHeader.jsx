@@ -85,6 +85,7 @@ function NavHeader() {
                   <span className="auroranav-menucta-chevron"></span>
                 </label>
               </div>
+              <!--
               <div className="auroranav-action auroranav-action-button">
                 <div className="button-multi-container">
                   <a
@@ -145,6 +146,7 @@ function NavHeader() {
                   </div>
                 </div>
               </div>
+              -->
             </div>
           </div>
         </div>
