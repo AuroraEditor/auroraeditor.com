@@ -6,7 +6,7 @@ function Ribbon() {
             <div className="ribbon-content-wrapper">
                 <div className="ribbon-content row">
                     <div className="column large-12 large-centered">
-                        <p>Currently in development, <a href="https://github.com/orgs/AuroraEditor/projects/1/views/2" id="suggest-link" className="ribbon-link more">check out the roadmap</a>.</p>
+                        <p>Aurora Editor is not in development anymore, <a href="https://github.com/AuroraEditor/AuroraEditor?tab=readme-ov-file#aurora-editor-sunset-announcement" id="suggest-link" className="ribbon-link more">read the announcement here</a>.</p>
                     </div>
                 </div>
             </div>
