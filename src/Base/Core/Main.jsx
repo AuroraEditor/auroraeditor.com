@@ -28,7 +28,7 @@ function Main() {
               <br />
               — The Aurora Editor Team (<a href='https://github.com/0xWDG'>@0xWDG</a> & <a href='https://github.com/nanashili'>@nanashili</a>).
               </p>
-              <hr>
+              <hr />
               <h1 className="typography-headline gradient-text">
                 Aurora Editor
               </h1>
