@@ -10,6 +10,7 @@ function Contributors() {
                 <div className="row">
                     <div className="column large-centered large-10 text-center">
                         <h1 className="typography-headline gradient-text">Contributors</h1>
+                        <h2>Thank you for being part of Aurora’s story!</h2>
                     </div>
                 </div>
             </div>
